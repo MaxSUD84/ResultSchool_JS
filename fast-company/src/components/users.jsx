@@ -1,21 +1,23 @@
 import React from "react";
-import { useState } from "react";
-import api from "../api";
+import User from "./user";
 
-const Users = () => {
-  const [users, setUsers] = useState(api.users.fetchAll());
+const Users = ({ users, ...rest }) => {
+  return (
+    <>
+      {users.map((user) => (
+        <User key={users._id} {...user} onDelete={users.onDelete} />
+      ))}
+    </>
+  );
+};
 
-  const handleDelete = (userId) => {
-    setUsers((prevItems) => prevItems.filter((user) => user._id !== userId));
-  };
+// const [users, setUsers] = useState(api.users.fetchAll());
 
-  const renderPhrase = (number) => {
-    return number && [2, 3, 4].includes(number)
-      ? number + " человека тусанут с тобой сегодня"
-      : number
-      ? number + " человек тусанет с тобой сегодня"
-      : "Никто с тобой не тусанет сегодня";
-  };
+// const handleDelete = (userId) => {
+//   setUsers((prevItems) => prevItems.filter((user) => user._id !== userId));
+// };
+
+/*
 
   return (
     <>
@@ -72,5 +74,6 @@ const Users = () => {
     </>
   );
 };
+*/
 
 export default Users;
