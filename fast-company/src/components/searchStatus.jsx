@@ -11,9 +11,11 @@ const SearchStatus = ({ length }) => {
       : "Никто с тобой не тусанет сегодня";
   };
 
-  <span className={"badge p-2 m-2 bg-" + (length ? "primary" : "danger")}>
-    {renderPhrase(length)}
-  </span>;
+  return (
+    <span className={"badge p-2 m-2 bg-" + (length ? "primary" : "danger")}>
+      {renderPhrase(length)}
+    </span>
+  );
 };
 
 export default SearchStatus;

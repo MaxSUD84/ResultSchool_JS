@@ -9,13 +9,19 @@ function App() {
   const handleDelete = (id) => {
     setUsers((prevState) => prevState.filter((user) => user._id !== id));
   };
+
   const handleToggleBookMark = (id) => {
-    console.log("first");
+    setUsers((prevState) =>
+      prevState.map((user) => ({
+        ...user,
+        status: user._id === id ? !user.status : user.status,
+      }))
+    );
   };
 
   return (
     <>
-      <SearchStatus />
+      <SearchStatus length={users.length} />
       {users.length !== 0 ? (
         <table className="table">
           <thead>
@@ -25,12 +31,13 @@ function App() {
               <th scope="col">Профессия</th>
               <th scope="col">Встретился, раз</th>
               <th scope="col">Оценка</th>
+              <th scope="col">Избранное</th>
               <th scope="col"></th>
             </tr>
           </thead>
           <tbody className="table-group-divider">
             <Users
-              {...users}
+              users={users}
               onDelete={handleDelete}
               onToggleBookMark={handleToggleBookMark}
             />

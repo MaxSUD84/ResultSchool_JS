@@ -5,7 +5,12 @@ const Users = ({ users, ...rest }) => {
   return (
     <>
       {users.map((user) => (
-        <User key={users._id} {...user} onDelete={users.onDelete} />
+        <User
+          key={user._id}
+          user={user}
+          onDelete={rest.onDelete}
+          onToggleBookMark={rest.onToggleBookMark}
+        />
       ))}
     </>
   );

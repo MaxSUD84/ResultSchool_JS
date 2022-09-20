@@ -1,33 +1,32 @@
 import React from "react";
 
 const BookMark = ({ status, ...rest }) => {
-  console.log("first");
-  //   status ? (
-  //     <svg class="bi" width="32" height="32" fill="currentColor">
-  //       <use xlink:href="bootstrap-icons.svg#heart-fill" />
-  //     </svg>
-  //   ) : (
-  //     <svg class="bi" width="32" height="32" fill="currentColor">
-  //       <use xlink:href="bootstrap-icons.svg#heart-empty" />
-  //     </svg>
-  //   );
-  // active={item.active}
-  // link={item.link}
+  return (
+    <button onClick={() => rest.onToggleBookMark(rest._id)}>
+      <svg className="bi">
+        <image
+          width="32"
+          height="32"
+          fill="currentColor"
+          xlinkHref={"bootstrap-icons.svg#" + status ? "heart-fill" : "heart"}
+        />
+      </svg>
+    </button>
+  );
 };
 
 export default BookMark;
 
+// <svg class="bi" width="32" height="32" fill="currentColor">
+// <use xlink:href="bootstrap-icons.svg#heart-fill" />
+// </svg>
+
+// <svg class="bi" width="32" height="32" fill="currentColor">
+// <use xlink:href="bootstrap-icons.svg#heart" />
+// </svg>
+
 {
-  /*
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></link> 
-
-<svg class="bi" width="32" height="32" fill="currentColor">
-  <use xlink:href="bootstrap-icons.svg#heart-fill"/>
-</svg>
-
-<svg class="bi" width="32" height="32" fill="currentColor">
-  <use xlink:href="bootstrap-icons.svg#heart-empty"/>
-</svg>
-
-*/
+  /* <use
+xlinkHref={"bootstrap-icons.svg#" + status ? "heart-fill" : "heart"}
+/> */
 }
