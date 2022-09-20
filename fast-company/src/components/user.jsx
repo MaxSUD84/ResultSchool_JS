@@ -16,7 +16,7 @@ const User = ({ user, ...rest }) => {
       <td>{user.rate}</td>
       <td>
         <BookMark
-          state={user.state}
+          status={user.status}
           {...user}
           onToggleBookMark={rest.onToggleBookMark}
         />
