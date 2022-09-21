@@ -48,6 +48,7 @@ const users = [
     qualities: [qualities.tedious, qualities.uncertain, qualities.strange],
     completedMeetings: 36,
     rate: 2.5,
+    bookmark: false
   },
   {
     _id: "5af28cee50774dd0ae7be5e7d9753efe",
@@ -56,6 +57,7 @@ const users = [
     qualities: [qualities.buller, qualities.handsome, qualities.alcoholic],
     completedMeetings: 15,
     rate: 2.5,
+    bookmark: false
   },
   {
     _id: "d743db347bfc49bf9e55e17f68f7620d",
@@ -64,6 +66,7 @@ const users = [
     qualities: [qualities.tedious, qualities.strange],
     completedMeetings: 37,
     rate: 4.6,
+    bookmark: false
   },
   {
     _id: "411944eee93146419cc64863c8cf41e6",
@@ -72,6 +75,7 @@ const users = [
     qualities: [qualities.tedious, qualities.uncertain],
     completedMeetings: 147,
     rate: 3.5,
+    bookmark: false
   },
   {
     _id: "543a017efc8e499fbe3836b25e27ce26",
@@ -80,6 +84,7 @@ const users = [
     qualities: [qualities.strange, qualities.tedious],
     completedMeetings: 72,
     rate: 3.6,
+    bookmark: false
   },
   {
     _id: "3d671fbad9754e7681a4b3bfce6ce942",
@@ -88,6 +93,7 @@ const users = [
     qualities: [qualities.handsome, qualities.buller],
     completedMeetings: 17,
     rate: 4.5,
+    bookmark: false
   },
 ];
 

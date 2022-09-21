@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { paginate } from "../utils/paginate"
 import Pagination from "./pagination";
 import User from "./user";
 
@@ -11,6 +12,9 @@ const Users = ({ users, ...rest }) => {
     // console.log("page", pageIndex);
     setCurrentPage(pageIndex);
   };
+
+  const userCrop= paginate(users, currentPage, pageSize);
+  // console.log(userCrop)
 
   return (
     <>
@@ -27,12 +31,13 @@ const Users = ({ users, ...rest }) => {
           </tr>
         </thead>
         <tbody className="table-group-divider">
-          {users.map((user) => (
+          {userCrop.map((user) => (
             <User
               key={user._id}
               user={user}
-              onDelete={rest.onDelete}
-              onToggleBookMark={rest.onToggleBookMark}
+              {...rest}                                     // добавил согласно рекомендациям от 21.09.22
+              // onDelete={rest.onDelete}                   // убрал согласно рекомендациям от 21.09.22
+              // onToggleBookMark={rest.onToggleBookMark}   // убрал согласно рекомендациям от 21.09.22
             />
           ))}
         </tbody>

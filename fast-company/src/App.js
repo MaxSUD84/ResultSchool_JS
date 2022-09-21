@@ -14,7 +14,7 @@ function App() {
     setUsers((prevState) =>
       prevState.map((user) => ({
         ...user,
-        status: user._id === id ? !user.status : user.status,
+        bookmark: user._id === id ? !user.bookmark : user.bookmark,
       }))
     );
   };
