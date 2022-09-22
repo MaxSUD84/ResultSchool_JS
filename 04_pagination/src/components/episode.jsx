@@ -1,11 +1,12 @@
 import React from "react";
 
-const Episode = (props) => {
-  const { name, airDate, episode } = props;
+const Episode = ({ name, airDate, episode, link }) => {
+  // const { name, airDate, episode, link } = props;
   return (
     <div className="col-4 mb-2">
-      <div className="card" style={{ height: "100%" }}>
-        <div className="card-body">
+      <div className="card" style={{ height: "100%", width: "18rem" }}>
+        <img src={link} alt="" className="card-img-top" />
+        <div className="card-body">       
           <h5 className="card-title">
             {name} {episode}
           </h5>
