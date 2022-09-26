@@ -154,3 +154,27 @@ export const episodes = [
       link: "https://android-obzor.com/wp-content/uploads/2022/03/kisspng-rick-sanchez-pocket-mortys-morty-smith-rixty-minut-dandy-rick-pocketmortys-net-5cf9e136b63022.5748869415598799907463-768x631.jpg"
     },
   ];
+
+// Получение эпизодов
+export const fetchAll = (year) =>
+new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(episodes);
+    }, 2000);
+});
+
+// Получение списка годов
+export const fetchYears = () =>
+new Promise((resolve) => {
+    const years = episodes.map(
+        // Возьмём последние 4 символа, например 
+        // из "September 27, 2015" -> получим "2015"
+        ({ airDate }) => airDate.slice(-4)
+    );
+
+    const uniqYears = [...new Set(years)];
+
+    setTimeout(() => {
+        resolve(uniqYears);
+    }, 2000);
+});

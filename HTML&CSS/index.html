@@ -2,23 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MaxG</title>
+    <title>Max Golodov</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Голодов Максим</h1>
-    <p><em>Инженер программист систем АСУ ТП</em></p>
-    <p>Люблю футбол и изучать языки программирования</p>
+    <div class="info">
+        <table>
+            <tr>
+                <td>
+                    <img class="avatar" src="https://catchar.io/storage/mp_screenshots/99/mp_scr_60f194c739f33.jpg" alt="аватар" width="300" height="300">
+                </td>
+                <td>
+                    <container class="container-info">
+                        <span class="regular-text name">Фамилия, Имя:</span>
+                        <b>Голодов Максим</b>
+                        <span class="regular-text age">Возраст:</span>
+                        <b>38 лет</b>
+                        <span class="regular-text experience">Опыт в программировании:</span>
+                        <b>2 месяца</b>
+                        <span class="regular-text about">Опыт в программировании:</span>
+                        <p><em>Инженер программист систем АСУ ТП</em> Люблю футбол и изучать языки программирования</p>
+                    </container>
 
-    <hr>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a target="_blank" href="">Telegram</a></li>
-    </ul>
-    
+    <div class="targets">
+        <h3 class="title-targets">Мои цели на обучение</h3>
+        <ul class="list-targets">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
-    
+    <div class="study-timing">
+        <h3 class="title-study-timing">Сколько времени смогу учиться</h3>
+        <dd class="day1">Понедельник    -   1ч.</dd>
+        <dd class="day2">Вторник        -   2ч.</dd>
+        <dd class="day3">Среда          -   3ч.</dd>
+        <dd class="day4">Четверг        -   2ч.</dd>
+        <dd class="day5">Пятница        -   1ч.</dd>
+        <dd class="day6">Суббота        -   5ч.</dd>
+        <dd class="day7">Воскресенье    -   8ч.</dd>
+    </div>
 
-    
+    <div class="study-already-done">
+        <h3>Мои пройденные курсы</h3>
+        <table class="course-tb"><header class="header-tb">
+                <td>Название</td>
+                <td>Автор</td>
+                <td>Оценка</td>
+            </header>
+            <tr>
+                <td>HTML</td>
+                <td>Владилен Минин</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Владилен Минин</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>Тест-драйв профессии</td>
+                <td>Владилен Минин</td>
+                <td>10/10</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contact">
+        <h3 class="title-contact">Контакты</h3>
+        <div class="contact-gr">
+            <div class="Telegram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                </svg>
+                <a href="">Telegram</a>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

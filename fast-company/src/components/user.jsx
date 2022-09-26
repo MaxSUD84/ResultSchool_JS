@@ -17,7 +17,7 @@ const User = ({ user, ...rest }) => {
                     />
                 ))}
             </td>
-            <td>{user.professions.name}</td>
+            <td>{user.profession.name}</td>
             <td>{user.completedMeetings}</td>
             <td>{user.rate}</td>
             <td>
