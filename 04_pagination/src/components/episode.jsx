@@ -7,10 +7,10 @@ const Episode = ({ name, airDate, episode, link }) => {
       <div className="card" style={{ height: "100%", width: "18rem" }}>
         <img src={link} alt="" className="card-img-top" />
         <div className="card-body">       
-          <h5 className="card-title">
+          <h5 className="card-title fs-6">
             {name} {episode}
           </h5>
-          <h6 className="card-subtitle mb-2 text-muted">
+          <h6 className="card-subtitle mb-2 text-muted small">
             {airDate}
           </h6>
         </div>

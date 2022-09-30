@@ -157,15 +157,21 @@ export const episodes = [
 
 // Получение эпизодов
 export const fetchAll = (year) =>
-new Promise((resolve) => {
+  new Promise((resolve) => {
+    // Фильтруем все эпизоды с нужным годом выпуска
+    const filterEpisodes = episodes.filter(({airDate}) => 
+      year ? airDate.slice(-4) === year : true
+    );
+
     setTimeout(() => {
-        resolve(episodes);
-    }, 2000);
+        // Передаём офильтрованный список
+        resolve(filterEpisodes);
+    }, 500);
 });
 
 // Получение списка годов
 export const fetchYears = () =>
-new Promise((resolve) => {
+  new Promise((resolve) => {
     const years = episodes.map(
         // Возьмём последние 4 символа, например 
         // из "September 27, 2015" -> получим "2015"
@@ -174,7 +180,19 @@ new Promise((resolve) => {
 
     const uniqYears = [...new Set(years)];
 
+    const seasonsByYear = {
+      2013: "S01",
+      2014: "S01",
+      2015: "S02"
+    };
+
+    const filters = uniqYears.map((year) => ({
+      id: year,
+      text: `${year} (${seasonsByYear[year]})`
+    }));
+
+
     setTimeout(() => {
-        resolve(uniqYears);
+        resolve(filters);
     }, 2000);
 });

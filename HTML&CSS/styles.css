@@ -3,11 +3,97 @@ html, body, html * {
   font-family: 'Roboto', sans-serif;
 }
 
-root {
-    --color_A: #856dad;
-    --color_B: #47287a;
+:root {
+    --color_A: rgba(134,110,172, 0.7);
+    --color_B: rgba(71,40,172, 0.9);
     --color_C: #A5afe1;
     --color_D: #e4bb6e;
     --color_E: #AD906d;
-    
+    --color_F: rgba(249, 160, 254, 0.3);
+    --w_pading: 1vh;
+    --h_pading: 1vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-blend-mode: color;
+  background-color: var(--color_C);
+  color: #47287a;
+  height: 100vw;
+  padding: 2vmax;
+}
+
+body div {
+  margin-top: 1rem;
+}
+
+h1 {
+  align-content: center;
+  color-scheme: normal;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info div {
+  padding: 0.5em;
+  gap: 0.5em;
+}
+
+.avatar {
+  height: 150;
+  width: 150;
+}
+
+.info .container-text {
+  background: #856dad;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.container-text b {
+  font-size: larger;
+  transform: translateX(2vw);
+}
+
+.container-text [class*="regular-text"] {
+  font-size: small;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.avatar {
+  border-right: 2px solid var(--color_B);
+  border-radius: 50%;
+}
+
+.targets {
+  background: #e4bb6e;
+  padding: 0px 15px;
+  border-radius: 10px;
+}
+
+.study-timing {
+  background: #AD906d;
+  padding: 0px 15px 15px 15px;
+  border-radius: 10px;
+}
+
+.study-already-done {
+  /* background: rgb(249, 160, 254, 0.3); */
+  background: var(--color_F);
+  padding: 0px 15px 15px 15px;
+  border-radius: 10px;
+}
+
+.contact-gr {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
 }
