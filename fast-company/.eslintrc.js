@@ -3,7 +3,8 @@ module.exports = {
         browser: true,
         es2021: true
     },
-    extends: ["plugin:react/recommended", "standard"],
+    extends: ["plugin:react/recommended"],
+    // extends: ["plugin:react/recommended", "standard"],
     overrides: [],
     parserOptions: {
         ecmaFeatures: {
@@ -16,7 +17,10 @@ module.exports = {
     rules: {
         indent: ["error", 4],
         semi: [2, "always"],
-        "space-before-function-paren": ["error", { anonymous: "always", named: "never" }],
+        "space-before-function-paren": [
+            "error",
+            { anonymous: "always", named: "never" }
+        ],
         quotes: ["error", "double", { allowTemplateLiterals: true }],
         "multiline-ternary": ["error", "always-multiline"]
     }
