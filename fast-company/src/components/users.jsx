@@ -11,7 +11,8 @@ const Users = ({ users: allUsers, ...rest }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState();
     const [selectedProf, setSelectedProf] = useState();
-    const pageSize = 4;
+    const [sortBy, setSortBy] = useState({iter:"name", order:"asc"});
+    const pageSize = 6;
 
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
@@ -40,7 +41,13 @@ const Users = ({ users: allUsers, ...rest }) => {
     };
 
     const handleSort = (item) => {
-        console.log(item);
+        // console.log(item);
+        if(sortBy.iter === item) {
+            setSortBy((prevState) => ({...prevState, order: prevState.order === "asc" ? "desc":"asc"}));
+
+        } else {
+            setSortBy({iter:item, order: "asc"});
+        }
     };
 
     const filteredUsers = selectedProf
@@ -48,7 +55,9 @@ const Users = ({ users: allUsers, ...rest }) => {
         : allUsers;
 
     const count = filteredUsers.length;
-    const userCrop = paginate(filteredUsers, currentPage, pageSize);
+
+    const sortedUsers = _.orderBy(filteredUsers,[sortBy.iter],[sortBy.order]);
+    const userCrop = paginate(sortedUsers, currentPage, pageSize);
     const clearFilter = () => {
         setSelectedProf();
     };
