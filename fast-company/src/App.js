@@ -1,8 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Users from "./components/users";
-import api from "./api/index";
 
 function App() {
+    return <Users />;
+}
+
+export default App;
+
+/* 
+
     const [users, setUsers] = useState(); // API.users.fetchAll()
 
     useEffect(() => {
@@ -32,6 +38,5 @@ function App() {
             }
         </>
     );
-}
 
-export default App;
+    */

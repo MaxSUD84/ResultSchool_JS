@@ -5,14 +5,34 @@ import Pagination from "./pagination";
 import SearchStatus from "./searchStatus";
 import api from "../api/index";
 import PropTypes from "prop-types";
-import UserTable from "./userTable";
+import UserTable from "./usersTable";
 
-const Users = ({ users: allUsers, ...rest }) => {
+const Users = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState();
     const [selectedProf, setSelectedProf] = useState();
-    const [sortBy, setSortBy] = useState({iter:"name", order:"asc"});
+    const [sortBy, setSortBy] = useState({path:"name", order:"asc"});
     const pageSize = 6;
+
+    const [users, setUsers] = useState(); // API.users.fetchAll()
+
+    useEffect(() => {
+        api.users.default.fetchAll()
+            .then((data) => setUsers(data));
+    }, []);
+
+    const handleDelete = (id) => {
+        setUsers((prevState) => prevState.filter((user) => user._id !== id));
+    };
+
+    const handleToggleBookMark = (id) => {
+        setUsers((prevState) =>
+            prevState.map((user) => ({
+                ...user,
+                bookmark: user._id === id ? !user.bookmark : user.bookmark
+            }))
+        );
+    };
 
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
@@ -31,8 +51,6 @@ const Users = ({ users: allUsers, ...rest }) => {
 
     const handleProfessionSelect = (item) => {
         setSelectedProf(item);
-        // console.log(allUsers);
-        // console.log(allUsers[0].profession, item, allUsers[0].profession._id === item._id);
     };
 
     const handlePageChange = (pageIndex) => {
@@ -41,63 +59,69 @@ const Users = ({ users: allUsers, ...rest }) => {
     };
 
     const handleSort = (item) => {
-        // console.log(item);
-        if(sortBy.iter === item) {
-            setSortBy((prevState) => ({...prevState, order: prevState.order === "asc" ? "desc":"asc"}));
-
-        } else {
-            setSortBy({iter:item, order: "asc"});
-        }
+        setSortBy(item);
     };
 
-    const filteredUsers = selectedProf
-        ? allUsers.filter((user) => user.profession._id === selectedProf._id)
-        : allUsers;
+    if(users) {
+        const filteredUsers = selectedProf
+            ? users.filter((user) => JSON.stringify(user.profession) === JSON.stringify(selectedProf))
+            : users;
+        // Моя реализация    
+        // const filteredUsers = selectedProf
+        //     ? users.filter((user) => user.profession._id === selectedProf._id)
+        //     : users;
 
-    const count = filteredUsers.length;
+        const count = filteredUsers.length;
+        const sortedUsers = _.orderBy(filteredUsers,[sortBy.path],[sortBy.order]);
+        const userCrop = paginate(sortedUsers, currentPage, pageSize);
+        const clearFilter = () => {
+            setSelectedProf();
+        };
 
-    const sortedUsers = _.orderBy(filteredUsers,[sortBy.iter],[sortBy.order]);
-    const userCrop = paginate(sortedUsers, currentPage, pageSize);
-    const clearFilter = () => {
-        setSelectedProf();
-    };
-
-    return (
-        <div className="d-flex">
-            {professions && (
-                <div className="d-flex flex-column flex-shrink-0 p-3">
-                    <GroupList
-                        selectedItem={selectedProf}
-                        items={professions}
-                        onItemSelect={handleProfessionSelect}
-                    />
-                    <button
-                        className="btn btn-secondary mt-2"
-                        onClick={clearFilter}
-                    >
-                        Очистить
-                    </button>
-                </div>
-            )}
-            <div className="d-flex flex-column">
-                <SearchStatus length={count} />
-                {count > 0 && (
-                    <UserTable users={userCrop} onSort={handleSort} {...rest} />
+        return (
+            <div className="d-flex">
+                {professions && (
+                    <div className="d-flex flex-column flex-shrink-0 p-3">
+                        <GroupList
+                            selectedItem={selectedProf}
+                            items={professions}
+                            onItemSelect={handleProfessionSelect}
+                        />
+                        <button
+                            className="btn btn-secondary mt-2"
+                            onClick={clearFilter}
+                        >
+                            Очистить
+                        </button>
+                    </div>
                 )}
-                <div className="d-flex justify-content-center">
-                    <Pagination
-                        itemsCount={count}
-                        pageSize={pageSize}
-                        currentPage={currentPage}
-                        onPageChange={handlePageChange}
-                    />
+                <div className="d-flex flex-column">
+                    <SearchStatus length={count} />
+                    {count > 0 && (
+                        <UserTable 
+                            users={userCrop}
+                            onSort={handleSort}
+                            selectedSort={sortBy}
+                            onToggleBookMark={handleToggleBookMark}
+                            onDelete={handleDelete} 
+                        />
+                    )}
+                    <div className="d-flex justify-content-center">
+                        <Pagination
+                            itemsCount={count}
+                            pageSize={pageSize}
+                            currentPage={currentPage}
+                            onPageChange={handlePageChange}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    } 
+    return "loading...";
 };
 Users.propTypes = {
-    users: PropTypes.arrayOf(PropTypes.object).isRequired
+    users: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default Users;
