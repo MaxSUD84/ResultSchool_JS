@@ -6,72 +6,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>Анкета</h1>
+    <div class="title">
+        <h1>Карточка студента</h1>
     </div>
+    <hr>
     <div class="info">
         <div class="container-avatar">
             <img class="avatar" src="https://catchar.io/storage/mp_screenshots/99/mp_scr_60f194c739f33.jpg" alt="аватар" height="200" width="200">
         </div>
         <div class="container-text">
-            <span class="regular-text name">Фамилия, Имя:</span>
-            <b>Голодов Максим</b>
-            <span class="regular-text age">Возраст:</span>
-            <b>38 лет</b>
-            <span class="regular-text experience">Опыт в программировании:</span>
-            <b>2 месяца</b>
+            <span class="regular-text name">Фамилия, Имя:  <b>Голодов Максим</b></span>
+            <span class="regular-text age">Возраст:  <b>38 лет</b></span>           
+            <span class="regular-text experience">Опыт в программировании:  <b>2 месяца</b></span>
             <p>
                 <span class="regular-text about">О себе:</span>
                Инженер программист систем АСУ ТП. 
-               Люблю футбол и изучать языки программирования</p>
+               Люблю футбол, изучать языки программирования и новые технологии.</p>
         </div>
     </div>
-
+    <hr>
     <div class="targets">
         <h3 class="title-targets">Мои цели на обучение</h3>
         <ul class="list-targets">
-            <li> - 1</li>
-            <li> - 2</li>
-            <li> - 3</li>
+            <li> Изучить принципы программирования и построения програм в JavaScript на примере "рабочих проектов";</li>
+            <li> Овладеть навыками разработки Web-приложений в одном из самых популярных фреймворков;</li>
+            <li> Повысить свои теоритические знания и технические навыки, получить большую уверенность в своих силах;</li>
+            <li> Получить необходиму практику и вектор для дальнейшего саморазвития;</li>
         </ul>
     </div>
-
+    <hr>
     <div class="study-timing">
         <h3 class="title-study-timing">Сколько времени смогу учиться</h3>
-        <dd class="day1">Понедельник    -   1ч.</dd>
-        <dd class="day2">Вторник        -   2ч.</dd>
-        <dd class="day3">Среда          -   3ч.</dd>
-        <dd class="day4">Четверг        -   2ч.</dd>
-        <dd class="day5">Пятница        -   1ч.</dd>
-        <dd class="day6">Суббота        -   5ч.</dd>
-        <dd class="day7">Воскресенье    -   8ч.</dd>
+        <ol>
+            <li class="day1">Понедельник    <span> -   1ч.</span></li>
+            <li class="day2">Вторник        <span> -   2ч.</span></li>
+            <li class="day3">Среда          <span> -   3ч.</span></li>
+            <li class="day4">Четверг        <span> -   2ч.</span></li>
+            <li class="day5">Пятница        <span> -   1ч.</span></li>
+            <li class="day6">Суббота        <span> -   5ч.</span></li>
+            <li class="day7">Воскресенье    <span> -   8ч.</span></li>
+        </ol>
     </div>
-
+    <hr>
     <div class="study-already-done">
         <h3>Мои пройденные курсы</h3>
-        <table class="course-tb"><header class="header-tb">
-                <td>Название</td>
-                <td>Автор</td>
-                <td>Оценка</td>
-            </header>
-            <tr>
-                <td>HTML</td>
-                <td>Владилен Минин</td>
-                <td>10/10</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Владилен Минин</td>
-                <td>10/10</td>
-            </tr>
-            <tr>
-                <td>Тест-драйв профессии</td>
-                <td>Владилен Минин</td>
-                <td>10/10</td>
-            </tr>
+        <table class="course-tb">
+            <thead class="header-tb">
+                <tr>
+                    <td>Название</td>
+                    <td>Автор</td>
+                    <td>Оценка</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Владилен Минин</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Владилен Минин</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Тест-драйв профессии</td>
+                    <td>Владилен Минин</td>
+                    <td>10/10</td>
+                </tr>
+            </tbody>
+
         </table>
     </div>
-
+</body>
+<footer>
     <div class="contact">
         <h3 class="title-contact">Контакты</h3>
         <div class="contact-gr">
@@ -89,5 +97,5 @@
             </div>
         </div>
     </div>
-</body>
+</footer>
 </html>
