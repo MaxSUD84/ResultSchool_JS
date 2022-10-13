@@ -1,8 +1,22 @@
 import React from "react";
-import Users from "./components/users";
+import { Switch, Route } from "react-router-dom";
+import NavBar from "./components/navBar";
+import Main from "./layouts/main";
+import Login from "./layouts/login";
+import Users from "./layouts/users";
 
 function App() {
-    return <Users />;
+    return (
+        <div>
+            <NavBar />
+            <Switch>
+                <Route exact path="/" component={Main} />
+                <Route path="/users/:id?" component={Users} />
+                <Route path="/login" component={Login} />
+                <Route render={() => <h1>Loading</h1>} />
+            </Switch>
+        </div>
+    );
 }
 
 export default App;
