@@ -7,7 +7,7 @@ import api from "../api/index";
 import PropTypes from "prop-types";
 import UserTable from "./usersTable";
 
-const Users = () => {
+const UsersList = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState();
     const [selectedProf, setSelectedProf] = useState();
@@ -118,10 +118,10 @@ const Users = () => {
             </div>
         );
     } 
-    return "loading...";
+    return <h1>Loading...</h1>;
 };
-Users.propTypes = {
+UsersList.propTypes = {
     users: PropTypes.arrayOf(PropTypes.object)
 };
 
-export default Users;
+export default UsersList;
