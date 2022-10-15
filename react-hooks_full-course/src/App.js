@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 
-// Классовый подход к постоению компонентов
-// this.setState({a: 1}) => this.render() // render и setState наследовались от базовых компонентов
-
 function App() {
-  const [count, setCount] = useState(0);
+  // const [renderCount, setRenderCount] = useState(1);
+  const [number, setNumber] = useState(42);
 
   return (
     <div>
-      <h1 className="font-semibold text-3xl">Счетчик</h1>
+      <h1>Вычисляемое свойство: {number}</h1>
+      {/* <h1>Прошлое состояние: {prevValue.current}</h1> */}
       <button
         type="button"
-        className="rounded-full text-blue-100 bg-green-500 p-2.5 m-2 hover:bg-green-800 dark:bg-white dark:hover:bg-green-50"
+        className="btn btn-success"
+        onClick={() => setNumber((prev) => prev + 1)}
       >
         Добавить
       </button>
       <button
         type="button"
-        className="rounded-full text-blue-100 bg-gray-500 p-2.5 m-2 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-50"
+        className="btn btn-danger"
+        onClick={() => setNumber((prev) => prev - 1)}
       >
         Убрать
       </button>
+      {/* <pre>{JSON.stringify(type, null, 2)}</pre> */}
     </div>
   );
 }
