@@ -1,29 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Main from './main';
+import Alert from './alert/alert';
+import { AlertProvider } from './alert/alertContext';
 
 function App() {
-  // const [renderCount, setRenderCount] = useState(1);
-  const [number, setNumber] = useState(42);
-
   return (
-    <div>
-      <h1>Вычисляемое свойство: {number}</h1>
-      {/* <h1>Прошлое состояние: {prevValue.current}</h1> */}
-      <button
-        type="button"
-        className="btn btn-success"
-        onClick={() => setNumber((prev) => prev + 1)}
-      >
-        Добавить
-      </button>
-      <button
-        type="button"
-        className="btn btn-danger"
-        onClick={() => setNumber((prev) => prev - 1)}
-      >
-        Убрать
-      </button>
-      {/* <pre>{JSON.stringify(type, null, 2)}</pre> */}
-    </div>
+    <AlertProvider>
+      <div className="container pt-3">
+        <Alert />
+        <Main />
+      </div>
+    </AlertProvider>
   );
 }
 

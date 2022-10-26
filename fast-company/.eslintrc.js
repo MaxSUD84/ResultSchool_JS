@@ -11,6 +11,7 @@ module.exports = {
     ],
     // extends: ["plugin:react/recommended", "standard"],
     overrides: [],
+    // extends: ["airbnb-base", "plugin:prettier/recommended"],
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -20,7 +21,11 @@ module.exports = {
     },
     plugins: ["react"],
     rules: {
-        indent: ["error", 4],
+        indent: [
+            "error",
+            4,
+            { SwitchCase: 1, ignoredNodes: ["PropertyDefinition"] }
+        ],
         semi: [2, "always"],
         "space-before-function-paren": [
             "error",
