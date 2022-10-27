@@ -11,14 +11,14 @@ const UsersList = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState();
     const [selectedProf, setSelectedProf] = useState();
-    const [sortBy, setSortBy] = useState({path:"name", order:"asc"});
+    const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
+    const [searchField, setSearchField] = useState("");
     const pageSize = 6;
 
     const [users, setUsers] = useState(); // API.users.fetchAll()
 
     useEffect(() => {
-        api.users.default.fetchAll()
-            .then((data) => setUsers(data));
+        api.users.default.fetchAll().then((data) => setUsers(data));
     }, []);
 
     const handleDelete = (id) => {
@@ -49,12 +49,17 @@ const UsersList = () => {
     //         Object.assign(data, { allProfession: { name: "Все профессии" } })));
     // }, []);
 
+    const handleChange = ({ target }) => {
+        setSelectedProf();
+        setSearchField(target.value);
+    };
+
     const handleProfessionSelect = (item) => {
-        setSelectedProf(item);
+        setSelectedProf(item); //
+        setSearchField("");
     };
 
     const handlePageChange = (pageIndex) => {
-        // console.log("page", pageIndex);
         setCurrentPage(pageIndex);
     };
 
@@ -62,17 +67,30 @@ const UsersList = () => {
         setSortBy(item);
     };
 
-    if(users) {
-        const filteredUsers = selectedProf
-            ? users.filter((user) => JSON.stringify(user.profession) === JSON.stringify(selectedProf))
+    if (users) {
+        const searchMatches = searchField
+            ? users.filter((user) => user.name.includes(searchField))
             : users;
-        // Моя реализация    
-        // const filteredUsers = selectedProf
-        //     ? users.filter((user) => user.profession._id === selectedProf._id)
-        //     : users;
+
+        const filteredUsers = selectedProf
+            ? searchMatches.filter(
+                  (user) =>
+                      JSON.stringify(user.profession) ===
+                      JSON.stringify(selectedProf)
+              )
+            : searchMatches;
+
+        //  Моя реализация
+        //  const filteredUsers = selectedProf
+        //       ? users.filter((user) => user.profession._id === selectedProf._id)
+        //       : users;
 
         const count = filteredUsers.length;
-        const sortedUsers = _.orderBy(filteredUsers,[sortBy.path],[sortBy.order]);
+        const sortedUsers = _.orderBy(
+            filteredUsers,
+            [sortBy.path],
+            [sortBy.order]
+        );
         const userCrop = paginate(sortedUsers, currentPage, pageSize);
         const clearFilter = () => {
             setSelectedProf();
@@ -97,13 +115,26 @@ const UsersList = () => {
                 )}
                 <div className="d-flex flex-column">
                     <SearchStatus length={count} />
+                    <div className="d-flex w-100 mx-auto">
+                        <div className="input-group">
+                            <input
+                                type="search"
+                                id="table-search"
+                                placeholder="Search..."
+                                name="q"
+                                value={searchField}
+                                onChange={handleChange}
+                                className="form-control"
+                            />
+                        </div>
+                    </div>
                     {count > 0 && (
-                        <UserTable 
+                        <UserTable
                             users={userCrop}
                             onSort={handleSort}
                             selectedSort={sortBy}
                             onToggleBookMark={handleToggleBookMark}
-                            onDelete={handleDelete} 
+                            onDelete={handleDelete}
                         />
                     )}
                     <div className="d-flex justify-content-center">
@@ -117,7 +148,7 @@ const UsersList = () => {
                 </div>
             </div>
         );
-    } 
+    }
     return <h1>Loading...</h1>;
 };
 UsersList.propTypes = {

@@ -7,6 +7,7 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:react/jsx-runtime",
+        // "plugin:prettier/recommended"
         "prettier"
     ],
     // extends: ["plugin:react/recommended", "standard"],
@@ -19,12 +20,20 @@ module.exports = {
         ecmaVersion: "latest",
         sourceType: "module"
     },
-    plugins: ["react"],
+    plugins: [
+        "react"
+        // "prettier"
+    ],
     rules: {
         indent: [
-            "error",
+            "warn",
             4,
-            { SwitchCase: 1, ignoredNodes: ["PropertyDefinition"] }
+            {
+                SwitchCase: 1,
+                ignoredNodes: ["PropertyDefinition", "ConditionalExpression"],
+                flatTernaryExpressions: false,
+                offsetTernaryExpressions: true
+            }
         ],
         semi: [2, "always"],
         "space-before-function-paren": [
@@ -32,6 +41,9 @@ module.exports = {
             { anonymous: "always", named: "never" }
         ],
         quotes: ["error", "double", { allowTemplateLiterals: true }],
-        "multiline-ternary": ["error", "always-multiline"]
+        "multiline-ternary": ["warn", "always-multiline"]
+        // "prettier/prettier": "error",
+        // "arrow-body-style": "off",
+        // "prefer-arrow-callback": "off"
     }
 };
