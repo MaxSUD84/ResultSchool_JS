@@ -69,8 +69,17 @@ const UsersList = () => {
 
     if (users) {
         const searchMatches = searchField
-            ? users.filter((user) => user.name.includes(searchField))
+            ? users.filter((user) =>
+                  new RegExp(searchField.toLowerCase()).test(
+                      user.name.toLowerCase()
+                  )
+              )
             : users;
+        // const searchMatches = searchField
+        //     ? users.filter((user) =>
+        //           user.name.toLowerCase().includes(searchField.toLowerCase())
+        //       )
+        //     : users;
 
         const filteredUsers = selectedProf
             ? searchMatches.filter(
