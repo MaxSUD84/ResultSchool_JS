@@ -30,7 +30,6 @@
         "quotes": ["error", "double", 
         { "allowTemplateLiterals": true }],
         "multiline-ternary": ["error", "always-multiline"],
-        "linebreak-style": ["error", "unix"],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }

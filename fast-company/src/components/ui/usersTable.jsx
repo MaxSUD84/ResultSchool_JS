@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BookMark from "./bookmark";
-import Qualitie from "./qualitie";
-import Table from "./table";
+import BookMark from "../common/bookmark";
+import Qualities from "../ui/qualities";
+import Table from "../common/table";
 import { Link } from "react-router-dom";
 
-const UserTable = ({ 
+const UserTable = ({
     users,
     onSort,
     selectedSort,
@@ -14,23 +14,23 @@ const UserTable = ({
 }) => {
     const columns = {
         // name: { path: "name", name: "Имя" },
-        name: { 
+        name: {
             name: "Имя",
             path: "name",
             component: (user) => (
                 <Link to={"/users/" + user._id}>{user.name}</Link>
             )
         },
-        qualities: { 
+        qualities: {
             name: "Качества",
-            component: (user) => (
+            component: (user) =>
                 user.qualities.map((ql) => (
-                    <Qualitie
+                    <Qualities
                         key={ql._id}
                         _id={ql._id}
                         color={ql.color}
                         name={ql.name}
-                    />)
+                    />
                 ))
         },
         professions: { path: "profession.name", name: "Профессия" },
@@ -39,9 +39,9 @@ const UserTable = ({
             name: "Встретился, раз"
         },
         rate: { path: "rate", name: "Оценка" },
-        bookmark: { 
+        bookmark: {
             path: "bookmark",
-            name: "Избранное", 
+            name: "Избранное",
             component: (user) => (
                 <BookMark
                     status={user.bookmark}
@@ -51,7 +51,7 @@ const UserTable = ({
                 />
             )
         },
-        delete: { 
+        delete: {
             component: (user) => (
                 <button
                     className="btn m-2 bg-danger btn-sm"
@@ -63,7 +63,7 @@ const UserTable = ({
         }
     };
     return (
-        <Table {...{ onSort, selectedSort, columns, data: users }}/>
+        <Table {...{ onSort, selectedSort, columns, data: users }} />
         // или
         // <TableHeader {...{ onSort, selectedSort, columns }} />
         // <TableBody {...{ columns, data: users }}/>

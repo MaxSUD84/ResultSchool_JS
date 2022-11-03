@@ -35,6 +35,7 @@ module.exports = {
                 offsetTernaryExpressions: true
             }
         ],
+        "multiline-ternary": ["off"],
         semi: [2, "always"],
         "space-before-function-paren": [
             "error",

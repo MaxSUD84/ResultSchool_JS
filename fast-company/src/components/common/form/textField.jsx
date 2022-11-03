@@ -5,6 +5,14 @@ import { useState } from "react";
 
 const TextField = ({ label, type, name, value, onChange, error }) => {
     const [showPassword, setShowPassword] = useState(false);
+
+    const handleChange = ({ target }) => {
+        onChange({ name: target.name, value: target.value });
+    };
+
+    const getInputClasses = () => {
+        return "form-control" + (error ? " is-invalid" : "");
+    };
     const toggleShowPassword = () => setShowPassword((prevState) => !prevState);
 
     return (
@@ -13,12 +21,13 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
             {": "}
             <div className="input-group has-validation">
                 <input
+                    className={getInputClasses()}
                     type={showPassword ? "text" : type}
                     id={name}
                     name={name}
                     value={value}
-                    onChange={onChange}
-                    className={"form-control " + (error ? " is-invalid" : "")}
+                    onChange={handleChange}
+                    // className={"form-control " + (error ? " is-invalid" : "")}
                 />
                 {type === "password" && (
                     <button
