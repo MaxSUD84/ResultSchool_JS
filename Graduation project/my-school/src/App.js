@@ -12,6 +12,10 @@ import About from "./layouts/aboutContact";
 function App() {
   return (
     <div>
+      <div>
+        <h1 className="text-3xl font-bold underline">Hello World</h1>
+      </div>{" "}
+      <hr />
       <NavBar />
       <Switch>
         <Route exact path="/" component={Main} />

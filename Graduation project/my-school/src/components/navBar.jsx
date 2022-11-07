@@ -1,5 +1,7 @@
 // import React from "react";
 // import { Link } from "react-router-dom";
+
+import "./index.css";
 import Nav from "./nav";
 import NavItem from "./navItem";
 import PropTypes from "prop-types";

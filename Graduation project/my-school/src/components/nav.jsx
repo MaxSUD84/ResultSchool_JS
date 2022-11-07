@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./index.css";
 
 export default function Nav({ children }) {
   return (
