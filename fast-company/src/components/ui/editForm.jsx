@@ -7,6 +7,7 @@ import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
+import CustomReactSelect from "./styles/customReactSelect";
 
 const EditForm = () => {
     const params = useParams();
@@ -218,13 +219,14 @@ const EditForm = () => {
                                     label="Пол:"
                                     onChange={handleChange}
                                 />
-                                <MultiSelectField
+                                {/* <MultiSelectField
                                     defaultValue={data.qualities}
                                     options={qualities}
                                     name="qualities"
                                     onChange={handleChange}
                                     label="Качества:"
-                                />
+                                /> */}
+                                <CustomReactSelect />
                                 <button
                                     type="submit"
                                     disabled={!isValid}
