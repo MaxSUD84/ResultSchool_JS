@@ -1,7 +1,12 @@
 import React from "react";
 import CollapseWrapper from "../common/collapse";
+import Divider from "../common/divider";
+import SmallTitle from "../common/typografy/smallTitle";
+import withFunctions from "./hoc/withFunctions";
+import SimpleComponent from "./hoc/simpleComponent";
 
 const HocExercise = () => {
+    const ComponentWithHoc = withFunctions(SimpleComponent);
     return (
         <CollapseWrapper title="Упражнение">
             <p className="mt-3">
@@ -76,8 +81,18 @@ const HocExercise = () => {
                 <code>SimpleComponent</code> обновится после перезагрузки
                 страницы
             </p>
+            <SmallTitle>Результат</SmallTitle>
+            <Divider />
+            {/* <SimpleComponent 
+                onLogIn={() => console.log("Login clicked")}
+                onLogOut={() => console.log("LogOut clicked")}
+                isAuth = {false}
+            /> */}
+            <ComponentWithHoc />
+
         </CollapseWrapper>
     );
 };
+
 
 export default HocExercise;

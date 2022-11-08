@@ -3,7 +3,13 @@ module.exports = {
         browser: true,
         es2021: true
     },
-    extends: ["plugin:react/recommended", "standard"],
+    extends: [
+        // "eslint:recommended",
+        "plugin:react/recommended",
+        // "standard"
+        "prettier"
+    ],
+    // parser: "babel-eslint",
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -11,22 +17,28 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: "module"
     },
-    plugins: ["react"],
+    plugins: ["react", "prettier"],
     rules: {
-        semi: [2, "always"],
-        indent: [0, 4],
+        indent: [
+            "warn",
+            4,
+            {
+                SwitchCase: 1,
+                ignoredNodes: ["PropertyDefinition", "ConditionalExpression"],
+                flatTernaryExpressions: false,
+                offsetTernaryExpressions: true
+            }
+        ],
+        quotes: ["error", "double", { allowTemplateLiterals: true }],
+        // "multiline-ternary": ["warn", "always-multiline"]
         "space-before-function-paren": [
             "error",
-            { anonymous: "always", named: "never" }
+            {
+                anonymous: "always",
+                named: "never"
+            }
         ],
         "multiline-ternary": ["off"],
-        "react/display-name": "off",
-        quotes: [
-            "error",
-            "double",
-            {
-                allowTemplateLiterals: true
-            }
-        ]
+        "react/display-name": "off"
     }
 };

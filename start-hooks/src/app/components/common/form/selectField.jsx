@@ -16,12 +16,15 @@ const SelectField = ({
         return "form-select" + (error ? " is-invalid" : "");
     };
 
+    
     const optionsArray =
         !Array.isArray(options) && typeof options === "object"
             ? Object.keys(options).map((optionName) => ({
+                // eslint-disable-next-line
                   name: options[optionName].name,
+                // eslint-disable-next-line
                   value: options[optionName]._id
-              }))
+            }))
             : options;
 
     return (
