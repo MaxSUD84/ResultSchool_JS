@@ -93,7 +93,7 @@ export const getColourOptions = (data) => {
         name: dataElem.label,
         _id: dataElem.value,
         color: bootstrapColor.filter((bc) => bc.label === dataElem.color)[0]
-            .color
+            ?.color
     }));
 };
 
