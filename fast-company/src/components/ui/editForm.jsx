@@ -7,7 +7,8 @@ import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
-import CustomReactSelect from "./styles/customReactSelect";
+// import CustomReactSelect from "./styles/customReactSelect";
+import { customStyles, getColourOptions } from "../ui/styles/data";
 
 const EditForm = () => {
     const params = useParams();
@@ -54,13 +55,14 @@ const EditForm = () => {
                     email: data.email,
                     profession: data.profession._id,
                     sex: data.sex,
-                    qualities: Object.keys(data.qualities).map(
-                        (optionName) => ({
-                            color: data.qualities[optionName].color,
-                            label: data.qualities[optionName].name,
-                            value: data.qualities[optionName]._id
-                        })
-                    )
+                    qualities: getColourOptions(
+                        Object.keys(data.qualities).map(
+                            (optionName) => ({
+                                color: data.qualities[optionName].color,
+                                label: data.qualities[optionName].name,
+                                value: data.qualities[optionName]._id,
+                            })
+                        ))
                 });
             }
         });
@@ -126,7 +128,8 @@ const EditForm = () => {
         const qualitiesArray = [];
         for (const elem of elements) {
             for (const quality in qualities) {
-                if (elem.value === qualities[quality].value) {
+                // if (elem.value === qualities[quality].value) {
+                if (elem._id === qualities[quality].value) {
                     qualitiesArray.push({
                         _id: qualities[quality].value,
                         name: qualities[quality].label,
@@ -219,14 +222,14 @@ const EditForm = () => {
                                     label="Пол:"
                                     onChange={handleChange}
                                 />
-                                {/* <MultiSelectField
+                                <MultiSelectField
                                     defaultValue={data.qualities}
-                                    options={qualities}
+                                    options={getColourOptions(qualities)}
+                                    styles={customStyles}
                                     name="qualities"
                                     onChange={handleChange}
                                     label="Качества:"
-                                /> */}
-                                <CustomReactSelect />
+                                />
                                 <button
                                     type="submit"
                                     disabled={!isValid}
