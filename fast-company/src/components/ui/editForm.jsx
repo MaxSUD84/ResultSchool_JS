@@ -1,3 +1,4 @@
+/* eslint-disable multiline-ternary */
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import TextField from "../common/form/textField";
@@ -159,6 +160,10 @@ const EditForm = () => {
         api.users.default.update(id, newData).finally(handleShowUser());
     };
 
+    const handlerReturn = () => {
+            history.push(".");
+    };
+
     /*
         {
             _id: "67rdca3eeb7f6fgeed47181r",
@@ -183,6 +188,15 @@ const EditForm = () => {
     return (
         <div className="container mt-5">
             <div className="row">
+                <div className="col-md-2 p-1 ">
+                    <button 
+                        className="btn btn-primary shadow p-2"
+                        type="button" 
+                        onClick={handlerReturn} 
+                    >
+                        Назад
+                    </button>
+                </div>
                 <div className="col-md-6 offset-md-3 shadow p-4">
                     {isDataReady ? (
                         <>
