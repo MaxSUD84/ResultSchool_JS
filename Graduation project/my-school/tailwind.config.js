@@ -6,8 +6,22 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Source Serif Pro", "Georgia", "serif"],
-        body: ["Synonym", "system-ui", "sans-serif"]
+        display: ["SofiaPro", "Lato", "ui-sans-serif"],
+        body: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ]
       },
       screens: {
         sm: "640px",
@@ -21,9 +35,9 @@ module.exports = {
           50: "#f8fafc",
           100: "#f1f5f9",
           200: "#e2e8f0",
-          300: "#cbd5e1",
+          300: "#103869", // Link, button color
           400: "#94a3b8",
-          500: "#64748b",
+          500: "#07182c", // Header color
           600: "#475569",
           700: "#334155",
           800: "#1e293b",
@@ -41,6 +55,21 @@ module.exports = {
           800: "#065f46",
           900: "#064e3b"
         },
+        light: "#fcfcfc",
+        neutral: {
+          300: "#85859f" // Link title,text
+        },
+        accent_1: {
+          300: "#00d3ad" // Button text, border on dark mode
+        },
+        accent_2: {
+          100: "#b9eff5" // paginate bg, border
+        },
+        custom: {
+          prmBtn: "#103869", // pimry-500
+          secBtn: "#e5e7eb", // light-btn, bg-input
+          ringCl: "#3b82f6" // and opacity: .5
+        },
         transparent: "transparent",
         current: "currentColor"
       },
@@ -56,8 +85,28 @@ module.exports = {
         DEFAULT: ".25rem",
         lg: ".5rem",
         full: "9999px"
+      },
+      transitionTimingFunction: {
+        DEFAULT: "ease-in-out"
+      },
+      transitionDuration: {
+        DEFAULT: "400ms"
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 }
+        }
+      },
+      animation: {
+        fade: "fadeIn .5s ease-in-out"
+      },
+      zIndex: {
+        1: "1",
+        2: "2",
+        3: "3"
       }
     }
   },
-  plugins: []
+  plugins: [require("@tailwindcss/forms")]
 };

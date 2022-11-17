@@ -9,7 +9,8 @@ import PropTypes from "prop-types";
 const NavBar = () => {
   return (
     <>
-      <div className="divide-y divide-slate-100">
+      {/* <div className="divide-y divide-slate-100"> */}
+      <div className="primary-navbar">
         <Nav>
           <NavItem href="/" isActive>
             Главная
@@ -30,9 +31,9 @@ NavBar.default = {
 };
 
 NavBar.propTypes = {
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
   isActive: PropTypes.bool,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node
 };
 
 export default NavBar;
