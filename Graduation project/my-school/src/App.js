@@ -11,7 +11,7 @@ import About from "./layouts/aboutContact";
 
 function App() {
   return (
-    <div>
+    <div className="bg-zinc-50 w-full overflow-hidden">
       <NavBar />
       <Switch>
         <Route exact path="/" component={Main} />

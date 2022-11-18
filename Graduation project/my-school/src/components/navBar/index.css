@@ -38,7 +38,7 @@
 }
 
 .big-card {
-  @apply border-0 shadow-lg drop-shadow flex h-full cursor-pointer flex-col justify-between rounded-lg border 
+  @apply shadow-lg drop-shadow flex h-full cursor-pointer flex-col justify-between rounded-lg border 
   border-neutral-100 py-10 px-6  lg:py-12 lg:px-10 xl:py-6 xl:px-6;
 }
 /*
@@ -58,5 +58,5 @@ bg-light
 }
 
 @layer base {
-  'text-light':bg-fuchsia-100 ;
+  /* 'text-light':bg-fuchsia-100; */
 }

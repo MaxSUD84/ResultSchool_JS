@@ -8,12 +8,12 @@ const styles = {
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 
-  paddingX: "sm:px-16 px-6",
-  paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-12 py-4",
+  paddingX: "sm:px-12 px-4",
+  paddingY: "sm:py-12 py-4",
+  padding: "sm:px-12 px-4 sm:py-9 py-3",
 
-  marginX: "sm:mx-16 mx-6",
-  marginY: "sm:my-16 my-6",
+  marginX: "sm:mx-12 mx-4",
+  marginY: "sm:my-12 my-4",
 
   inputText: `mt-1
                 block

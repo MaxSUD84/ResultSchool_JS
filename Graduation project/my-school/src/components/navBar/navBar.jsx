@@ -5,23 +5,30 @@ import "./index.css";
 import Nav from "./nav";
 import NavItem from "./navItem";
 import PropTypes from "prop-types";
+import style from "../../styles/styles";
 
 const NavBar = () => {
   return (
     <>
       {/* <div className="divide-y divide-slate-100"> */}
-      <div className="primary-navbar">
-        <Nav>
-          <NavItem href="/" isActive>
-            Главная
-          </NavItem>
-          <NavItem href="/news">Новости</NavItem>
-          <NavItem href="/events">События</NavItem>
-          <NavItem href="/managment">Сотрудники</NavItem>
-          <NavItem href="/faq">Вопросы</NavItem>
-          <NavItem href="/about">О школе</NavItem>
-          <NavItem href="/login">Авторизоваться</NavItem>
-        </Nav>
+      <div className={`${style.paddingX} ${style.flexCenter}`}>
+        <div className="primary-navbar">
+          <Nav>
+            <NavItem href="/" isActive>
+              Главная
+            </NavItem>
+            <NavItem href="/news">Новости</NavItem>
+            <NavItem href="/events">События</NavItem>
+            <NavItem href="/managment">Сотрудники</NavItem>
+            <NavItem href="/faq">Вопросы</NavItem>
+            <NavItem href="/about">О школе</NavItem>
+            <div className="border-l-[2px] border-alter-prim_2 pl-3">
+              <button className="border-[3px] ring-1 ring-primary-300 ring-opacity-40 rounded-md border-alter-prim_2 px-4 py-sm ">
+                <NavItem href="/login">Авторизоваться</NavItem>
+              </button>
+            </div>
+          </Nav>
+        </div>
       </div>
     </>
   );

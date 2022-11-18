@@ -1,0 +1,16 @@
+// fake image wildfire
+1. Site: https://github.com/Rydgel/Fake-images-please
+use:
+    <img src="https://fakeimg.pl/250x100/">
+    <img src="https://fakeimg.pl/250x100/ff0000/">
+    <img src="https://fakeimg.pl/350x200/ff0000/000">
+    <img src="https://fakeimg.pl/350x200/?text=Hello">
+    <img src="https://fakeimg.pl/350x200/?text=オラ&font=noto">
+    <img src="https://fakeimg.pl/350x200/?text=World&font=lobster">
+
+2. Free images site:
+    1. https://pikwizard.com/
+    2. https://www.everystockphoto.com/
+    3. https://smarterpix.com/
+
+3. 

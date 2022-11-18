@@ -20,7 +20,8 @@ module.exports = {
           "Apple Color Emoji",
           "Segoe UI Emoji",
           "Segoe UI Symbol",
-          "Noto Color Emoji"
+          "Noto Color Emoji",
+          "Hanka Rounded Sans Light"
         ]
       },
       screens: {
@@ -56,8 +57,15 @@ module.exports = {
           900: "#064e3b"
         },
         light: "#fcfcfc",
+        alter: {
+          prim_1: "#321E43",
+          prim_2: "#311D40",
+          mcol_1: "#EFB257",
+          mcol_2: "#EDE560" // alter-mcol_2
+        },
         neutral: {
-          300: "#85859f" // Link title,text
+          300: "#85859f", // Link title,text
+          500: "#3a4750"
         },
         accent_1: {
           300: "#00d3ad" // Button text, border on dark mode

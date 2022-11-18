@@ -1,18 +1,36 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
+import style from "../../../styles/styles";
 
-const BenefitCard = (props) => {
+const BenefitCard = () => {
   return (
-    <div className="pt-6 space-y-4">
-      <div className="w-72 bg-white shadow rounded">
-        <h1 className="flex-auto text-lg font-ligth text-primary-900">Main</h1>
-        <button
-          className="btn--primary h-10 px-6 font-semibold rounded-md border border-slate-200 bg-secondary-200 text-primary-900"
-          type="button"
-        >
-          Нажми
-        </button>
+    <div className="flex-nowrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
+      <div className={`flex-col justify-center px-6 py-6 w-72 shadow-sm`}>
+        <div className="flex justify-center">
+          <img
+            src={`https://avatars.dicebear.com/api/avataaars/${(
+              Math.random() + 1
+            )
+              .toString(36)
+              .substring(7)}.svg`}
+            className="rounded-full"
+            alt="avatar"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div className={`${style.flexCenter} mb-3`}>
+          <h3 className="text-lg font-normal text-alter-prim_2">
+            Иванов Иван Иванович
+          </h3>
+        </div>
+        <p className="text-xs font-body text-neutral-300">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed aliquam
+          nulla accusamus ipsa molestias, voluptates iure ex officia eveniet
+          consequuntur non cum quidem unde eius! Optio magnam molestiae enim?
+          Dolore.
+        </p>
       </div>
     </div>
   );

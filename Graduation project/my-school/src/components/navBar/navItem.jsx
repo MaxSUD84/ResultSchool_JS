@@ -4,11 +4,11 @@ import "./index.css";
 
 export default function NavItem({ href, children }) {
   return (
-    <li>
+    <li className="flex align-middle">
       <Link
         to={href}
         // href={href}
-        className={`text-primary-500 block py-2 pr-4 pl-3 hover:text-slate-300 lg:p-0 `}
+        className={`text-primary-500 block py-2 pr-4 pl-3 font-semibold cursor-pointer hover:text-alter-mcol_1 lg:p-0 `} // alter-mcol_2
       >
         {children}
       </Link>
@@ -21,8 +21,3 @@ NavItem.propTypes = {
   // isActive: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired
 };
-
-/* ${ isActive,
-          isActive ? "bg-sky-500 text-white" : "bg-slate-50"
-        }
-        */
