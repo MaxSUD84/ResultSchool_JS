@@ -33,6 +33,13 @@ module.exports = {
       },
       colors: {
         primary: {
+          1: "#321E43",
+          2: "#311D40",
+          41: "#EFB257",
+          42: "#EDE560", // alter-mcol_2
+          46: "#e5e7eb", // // light-btn, bg-input
+          47: "#3b82f6", // and opacity: .5
+          // ============
           50: "#f8fafc",
           100: "#f1f5f9",
           200: "#e2e8f0",
@@ -57,26 +64,15 @@ module.exports = {
           900: "#064e3b"
         },
         light: "#fcfcfc",
-        alter: {
-          prim_1: "#321E43",
-          prim_2: "#311D40",
-          mcol_1: "#EFB257",
-          mcol_2: "#EDE560" // alter-mcol_2
-        },
-        neutral: {
-          300: "#85859f", // Link title,text
-          500: "#3a4750"
-        },
+        // neutral: {
+        //   300: "#85859f", // Link title,text
+        //   500: "#3a4750"
+        // },
         accent_1: {
           300: "#00d3ad" // Button text, border on dark mode
         },
         accent_2: {
           100: "#b9eff5" // paginate bg, border
-        },
-        custom: {
-          prmBtn: "#103869", // pimry-500
-          secBtn: "#e5e7eb", // light-btn, bg-input
-          ringCl: "#3b82f6" // and opacity: .5
         },
         transparent: "transparent",
         current: "currentColor"

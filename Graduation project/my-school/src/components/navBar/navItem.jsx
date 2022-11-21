@@ -4,11 +4,15 @@ import "./index.css";
 
 export default function NavItem({ href, children }) {
   return (
-    <li className="flex align-middle">
+    // <li className="flex align-middle">
+    <li
+      className="font-semibold cursor-pointer mr-1
+     text-primary-500 block py-2 pr-2 pl-2 hover:text-primary-41"
+    >
       <Link
         to={href}
         // href={href}
-        className={`text-primary-500 block py-2 pr-4 pl-3 font-semibold cursor-pointer hover:text-alter-mcol_1 lg:p-0 `} // alter-mcol_2
+        className={` font-semibold cursor-pointer `} // alter-mcol_2
       >
         {children}
       </Link>

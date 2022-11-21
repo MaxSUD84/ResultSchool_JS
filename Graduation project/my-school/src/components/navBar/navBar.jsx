@@ -22,8 +22,11 @@ const NavBar = () => {
             <NavItem href="/managment">Сотрудники</NavItem>
             <NavItem href="/faq">Вопросы</NavItem>
             <NavItem href="/about">О школе</NavItem>
-            <div className="border-l-[2px] border-alter-prim_2 pl-3">
-              <button className="border-[3px] ring-1 ring-primary-300 ring-opacity-40 rounded-md border-alter-prim_2 px-4 py-sm ">
+            <div className="border-l-[2px] border-primary-41 pl-3">
+              <button
+                className="border-[3px] ring-1 ring-primary-300 
+                ring-opacity-40 rounded-md border-primary-42 px-4 py-sm "
+              >
                 <NavItem href="/login">Авторизоваться</NavItem>
               </button>
             </div>
