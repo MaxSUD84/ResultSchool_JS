@@ -1,43 +1,24 @@
-export function validator(data, config) {
-    const errors = {};
+import validateRules from "./validateRules";
 
-    function validate(validateMethod, data, config) {
-        let statusValidate;
-        switch (validateMethod) {
-            case "isRequired":
-                statusValidate = data.trim() === "";
-                break;
-            case "isEmail":
-                const emailRegExp = /^\S+@\S+\.\S+/g;
-                statusValidate = !emailRegExp.test(data);
-                break;
-            case "isCapitalSymbol":
-                const capitalRegExp = /[A-Z]+/g;
-                statusValidate = !capitalRegExp.test(data);
-                break;
-            case "isContainDigit":
-                const digitRegExp = /\d+/g;
-                statusValidate = !digitRegExp.test(data);
-                break;
-            case "min":
-                statusValidate = data.length < config.value;
-                break;
-            default:
-                break;
-        }
-        if (statusValidate) return config.message;
+export const validate = (values, config) => {
+  const errors = {};
+
+  for (const name in values) {
+    const validationRules = config[name];
+    for (const rule in validationRules) {
+      const { message, param } = validationRules[rule];
+
+      // Получение нужного валидатора
+      const validator = validateRules[rule];
+      // Вызываем валидатор, если он есть
+      const hasError = validator && !validator(values[name], param);
+
+      if (hasError) {
+        errors[name] = message;
+        break;
+      }
     }
-    for (const fieldName in data) {
-        for (const validateMethod in config[fieldName]) {
-            const error = validate(
-                validateMethod,
-                data[fieldName],
-                config[fieldName][validateMethod]
-            );
+  }
 
-            if (error && !errors[fieldName]) errors[fieldName] = error;
-        }
-    }
-
-    return errors;
-}
+  return errors;
+};
