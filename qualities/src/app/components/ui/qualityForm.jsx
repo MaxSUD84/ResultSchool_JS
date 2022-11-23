@@ -4,8 +4,9 @@ import TextField from "../common/form/textField";
 import colors from "../../constants/colors.json";
 import useForm from "../../hooks/useForm";
 
-const CreateForm = ({ onSubmit }) => {
-    const { handleChange, handeleSubmit, form } = useForm({}, onSubmit);
+const QualityForm = ({ data = {}, onSubmit }) => {
+    const { handleChange, handeleSubmit, form } = useForm(data, onSubmit);
+
     return (
         <form onSubmit={handeleSubmit}>
             <TextField label="Наименование" name="name" onChange={handleChange} value={form.name || ""} />
@@ -15,4 +16,4 @@ const CreateForm = ({ onSubmit }) => {
     );
 };
 
-export default CreateForm;
+export default QualityForm;

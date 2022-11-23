@@ -5,55 +5,35 @@ import NavBar from "./components/ui/navBar";
 import Main from "./layouts/main";
 import Login from "./layouts/login";
 import Users from "./layouts/users";
-import EditForm from "./components/ui/editForm";
+import { ToastContainer } from "react-toastify";
+import { ProfessionProvider } from "./hooks/useProfession";
 
 function App() {
     return (
         <div>
             <NavBar />
-            <Switch>
-                <Route exact path="/" component={Main} />
-                <Route path="/users/:id?/edit" component={EditForm} />
-                <Route path="/users/:id?" component={Users} />
-                <Route path="/login/:type?" component={Login} />
-                <Route render={() => <h1>Loading</h1>} />
-            </Switch>
+            <ProfessionProvider>
+                <Switch>
+                    <Route path="/users/:id?/:edit?" component={Users} />
+                    <Route path="/login/:type?" component={Login} />
+                    <Route exact path="/" component={Main} />
+                    <Route render={() => <h1>Loading</h1>} />
+                </Switch>
+            </ProfessionProvider>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+            />
         </div>
     );
 }
 
 export default App;
-
-/* 
-
-    const [users, setUsers] = useState(); // API.users.fetchAll()
-
-    useEffect(() => {
-        api.users.default.fetchAll()
-            .then((data) => setUsers(data));
-    }, []);
-
-    const handleDelete = (id) => {
-        setUsers((prevState) => prevState.filter((user) => user._id !== id));
-    };
-
-    const handleToggleBookMark = (id) => {
-        setUsers((prevState) =>
-            prevState.map((user) => ({
-                ...user,
-                bookmark: user._id === id ? !user.bookmark : user.bookmark
-            }))
-        );
-    };
-
-    return (
-        <>
-            {
-                users && users.length !== 0
-                    ? (<Users users={users} onDelete={handleDelete} onToggleBookMark={handleToggleBookMark} />)
-                    : ("")
-            }
-        </>
-    );
-
-    */

@@ -6,37 +6,38 @@ import SearchStatus from "../../ui/searchStatus";
 import api from "../../../api";
 import PropTypes from "prop-types";
 import UserTable from "../../ui/usersTable";
+import { useUser } from "../../../hooks/useUsers";
+import { useProfessions } from "../../../hooks/useProfession";
 
 const UsersListPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [professions, setProfessions] = useState();
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
     const [searchField, setSearchField] = useState("");
     const pageSize = 6;
 
-    const [users, setUsers] = useState(); // API.users.fetchAll()
+    const { professions } = useProfessions();
+    const { users } = useUser();
+    console.log(users);
 
-    useEffect(() => {
-        api.users.default.fetchAll().then((data) => setUsers(data));
-    }, []);
+    // useEffect(() => {
+    //     //  api.users.default.fetchAll().then((data) => setUsers(data));
+    //     api.professions.fetchAll().then((data) => setProfessions(data));
+    // }, []);
 
-    const handleDelete = (id) => {
-        setUsers((prevState) => prevState.filter((user) => user._id !== id));
+    const handleDelete = (userId) => {
+        // setUsers((prevState) => prevState.filter((user) => user._id !== id));
+        console.log(userId);
     };
 
     const handleToggleBookMark = (id) => {
-        setUsers((prevState) =>
-            prevState.map((user) => ({
-                ...user,
-                bookmark: user._id === id ? !user.bookmark : user.bookmark
-            }))
-        );
+        const newArray = users.map((user) => ({
+            ...user,
+            bookmark: user._id === id ? !user.bookmark : user.bookmark
+        }));
+        // setUsers(newArray);
+        console.log(newArray);
     };
-
-    useEffect(() => {
-        api.professions.fetchAll().then((data) => setProfessions(data));
-    }, []);
 
     // При обновлении профессии сбрасываем текущию страницу на 1 стр.
     useEffect(() => {
@@ -94,13 +95,15 @@ const UsersListPage = () => {
         //       ? users.filter((user) => user.profession._id === selectedProf._id)
         //       : users;
 
-        const count = filteredUsers.length;
         const sortedUsers = _.orderBy(
             filteredUsers,
             [sortBy.path],
             [sortBy.order]
         );
         const userCrop = paginate(sortedUsers, currentPage, pageSize);
+
+        const count = userCrop.length;
+        // const count = filteredUsers.length;
         const clearFilter = () => {
             setSelectedProf();
         };
