@@ -7,7 +7,8 @@ import api from "../../../api";
 import PropTypes from "prop-types";
 import UserTable from "../../ui/usersTable";
 import { useUser } from "../../../hooks/useUsers";
-import { useProfessions } from "../../../hooks/useProfession";
+import { useProfessions } from "../../../hooks/useProfessions";
+import { useQualities } from "../../../hooks/useQualitys";
 
 const UsersListPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -16,9 +17,14 @@ const UsersListPage = () => {
     const [searchField, setSearchField] = useState("");
     const pageSize = 6;
 
+    const { qualities } = useQualities();
     const { professions } = useProfessions();
     const { users } = useUser();
     console.log(users);
+    // console.log("UserListPage: ", qualities);
+    // console.log("QualityCustom: ", getQuality("637b2a842e4e5e3500a8afea"));
+    // console.log(selectedProf);
+    // console.log(professions);
 
     // useEffect(() => {
     //     //  api.users.default.fetchAll().then((data) => setUsers(data));
@@ -86,7 +92,7 @@ const UsersListPage = () => {
             ? searchMatches.filter(
                   (user) =>
                       JSON.stringify(user.profession) ===
-                      JSON.stringify(selectedProf)
+                      JSON.stringify(selectedProf._id)
               )
             : searchMatches;
 
@@ -110,7 +116,8 @@ const UsersListPage = () => {
 
         return (
             <div className="d-flex">
-                {professions && (
+                {/* {professions && ( */}
+                {
                     <div className="d-flex flex-column flex-shrink-0 p-3">
                         <GroupList
                             selectedItem={selectedProf}
@@ -124,7 +131,7 @@ const UsersListPage = () => {
                             Очистить
                         </button>
                     </div>
-                )}
+                }
                 <div className="d-flex flex-column">
                     <SearchStatus length={count} />
                     <div className="d-flex w-100 mx-auto">

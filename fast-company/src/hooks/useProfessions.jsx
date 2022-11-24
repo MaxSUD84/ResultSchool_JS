@@ -8,13 +8,13 @@ const ProfessionContext = React.createContext();
 export const useProfessions = () => useContext(ProfessionContext);
 
 export const ProfessionProvider = ({ children }) => {
-    const [profession, setProfessions] = useState([]);
+    const [professions, setProfessions] = useState([]);
     const [isLoading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         getProfessionsList();
-    });
+    }, []);
 
     useEffect(() => {
         if (error !== null) {
@@ -34,7 +34,7 @@ export const ProfessionProvider = ({ children }) => {
     }
 
     function getProfession(id) {
-        return profession.find((p) => p._id === id);
+        return professions.find((p) => p._id === id);
     }
 
     function errorCather(error) {
@@ -44,7 +44,7 @@ export const ProfessionProvider = ({ children }) => {
 
     return (
         <ProfessionContext.Provider
-            value={{ isLoading, profession, getProfession }}
+            value={{ isLoading, professions, getProfession }}
         >
             {children}
         </ProfessionContext.Provider>

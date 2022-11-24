@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import BookMark from "../common/bookmark";
-import Qualities from "../ui/qualities";
+import { Qualities } from "../ui/qualities";
 import Table from "../common/table";
 import { Link } from "react-router-dom";
 import Profession from "./profession";
@@ -13,6 +13,7 @@ const UserTable = ({
     onToggleBookMark,
     onDelete
 }) => {
+    // console.log(users);
     const columns = {
         // name: { path: "name", name: "Имя" },
         name: {
@@ -22,17 +23,21 @@ const UserTable = ({
                 <Link to={"/users/" + user._id}>{user.name}</Link>
             )
         },
+        // qualities: {
+        //     name: "Качества",
+        //     component: (user) =>
+        //         user.qualities.map((ql) => (
+        //             <Qualities
+        //                 key={ql._id}
+        //                 _id={ql._id}
+        //                 color={ql.color}
+        //                 name={ql.name}
+        //             />
+        //         ))
+        // },
         qualities: {
             name: "Качества",
-            component: (user) =>
-                user.qualities.map((ql) => (
-                    <Qualities
-                        key={ql._id}
-                        _id={ql._id}
-                        color={ql.color}
-                        name={ql.name}
-                    />
-                ))
+            component: (user) => <Qualities qualities={user.qualities} />
         },
         // professions: { path: "profession.name", name: "Профессия" },
         professions: {

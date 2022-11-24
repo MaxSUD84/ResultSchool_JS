@@ -1,2 +1,3 @@
 import Qualities from "./qualities";
-export default Qualities;
+import Quality from "./quality";
+export { Qualities, Quality };

@@ -4,6 +4,7 @@ import { UserProvider } from "../hooks/useUsers";
 import UserPage from "../components/page/userPage";
 import EditForm from "../components/ui/editForm";
 import UsersListPage from "../components/page/usersListPage";
+import { QualityProvider } from "../hooks/useQualitys";
 
 const Users = () => {
     const params = useParams();
@@ -12,19 +13,20 @@ const Users = () => {
     return (
         <>
             <UserProvider>
-                {id ? (
-                    edit ? (
-                        <EditForm />
+                <QualityProvider>
+                    {id ? (
+                        edit ? (
+                            <EditForm />
+                        ) : (
+                            <UserPage userId={id} />
+                        )
                     ) : (
-                        <UserPage userId={id} />
-                    )
-                ) : (
-                    <UsersListPage />
-                )}
+                        <UsersListPage />
+                    )}
+                </QualityProvider>
             </UserProvider>
         </>
     );
-    // <div>{id ? <UserPage id={id} /> : <UsersListPage />}</div>;
 };
 
 export default Users;
