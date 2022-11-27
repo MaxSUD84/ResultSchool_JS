@@ -97,13 +97,13 @@ module.exports = function () {
   });
 
   casual.define("parent", function (sex, famaly_name, address) {
-    const isFemale = sex.toLowerCase().startsWith("w");
+    const isFemale = sex?.toLowerCase().startsWith("w");
     return {
-      uuid_parent: casual.uuid,
-      full_name: `${famaly_name} ${
-        isFemale ? "{{first_name_female}}" : "{{first_name_female}}"
-      }`,
-      phone: `+7${casual.phone}`,
+      uuid: casual.uuid,
+      full_name: `${famaly_name}${isFemale ? "а" : ""} ${casual.populate(
+        isFemale ? "{{first_name_female}}" : "{{first_name_male}}"
+      )}`,
+      phone: casual.phone,
       login: casual.email,
       password: casual.password,
       address: address.uuid,
@@ -111,19 +111,24 @@ module.exports = function () {
     };
   });
 
-  casual.define("address", function () {
+  casual.define("addressFamaly", function () {
     return {
       uuid: casual.uuid,
       addr: casual.address
     };
   });
 
-  casual.define("learner", function (famaly_name, address) {
+  casual.define("learner", function (famaly_name, address, father, mother) {
+    sex = _.sample(["w", "m"]);
     return {
       uuid: casual.uuid,
-      first_name: casual.first_name,
-      last_name: famaly_name,
-      phone: `+7${casual.phone}`,
+      sex: sex,
+      first_name:
+        sex === "w"
+          ? casual.populate("{{first_name_female}}")
+          : casual.populate("{{first_name_male}}"),
+      last_name: famaly_name + (sex === "w" ? "а" : ""),
+      phone: casual.phone,
       login: casual.email,
       password: casual.password,
       address: address.uuid,
@@ -138,6 +143,10 @@ module.exports = function () {
         month: casual.month_number,
         year: casual.integer((from = 2010), (to = 2013))
       },
+      parents: {
+        father: father.uuid,
+        mother: mother.uuid
+      },
       achievements: [],
       events: [],
       messages: []
@@ -146,46 +155,35 @@ module.exports = function () {
 
   // *** инициализация БД объектов ***
 
-  // eslint-disable-next-line no-unused-vars
-  const calcLearner = () => {
-    // obj.address = [];
-    // obj.learners = [];
-    // obj.fathers = [];
-    // obj.mothers = [];
-    // const address = new Array();
-
-    return _.times(100, () => {
-      famaly_name = casual.last_name;
-      cur_address = casual.address;
-      // address.push(cur_address);
-      // obj.learners.push(casual.learner(famaly_name, cur_address));
-      // obj.fathers.push(casual.parent(famaly_name, cur_address));
-      // obj.mothers.push(casual.parent(famaly_name, cur_address));
-      return {
-        address: cur_address,
-        father: casual.parent(famaly_name, cur_address)
-      };
-    });
-
-    // let fh = new Array();
-    // data.forEach((learner) => {
-    //   fh.push(learner.father);
-    // });
-    // Array.prototype.push.apply(fathers, fh);
-
-    // address.push(data.address);
-    // mothers.push(data.mother);
-    // learners.push(data.learner);
+  const calcLearner = (obj) => {
+    famaly_name = casual.populate("{{last_name_male}}");
+    cur_address = casual.addressFamaly;
+    mother = casual.parent("w", famaly_name, cur_address);
+    father = casual.parent("m", famaly_name, cur_address);
+    obj.address.push(cur_address);
+    obj.father.push(father);
+    obj.mother.push(mother);
+    obj.learner.push(casual.learner(famaly_name, cur_address, father, mother));
   };
+
+  let def = {
+    address: [],
+    father: [],
+    mother: [],
+    learner: []
+  };
+
+  for (let i = 0; i < 50; i++) {
+    calcLearner(def);
+  }
 
   const result = {};
   result.classes = className.map((cls) => casual.class(cls));
   result.teachers = _.times(18, () => casual.teacher(_.sample(subjects)));
-  result.fathers = casual.parent("asad", { uuid: "121", addr: "asda" });
-  // result.mothers = learnerData.mothers;
-  // result.address = calcLearner();
-  // result.learners = learnerData.learners;
-  // calcLearner(result);
+  result.fathers = def.father;
+  result.mothers = def.mother;
+  result.address = def.address;
+  result.learners = def.learner;
 
   result.messages = [];
   result.events = [];
