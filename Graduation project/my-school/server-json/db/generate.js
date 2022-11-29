@@ -7,15 +7,16 @@ const { indexOf } = require("lodash");
 module.exports = function () {
   var casual = require("casual").ru_RU;
   var _ = require("lodash");
+  var ad = () => require("./add_lib");
 
-  const className = ["5К", "5А", "6Б"];
+  const className = ad.className; //["5К", "5А", "6Б"];
   const subjects = [
     "Математика",
     "Русский язык",
     "Литература",
     "Англиский язык",
     "Физика",
-    "Химия"
+    "Биология"
   ];
 
   const universities = [
@@ -98,13 +99,21 @@ module.exports = function () {
 
   casual.define("parent", function (sex, famaly_name, address) {
     const isFemale = sex?.toLowerCase().startsWith("w");
+    const last_name = famaly_name + (isFemale ? "а" : "");
+    const first_name = casual.populate(
+      isFemale ? "{{first_name_female}}" : "{{first_name_male}}"
+    );
+
     return {
       uuid: casual.uuid,
-      full_name: `${famaly_name}${isFemale ? "а" : ""} ${casual.populate(
-        isFemale ? "{{first_name_female}}" : "{{first_name_male}}"
-      )}`,
+      full_name: `${last_name} ${first_name}`,
       phone: casual.phone,
-      login: casual.email,
+      login:
+        (() => ad.translit(`${last_name}.${first_name}`)) +
+        _.sample(["_", ".", ""]) +
+        casual.integer((from = 1950), (to = 5000)) +
+        "@" +
+        _.sample(casual.free_email_domains),
       password: casual.password,
       address: address.uuid,
       messages: []
@@ -114,9 +123,11 @@ module.exports = function () {
   casual.define("addressFamaly", function () {
     return {
       uuid: casual.uuid,
-      addr: casual.address
+      addr: casual.populate(
+        "{{city_prefix}} Москва, {{street_prefix}} {{street}}, {{building_number}}"
+      )
     };
-  });
+  }); //
 
   casual.define("learner", function (famaly_name, address, father, mother) {
     sex = _.sample(["w", "m"]);
