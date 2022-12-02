@@ -1,4 +1,6 @@
-function translit(word) {
+/* eslint-disable no-undef */
+
+const translit = (word = "") => {
   var converter = {
     а: "a",
     б: "b",
@@ -50,9 +52,8 @@ function translit(word) {
   answer = answer.replace(/[-]+/g, ".");
   answer = answer.replace(/^\-|-$/g, "");
   return answer;
-}
+};
 
-module.exoprts = {
-  className: ["5К", "5А", "6Б"],
-  translit
+module.exports = {
+  translit: translit
 };

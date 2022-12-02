@@ -11,7 +11,12 @@ export default function Nav({ children }) {
       {" "}
       <nav className="w-full flex justify-between items-center navbar py-2 px-6 pb-2 text-sm font-medium">
         <div className="w-[150px]">
-          <Logo width={150} height={(150 * 105) / 400} />
+          <Logo
+            width={150}
+            height={(150 * 105) / 400}
+            strokeColor="#103869"
+            strokeWidth="2"
+          />
         </div>
 
         <ul className="list-none hidden lg:flex flex-row space-x-2 justify-end items-center flex-1">
@@ -20,7 +25,7 @@ export default function Nav({ children }) {
 
         <div className="flex flex-1 justify-end items-center lg:hidden">
           <img
-            src={toggle ? threeDotsVert : close}
+            src={!toggle ? threeDotsVert : close}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle((p) => !p)}

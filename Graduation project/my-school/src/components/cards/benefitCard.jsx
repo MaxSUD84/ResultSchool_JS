@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
-import style from "../../../styles/styles";
+import style from "../../styles/styles";
 
 const BenefitCard = ({ imgSrc, title, text }) => {
   return (
     <div className="flex-nowrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
-      <div className={`flex-col justify-center px-6 py-6 w-64 shadow-sm`}>
+      <div className={`flex-col justify-center px-2 py-2 w-48 shadow-sm`}>
         <div className="flex justify-center">
           <img
             src={imgSrc}

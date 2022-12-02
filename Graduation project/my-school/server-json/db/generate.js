@@ -1,84 +1,167 @@
+/* eslint-disable indent */
 /* eslint-disable no-undef */
 // generate.js
 // json-server index.jscd
 
-const { indexOf } = require("lodash");
+// const translit = (word = "") => {
+//   var converter = {
+//     а: "a",
+//     б: "b",
+//     в: "v",
+//     г: "g",
+//     д: "d",
+//     е: "e",
+//     ё: "e",
+//     ж: "zh",
+//     з: "z",
+//     и: "i",
+//     й: "y",
+//     к: "k",
+//     л: "l",
+//     м: "m",
+//     н: "n",
+//     о: "o",
+//     п: "p",
+//     р: "r",
+//     с: "s",
+//     т: "t",
+//     у: "u",
+//     ф: "f",
+//     х: "h",
+//     ц: "c",
+//     ч: "ch",
+//     ш: "sh",
+//     щ: "sch",
+//     ь: "",
+//     ы: "y",
+//     ъ: "",
+//     э: "e",
+//     ю: "yu",
+//     я: "ya"
+//   };
+
+//   word = word.toLowerCase();
+
+//   var answer = "";
+//   for (var i = 0; i < word.length; ++i) {
+//     if (converter[word[i]] == undefined) {
+//       answer += word[i];
+//     } else {
+//       answer += converter[word[i]];
+//     }
+//   }
+
+//   answer = answer.replace(/[^-0-9a-z]/g, "-");
+//   answer = answer.replace(/[-]+/g, ".");
+//   answer = answer.replace(/^\-|-$/g, "");
+//   return answer;
+// };
+
+// var {indexOf}
 
 module.exports = function () {
   var casual = require("casual").ru_RU;
+  var lp = require("./learning_programm");
+  var sd = require("./dataSchool");
+  var al = require("./add_lib");
   var _ = require("lodash");
-  var ad = () => require("./add_lib");
 
-  const className = ad.className; //["5К", "5А", "6Б"];
-  const subjects = [
-    "Математика",
-    "Русский язык",
-    "Литература",
-    "Англиский язык",
-    "Физика",
-    "Биология"
-  ];
-
-  const universities = [
-    "Российский государственный педагогический университет имени А. И. Герцена",
-    "Московский государственный психолого-педагогический университет",
-    "Новосибирский государственный педагогический университет",
-    "Тульский государственный педагогический университет имени Л.Н.Толстого",
-    "Башкирский государственный педагогический университет им. М.Акмуллы",
-    "Красноярский государственный педагогический университет им. В.П. Астафьева",
-    "Волгоградский государственный социально-педагогический университет",
-    "Алтайский государственный гуманитарно-педагогический университет имени В.М. Шукшина",
-    "Российский государственный профессионально-педагогический университет",
-    "Томский государственный педагогический университет",
-    "Южно-Уральский государственный гуманитарно-педагогический университет"
-  ];
-
-  const specialty_education = [
-    [
-      "Психология и социальная педагогика, Преподаватель математики",
-      "Психология и социальная педагогика, Математик-программист"
-    ],
-    [
-      "Педагог дополнительного образования, Учитель литературы и русского языка",
-      "Учитель русского языка"
-    ],
-    [
-      "Школьный психолог, Учитель литературы",
-      "Педагог дополнительного образования, Учитель литературы и русского языка"
-    ],
-    [
-      "Учитель английского языка, Лингвист",
-      "Учитель английского языка, Переводчик-синхронист"
-    ],
-    [
-      "Учитель физики, Преподаватель физики, Физик-исследователь",
-      "Школьный психолог, Учитель начальных классов, Преподаватель физики"
-    ],
-    [
-      "Учитель химии, Агрохимик, Биохимик",
-      "Учитель химии, Гидрохимик, Лаборант химического анализа",
-      "Преподаватель химии,  Химик экспертно-криминалистической лаборатории",
-      "Социальный педагог, Фундаментальная и прикладная химия"
-    ]
-  ];
-
+  // Геннерируем преподавательский опыт
   casual.define("experience_education", function (subject) {
-    const index = indexOf(subjects, subject);
+    const index = _.indexOf(sd.subjects, subject);
     return `Окончил: ${_.sample(
-      universities
-    )}. Опыт работы: ${_.sample(specialty_education[index])}.`;
+      sd.universities
+    )}. Опыт работы: ${_.sample(sd.specialty_education[index])}.`;
   });
 
+  // Создаем уникальные uuid по каждую программу обучения
+  casual.define("learning_programm", function (clsNum) {
+    const learning_programm = {
+      classNum: clsNum,
+      prog_data: Object.keys(sd.prg_subjects).map((sub) => ({
+        uuid: casual.uuid,
+        description: sd.prg_subjects[sub],
+        lp_data: lp.learning_programm[sub][clsNum]
+      }))
+    };
+
+    // доавляем уникальные идентификаторы к каждой теме
+    return {
+      ...learning_programm,
+      prog_data: learning_programm.prog_data.map((sub) => ({
+        ...sub,
+        lp_data: sub.lp_data.map((el) => ({ ...el, uuid: casual.uuid }))
+      }))
+    };
+
+    // return learning_programm;
+  });
+
+  // Инициализируем программы обучения под каждый номер класса
+  const learning_programm = _.sortedUniq(
+    sd.className.map((clsName) => clsName.slice(0, clsName.length > 2 ? 2 : 1))
+  ).map((clsNum) => casual.learning_programm(clsNum));
+
+  // копируем программу обучения по каждый класс
+  casual.define("study_program", function (cls) {
+    const find_lp = learning_programm.filter(
+      (el) => el.classNum == cls.slice(0, cls.length > 2 ? 2 : 1)
+    )[0];
+
+    return find_lp.prog_data.map((sub) => ({
+      uuid: sub.uuid,
+      name: sub.description
+    }));
+  });
+
+  // Генерируем структуру для храниения оценок для однго предмета на основе программы обучения
+  casual.define("subject_progress", function (data) {
+    return data.map((les) => ({
+      lesson: les.lesson,
+      uuid_les: les.uuid,
+      uuid_progress: casual.uuid,
+      progress: {
+        avr: 0,
+        values: []
+      }
+    }));
+  });
+
+  // value: { date: date, mark: value, type: "homework", uuid_work: "", description: "comment"}
+  // Генерируем структуру для храниения оценок по всем предметам
+  casual.define("all_subjects_progress", function (learning_programm) {
+    return learning_programm.map((sub) => ({
+      name: sub.description,
+      average: 0,
+      [sub.uuid]: casual.subject_progress(sub.lp_data)
+    }));
+  });
+
+  // Генерируем структуру для назначения заданий.
+  casual.define("subject_work", function (les_uuid, typework) {
+    return {
+      lesson: les_uuid,
+      uuid_les: les_uuid,
+      work: {
+        uuid: casual.uuid,
+        type: typework,
+        exercise: ""
+      }
+    };
+  });
+
+  // генирируем классы с программой обучения
   casual.define("class", function (str) {
     return {
       title: str,
       uuid: casual.uuid,
       description: "Класс " + str,
       group_mentor: "",
-      study_program: []
+      study_program: casual.study_program(str)
     };
   });
 
+  // генерируем учетелей
   casual.define("teacher", function (subject) {
     return {
       full_name: casual.full_name,
@@ -97,6 +180,7 @@ module.exports = function () {
     };
   });
 
+  // генерируем родителей
   casual.define("parent", function (sex, famaly_name, address) {
     const isFemale = sex?.toLowerCase().startsWith("w");
     const last_name = famaly_name + (isFemale ? "а" : "");
@@ -109,7 +193,7 @@ module.exports = function () {
       full_name: `${last_name} ${first_name}`,
       phone: casual.phone,
       login:
-        (() => ad.translit(`${last_name}.${first_name}`)) +
+        al.translit(`${last_name}.${first_name}`) +
         _.sample(["_", ".", ""]) +
         casual.integer((from = 1950), (to = 5000)) +
         "@" +
@@ -120,6 +204,7 @@ module.exports = function () {
     };
   });
 
+  // генерируем адресса проживания
   casual.define("addressFamaly", function () {
     return {
       uuid: casual.uuid,
@@ -129,26 +214,33 @@ module.exports = function () {
     };
   }); //
 
+  // генерируем учащихся
   casual.define("learner", function (famaly_name, address, father, mother) {
     sex = _.sample(["w", "m"]);
+    const last_name = famaly_name + (sex === "w" ? "а" : "");
+    const first_name =
+      sex === "w"
+        ? casual.populate("{{first_name_female}}")
+        : casual.populate("{{first_name_male}}");
     return {
       uuid: casual.uuid,
       sex: sex,
-      first_name:
-        sex === "w"
-          ? casual.populate("{{first_name_female}}")
-          : casual.populate("{{first_name_male}}"),
-      last_name: famaly_name + (sex === "w" ? "а" : ""),
+      first_name: first_name,
+      last_name: last_name,
       phone: casual.phone,
-      login: casual.email,
+      login:
+        al.translit(`${last_name}.${first_name}`) +
+        _.sample(["_", ".", ""]) +
+        casual.integer((from = 1950), (to = 5000)) +
+        "@" +
+        _.sample(casual.free_email_domains),
       password: casual.password,
       address: address.uuid,
       hobby: [],
       add_education: [],
-      uuid_class: "",
+      // uuid_class: "",
       academic_progress_sum: 0,
       teacher_raiting: 0,
-      study_program: "",
       birthday: {
         day: casual.day_of_mounth,
         month: casual.month_number,
@@ -166,6 +258,7 @@ module.exports = function () {
 
   // *** инициализация БД объектов ***
 
+  // инициализация учащихся
   const calcLearner = (obj) => {
     famaly_name = casual.populate("{{last_name_male}}");
     cur_address = casual.addressFamaly;
@@ -184,18 +277,144 @@ module.exports = function () {
     learner: []
   };
 
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 100; i++) {
     calcLearner(def);
   }
 
+  // Назначаем классых руководителей
+  const setMentor = ({ classes, teachers, learners }) => {
+    const tempArr = new Array();
+    var teacher_uuid = teachers.map((teacher) => teacher.uuid);
+    var learners_uuid = learners.map((learner) => learner.uuid);
+
+    for (const cls of classes) {
+      // Выбираем учителей предметников
+      const class_teachers = cls.study_program.map((sub) =>
+        _.sample(teachers.filter((teacher) => teacher.subject === sub.name))
+      );
+      // Выбираем классных руководителей
+      const selected_teacher = _.sample(teacher_uuid);
+      // исключаем выбранного
+      teacher_uuid = teacher_uuid.filter(
+        (teacher) => teacher !== selected_teacher
+      );
+      // создаем список учеников в каждый класс
+      let learners_list = [];
+      for (let i = 0; learners_uuid.length && i < 25; i++) {
+        const selected_learner = _.sample(learners_uuid);
+        learners_list.push(selected_learner);
+        learners_uuid = learners_uuid.filter(
+          (learner) => learner !== selected_learner
+        );
+      }
+
+      tempArr.push({
+        class_teachers: class_teachers,
+        class_uuid: cls.uuid,
+        mentor: selected_teacher,
+        class_learner_list: learners_list
+      });
+    }
+
+    // Функция для извлечения класса по uuid ученика
+    const get_tArrEl = (uuid) =>
+      _.find(tempArr, function (o) {
+        return o.class_learner_list.includes(uuid);
+      });
+
+    return {
+      classes: classes.map((cls) => {
+        const mentorId = tempArr.filter(
+          (tempData) => tempData.class_uuid === cls.uuid
+        )[0].mentor;
+        return {
+          ...cls,
+          // добавляем классного руководителя
+          group_mentor: mentorId,
+          // добавляем список учащихся в классе
+          learners_list: tempArr.filter(
+            (tempData) => tempData.class_uuid === cls.uuid
+          )[0].class_learner_list,
+          // назначаем учителей предметников
+          study_program: cls.study_program.map((sub) => ({
+            ...sub,
+            teacher_uuid: tempArr
+              .filter((tempData) => tempData.class_uuid === cls.uuid)[0]
+              .class_teachers.filter(
+                (teacher) => teacher.subject === sub.name
+              )[0].uuid
+          }))
+        };
+      }),
+      teachers: teachers.map((teach) => {
+        const class_mentor =
+          tempArr.filter((tempData) => tempData.mentor === teach.uuid)[0]
+            ?.class_uuid || "";
+        const isMentor = !!tempArr.filter(
+          (tempData) => tempData.mentor === teach.uuid
+        )[0];
+        const uuid_class = [];
+        tempArr.forEach((tArr) => {
+          if (
+            tArr.class_teachers.reduce(
+              (acc, el) => acc || el.uuid === teach.uuid,
+              false
+            )
+          )
+            uuid_class.push(tArr.class_uuid);
+        });
+        return {
+          ...teach,
+          // определем классных руководителей и привязываем классы
+          isMentor: isMentor,
+          uuid_mentor: class_mentor,
+          // назначаем классы для предметной работы
+          uuid_class: [...teach.uuid_class, ...uuid_class]
+        };
+      }),
+      learners: learners.map((learner) => ({
+        ...learner,
+        uuid_class: get_tArrEl(learner.uuid)?.class_uuid,
+        // tempArr.map((el) => ({ lists: el.class_learner_list })),
+        // tempArr.filter((tData) =>
+        //   tData.class_learner_list.includes(learner.uuid)
+        // )["class_uuid"], // )[0].class_uuid
+        uuid_progress: casual.uuid
+      }))
+    };
+  };
+
   const result = {};
-  result.classes = className.map((cls) => casual.class(cls));
-  result.teachers = _.times(18, () => casual.teacher(_.sample(subjects)));
+  result.classes = sd.className.map((cls) => casual.class(cls));
+  result.teachers = _.times(18, () => casual.teacher(_.sample(sd.subjects)));
+
   result.fathers = def.father;
   result.mothers = def.mother;
   result.address = def.address;
   result.learners = def.learner;
 
+  // Присвоение менторов класам, назначение учетей классам, генерация списков классов
+
+  temp = setMentor(result);
+  result.classes = temp.classes;
+  result.teachers = temp.teachers;
+  result.learners = temp.learners;
+
+  result.learning_programm = learning_programm;
+  result.learning_progress = temp.classes.map((cls) => {
+    const cls_number = cls.title.slice(0, cls.title.length > 2 ? 2 : 1);
+    return {
+      uuid_class: cls.uuid,
+      name_class: cls.title,
+      progress_journal: cls.learners_list.map((learner_uuid) => ({
+        [learner_uuid]: casual.all_subjects_progress(
+          learning_programm.filter(
+            (programm) => programm.classNum === cls_number
+          )[0].prog_data
+        )
+      }))
+    };
+  });
   result.messages = [];
   result.events = [];
 

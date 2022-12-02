@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import style from "../../styles/styles";
-import BenefitCard from "./cards/benefitCard";
+import BenefitCard from "../cards/benefitCard";
 import _ from "lodash";
 
 const dataBL = {
@@ -17,7 +17,9 @@ const BenefitsList = (props) => {
     <section className={`${style.flexCenter} flex-col flex-wrap sm:mb-20 mb-6`}>
       <div className={`${style.boxWidth} flex-row flex-1 ${style.paddingX}`}>
         <h1 className={`${style.heading2} items-start`}>Benefit list</h1>
-        <div className={`flex-row flex-wrap ${style.flexStart}  `}>
+        <div
+          className={`flex-row flex-wrap  gap-x-4 gap-y-4 ${style.flexStart}  `}
+        >
           {_.fill(Array(5), dataBL).map((data, index) => (
             <BenefitCard
               key={"bfc_" + index}

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const Logo = ({ width, height }) => (
+export const Logo = ({ width, height, strokeColor, strokeWidth }) => (
   <div>
     <svg
       width={width}
@@ -12,8 +12,8 @@ export const Logo = ({ width, height }) => (
         id="Svg_logo"
         transform="matrix(0.125,0,0,0.125,0,-18)"
         // transform="matrix(0.08223106219072954,0,0,0.08223106219072954,-4.818740118902108,6.891901451455643)"
-        fill="#103869"
-        strokeWidth="2px"
+        fill={strokeColor} //"#103869"
+        strokeWidth={strokeWidth} // "2px"
       >
         <path
           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,8 @@ export const Logo = ({ width, height }) => (
       <g
         id="Svg-title"
         transform="matrix(5.177221736694296,0,0,5.177221736694296,138.00000277727817,-24.95700527796264)"
-        fill="#103869"
+        fill={strokeColor} //"#103869"
+        strokeWidth={strokeWidth} // "2px"
       >
         <path
           d="M10.78 17.16 l0 2.84 l-0.58 0 l0 -2.84 c0 -1.26 -1.02 -2.26 -2.26 -2.26 s-2.24 1.02 -2.26 2.26 l0 2.84 l-0.58 0 l0 
