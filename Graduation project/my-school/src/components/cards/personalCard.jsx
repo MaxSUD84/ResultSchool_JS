@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
-import style from "../../../styles/styles";
+import style from "../../styles/styles";
 
 const PersonalCard = (props) => {
   return (
