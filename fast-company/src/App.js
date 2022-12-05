@@ -7,19 +7,22 @@ import Login from "./layouts/login";
 import Users from "./layouts/users";
 import { ToastContainer } from "react-toastify";
 import { ProfessionProvider } from "./hooks/useProfessions";
+import AuthProvider from "./hooks/useAuth";
 
 function App() {
     return (
         <div>
-            <NavBar />
-            <ProfessionProvider>
-                <Switch>
-                    <Route path="/users/:id?/:edit?" component={Users} />
-                    <Route path="/login/:type?" component={Login} />
-                    <Route exact path="/" component={Main} />
-                    <Route render={() => <h1>Loading</h1>} />
-                </Switch>
-            </ProfessionProvider>
+            <AuthProvider>
+                <NavBar />
+                <ProfessionProvider>
+                    <Switch>
+                        <Route path="/users/:id?/:edit?" component={Users} />
+                        <Route path="/login/:type?" component={Login} />
+                        <Route exact path="/" component={Main} />
+                        <Route render={() => <h1>Loading</h1>} />
+                    </Switch>
+                </ProfessionProvider>
+            </AuthProvider>
             <ToastContainer
                 position="bottom-right"
                 autoClose={5000}

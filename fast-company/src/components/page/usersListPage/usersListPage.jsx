@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 import UserTable from "../../ui/usersTable";
 import { useUser } from "../../../hooks/useUsers";
 import { useProfessions } from "../../../hooks/useProfessions";
-import { useQualities } from "../../../hooks/useQualitys";
+import { useQualities } from "../../../hooks/useQualities";
 
 const UsersListPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -20,7 +20,7 @@ const UsersListPage = () => {
     const { qualities } = useQualities();
     const { professions } = useProfessions();
     const { users } = useUser();
-    console.log(users);
+    // console.log(users);
     // console.log("UserListPage: ", qualities);
     // console.log("QualityCustom: ", getQuality("637b2a842e4e5e3500a8afea"));
     // console.log(selectedProf);

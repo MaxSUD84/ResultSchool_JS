@@ -4,7 +4,7 @@ import { UserProvider } from "../hooks/useUsers";
 import UserPage from "../components/page/userPage";
 import EditForm from "../components/ui/editForm";
 import UsersListPage from "../components/page/usersListPage";
-import { QualityProvider } from "../hooks/useQualitys";
+import { QualityProvider } from "../hooks/useQualities";
 
 const Users = () => {
     const params = useParams();

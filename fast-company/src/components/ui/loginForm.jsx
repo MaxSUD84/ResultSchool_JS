@@ -2,14 +2,18 @@ import React, { useState, useEffect } from "react";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
 import CheckBoxField from "../common/form/checkBoxField";
+import { useHistory } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 // import * as yup from "yup";  // Библиотека валидация (npm install -s yup)
 
 const LoginForm = () => {
+    const history = useHistory();
     const [data, setData] = useState({
         email: "",
         password: "",
         stayOn: false
     });
+    const { signIn } = useAuth();
     const [errors, setErrors] = useState({ email: "", password: "" });
     // errors
     const handleChange = (target) => {
@@ -88,12 +92,20 @@ const LoginForm = () => {
         validate();
     }, [data]);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // validate(); // Валидация данных в момент отправки сообщения
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
+
+        try {
+            await signIn(data);
+            history.push("/");
+        } catch (error) {
+            // console.log(error);
+            setErrors(error);
+        }
     };
 
     return (
