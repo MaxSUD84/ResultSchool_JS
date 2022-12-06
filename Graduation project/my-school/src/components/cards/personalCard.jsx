@@ -2,11 +2,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import style from "../../styles/styles";
+import Title from "../../components/articles/title";
 
-const PersonalCard = (props) => {
+const PersonalCard = ({
+  full_name,
+  experience_education,
+  subject,
+  education_rating,
+  uuid_mentor
+}) => {
   return (
-    <div className="flex-nowrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
-      <div className={`flex-col justify-center px-6 py-6 w-64 shadow-sm`}>
+    <div className="flex flex-wrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
+      <div className={` flex-row justify-center px-6 py-6 w-64 shadow-sm`}>
         <div className="flex justify-center">
           <img
             src={`https://avatars.dicebear.com/api/avataaars/${(
@@ -21,21 +28,37 @@ const PersonalCard = (props) => {
           />
         </div>
         <div className={`${style.flexCenter} mb-3`}>
-          <h3 className="text-lg font-normal text-primary-500">
-            Иванов Иван Иванович
-          </h3>
+          <h3 className="text-lg font-normal text-primary-500">{full_name}</h3>
         </div>
-        <p className="text-xs font-body text-slate-400">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed aliquam
-          nulla accusamus ipsa molestias, voluptates iure ex officia eveniet
-          consequuntur non cum quidem unde eius! Optio magnam molestiae enim?
-          Dolore.
-        </p>
+        <div>
+          <span>
+            Профильный предмет: <p>{subject}</p>
+          </span>
+          {uuid_mentor && (
+            <span>
+              Классный руководитель: <p>{uuid_mentor}</p>
+            </span>
+          )}
+        </div>
+        <div>
+          <span>{experience_education}</span>
+        </div>
+        <div>
+          <span>
+            Рейтинг учителя: <p>{education_rating}</p>
+          </span>
+        </div>
       </div>
     </div>
   );
 };
 
-PersonalCard.propTypes = {};
+PersonalCard.propTypes = {
+  full_name: PropTypes.string,
+  experience_education: PropTypes.string,
+  subject: PropTypes.string,
+  education_rating: PropTypes.string,
+  uuid_mentor: PropTypes.string
+};
 
 export default PersonalCard;

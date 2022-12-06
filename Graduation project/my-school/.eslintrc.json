@@ -21,7 +21,10 @@
     },
     "plugins": ["react"],
     "rules": {
-        "indent": ["error", 2],
+        "indent": ["error", 2, 
+        {   "ignoredNodes": ["ConditionalExpression"], 
+            "offsetTernaryExpressions": true,
+            "CallExpression": {"arguments": "first"}}],
         "semi": [2, "always"],
         "space-before-function-paren": [
             "error",

@@ -2,25 +2,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 import style from "../../styles/styles";
+import styles from "./heroes.module.scss";
 
 const HeroManagment = (props) => {
   return (
-    <section className={`flex-col ${style.flexCenter} sm:mb-20 mb-6`}>
-      <div className={`${style.boxWidth} flex-row flex-1 ${style.paddingX}`}>
-        <h1 className={`${style.heading2} items-start`}>Hero</h1>
-        <div className="space-y-0 justify-center items-center">
-          <div className={`flex-col ${style.flexCenter} space-y-1 `}>
-            <img src="https://fakeimg.pl/1080x400/?text=Managment detail images&font=lobster" />
-            <h2>Managment detail</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              error corrupti omnis odit, veniam suscipit culpa nulla neque?
-              Voluptatem similique nam est in quae dolorem porro blanditiis
-              explicabo nisi voluptates. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Officiis rerum maiores cupiditate accusantium
-              alias? Ratione quae dolores minus doloremque aspernatur atque eius
-              repudiandae temporibus, fuga quo laborum expedita facilis iure!
-            </p>
+    <section className={styles.flexCenterCol}>
+      <div className={`${styles.boxWidth} ${styles.paddingX} flex-row flex-1`}>
+        {/* <h1 className={`${style.heading2} items-start`}>Hero</h1> */}
+        <div className={styles.block}>
+          <div className={`grid grid-cols-2 gap-4 `}>
+            <div className="w-fit justify-center">
+              <img src="https://fakeimg.pl/400x400/?text=Managment detail images&font=lobster" />
+            </div>
+            <div className="w-auto">
+              <h3>Managment detail</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore error corrupti omnis odit, veniam suscipit culpa nulla
+                neque? Voluptatem similique nam est in quae dolorem porro
+                blanditiis explicabo nisi voluptates. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Officiis rerum maiores cupiditate
+                accusantium alias? Ratione quae dolores minus doloremque
+                aspernatur atque eius repudiandae temporibus, fuga quo laborum
+                expedita facilis iure!
+              </p>
+            </div>
           </div>
         </div>
       </div>

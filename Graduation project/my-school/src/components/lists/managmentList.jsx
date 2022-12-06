@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
@@ -14,8 +15,11 @@ const ManagmentList = () => {
   const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
   const [searchField, setSearchField] = useState("");
   const pageSize = 6;
+  let teachersCrop = [];
 
   const { teachers } = useTeachers();
+
+  // console.log(teachers);
 
   const handleSort = (item) => {
     setSortBy(item);
@@ -43,9 +47,8 @@ const ManagmentList = () => {
       [sortBy.path],
       [sortBy.order]
     );
-    const teachersCrop = paginate(sortedTeachers, currentPage, pageSize);
-
-    console.log(teachersCrop);
+    teachersCrop = paginate(sortedTeachers, currentPage, pageSize);
+    // console.log(teachersCrop);
 
     const count = teachersCrop.length;
   }
@@ -54,7 +57,13 @@ const ManagmentList = () => {
     // setSelectedProf();
   };
 
-  return <PersonalCard />;
+  return (
+    <>
+      {teachersCrop.map((teacher) => {
+        return <PersonalCard key={teacher.uuid} {...teacher} />;
+      })}
+    </>
+  );
 };
 
 export default ManagmentList;

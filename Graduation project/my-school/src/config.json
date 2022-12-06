@@ -1,4 +1,5 @@
 {
-    "apiEndpoint": "http://localhost:4000/"
+    "apiEndpoint": "http://localhost:4000/",
+    "isFireBase": false
     
 }

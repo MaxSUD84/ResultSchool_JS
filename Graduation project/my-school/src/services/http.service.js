@@ -5,31 +5,34 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import configFile from "../config.json";
 
-// использовать только для обращения к статическому адресу BackEnd Server'а
-axios.defaults.baseURL = configFile.apiEndpoint;
+const httpClient = axios.create({
+  baseURL: configFile.apiEndpoint,
+  timeout: 100,
+  headers: { "Content-Type": "application/json" }
+});
 
-// axios.interceptors.request.use(
-//     function (config) {
-//         if (configFile.isFireBase) {
-//             const containSlash = /\/$/gi.test(config.url);
-//             config.url =
-//                 (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
-//             // console.log(config.url);
-//         }
-
-//         return config;
-//     },
-//     function (error) {
-//         return Promise.reject(error);
-//     }
-// );
+httpClient.interceptors.request.use(
+  function (config) {
+    if (configFile.isFireBase) {
+      const containSlash = /\/$/gi.test(config.url);
+      config.url =
+        (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
+      // console.log(config.url);
+    }
+    return config;
+  },
+  function (error) {
+    return Promise.reject(error);
+  }
+);
 
 function transformData(data) {
   return data ? Object.keys(data).map((key) => ({ ...data[key] })) : [];
 }
 
-axios.interceptors.response.use(
+httpClient.interceptors.response.use(
   (res) => {
+    // перехватчик контента ОТВЕТА (для FireBase)
     if (configFile.isFireBase) {
       res.data = { content: transformData(res.data) };
       // console.log(res.data);
@@ -48,11 +51,12 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
 const httpService = {
-  get: axios.get,
-  post: axios.post,
-  put: axios.put,
-  delete: axios.delete
+  get: httpClient.get,
+  post: httpClient.post,
+  put: httpClient.put,
+  delete: httpClient.delete
 };
 
 export default httpService;
