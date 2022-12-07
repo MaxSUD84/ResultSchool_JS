@@ -8,13 +8,14 @@ import _ from "lodash";
 
 import PersonalCard from "../cards/personalCard";
 import { useTeachers } from "../../hooks/useTeachers";
+import Title from "../articles/title";
 
 const ManagmentList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedSubject, setSelectedSubject] = useState();
   const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
   const [searchField, setSearchField] = useState("");
-  const pageSize = 6;
+  const pageSize = 8;
   let teachersCrop = [];
 
   const { teachers } = useTeachers();
@@ -59,9 +60,21 @@ const ManagmentList = () => {
 
   return (
     <>
-      {teachersCrop.map((teacher) => {
-        return <PersonalCard key={teacher.uuid} {...teacher} />;
-      })}
+      <div className={`${style.flexCenter}`}>
+        <div className={`${style.boxWidth} flex-1`}>
+          <div className={""}>
+            <div className="py-4 px-6">
+              <Title title_1={"Наши учетеля"} />
+            </div>
+
+            <div className={`flex flex-wrap justify-evenly gap-4 px-6`}>
+              {teachersCrop.map((teacher) => {
+                return <PersonalCard key={teacher.uuid} {...teacher} />;
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

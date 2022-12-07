@@ -5,6 +5,7 @@ import HeroMain from "../components/heroes/heroMain";
 import MainTopNewsList from "../components/lists/mTopNewsList";
 import CalendarEventsList from "../components/lists/calendarEventList";
 import MediumFooter from "../components/footer/mdFooter";
+// import { Newspaper } from "../assets/icons/newspaper";
 
 const Main = () => {
   return (

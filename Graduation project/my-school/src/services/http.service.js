@@ -7,7 +7,7 @@ import configFile from "../config.json";
 
 const httpClient = axios.create({
   baseURL: configFile.apiEndpoint,
-  timeout: 100,
+  timeout: 2000,
   headers: { "Content-Type": "application/json" }
 });
 

@@ -12,8 +12,9 @@ const PersonalCard = ({
   uuid_mentor
 }) => {
   return (
-    <div className="flex flex-wrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
-      <div className={` flex-row justify-center px-6 py-6 w-64 shadow-sm`}>
+    // <div className="flex flex-nowrap bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
+    <div className="bg-gradient-to-r from-sky-50 to-stone-50 shadow rounded">
+      <div className={`justify-center px-6 py-6 w-64 shadow-sm`}>
         <div className="flex justify-center">
           <img
             src={`https://avatars.dicebear.com/api/avataaars/${(

@@ -5,7 +5,7 @@ import Title from "../articles/title";
 import style from "../../styles/styles";
 import TopNewsCard from "../cards/mTopNewsCard";
 
-import { newspaper } from "../../assets/icons";
+import { Newspaper } from "../../assets/icons/newspaper";
 import { topNews } from "../../assets/staticData/topNews";
 
 const MainTopNewsList = (props) => {
@@ -13,10 +13,11 @@ const MainTopNewsList = (props) => {
     <section className={`${style.flexCenter} flex-col flex-wrap sm:mb-10 mb-6`}>
       <div className={`${style.boxWidth} flex-row flex-1 ${style.paddingX}`}>
         <Title className={`px-2`} title_1="MainTop" title_2="NewsList">
-          <img
-            src={newspaper}
-            alt="newspaper"
-            className={`w-[36px] h-[36px] object-contain m-4`}
+          <Newspaper
+            width={"32px"}
+            height={"32px"}
+            strokeColor={"green"}
+            className="m-2"
           />
         </Title>
         <div className="flex flex-wrap justify-evenly">
