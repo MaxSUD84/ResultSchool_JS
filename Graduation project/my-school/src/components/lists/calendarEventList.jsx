@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Title from "../articles/title";
 import style from "../../styles/styles";
 
-import { newspaper } from "../../assets/icons";
+import { Newspaper } from "../../assets/icons";
 import { mCalendarEvent } from "../../assets/staticData/calendarEvent";
 import CalendarCard from "../cards/calendarCard";
 
@@ -12,11 +12,12 @@ const CalendarEventsList = (props) => {
   return (
     <section className={`${style.flexCenter} flex-col flex-wrap sm:mb-10 mb-6`}>
       <div className={`${style.boxWidth} flex-row flex-1 ${style.paddingX}`}>
-        <Title className={`px-2`} title_1="Last &" title_2="future events">
-          <img
-            src={newspaper}
-            alt="newspaper"
-            className={`w-[36px] h-[36px] object-contain m-4`}
+        <Title className={`px-2`} title_1="Last & " title_2=" future events">
+          <Newspaper
+            width={"32px"}
+            height={"32px"}
+            strokeColor={"white"}
+            style="p-2"
           />
         </Title>
         <div className="flex flex-nowrap justify-evenly">

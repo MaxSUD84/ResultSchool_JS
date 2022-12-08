@@ -1,7 +1,8 @@
+/* eslint-disable multiline-ternary */
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Logo } from "../../assets/logo/logo";
-import { close, threeDotsVert } from "../../assets/icons";
+import { Close, ThreeDotsVertical } from "../../assets/icons";
 import "./index.css";
 
 export default function Nav({ children }) {
@@ -24,12 +25,17 @@ export default function Nav({ children }) {
         </ul>
 
         <div className="flex flex-1 justify-end items-center lg:hidden">
-          <img
-            src={!toggle ? threeDotsVert : close}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle((p) => !p)}
-          />
+          <div onClick={() => setToggle((p) => !p)}>
+            {!toggle ? (
+              <ThreeDotsVertical
+                width="32px"
+                height="32px"
+                strokeColor="grey"
+              />
+            ) : (
+              <Close width="32px" height="32px" strokeColor="grey" />
+            )}
+          </div>
           <div
             className={`${
               toggle ? "flex" : "hidden"

@@ -5,7 +5,7 @@ import style from "../../styles/styles";
 import NavItem from "../navBar/navItem";
 import { headerLinks } from "../../assets/staticData/labels";
 import { Logo } from "../../assets/logo/logo";
-import { close } from "../../assets/icons";
+import { Close } from "../../assets/icons";
 import _ from "lodash";
 
 const MediumFooter = (props) => {
@@ -38,9 +38,14 @@ const MediumFooter = (props) => {
         </div>
         <div className="flex flex-row space-x-8 align-middle justify-center py-4">
           {_.times(5).map((i) => (
-            <div key={"icon_footer_" + i}>
-              <img src={close} alt="icon" className="w-6 h-6 stroke-red-60" />
-            </div>
+            //  <div >
+            <Close
+              width="24px"
+              height="24px"
+              strokeColor="yellow"
+              key={"icon_footer_" + i}
+            />
+            // {/* </div> */}
           ))}
         </div>
         <p className="text-primary-200 font-semibold text-xs">
