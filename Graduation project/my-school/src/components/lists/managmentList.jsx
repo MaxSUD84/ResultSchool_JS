@@ -7,6 +7,7 @@ import { paginate } from "../../utils/paginate";
 import _ from "lodash";
 
 import PersonalCard from "../cards/personalCard";
+import Pagination from "../elems/pagination";
 import { useTeachers } from "../../hooks/useTeachers";
 import Title from "../articles/title";
 
@@ -22,38 +23,52 @@ const ManagmentList = () => {
 
   // console.log(teachers);
 
+  // const handleSort = (item) => {
+  //   setSortBy(item);
+  // };
+
+  // При обновлении профессии сбрасываем текущию страницу на 1 стр.
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSubject]);
+
+  const handlePageChange = (pageIndex) => {
+    setCurrentPage(pageIndex);
+  };
+
   const handleSort = (item) => {
     setSortBy(item);
   };
 
-  if (teachers) {
-    const searchMatches = teachers;
-    // const searchMatches = searchField
-    //   ? teachers.filter((user) =>
-    //         new RegExp(searchField.toLowerCase()).test(
-    //             user.name.toLowerCase()
-    //         )
-    //     )
-    //   : users;
+  // if (teachers) { }
+  const searchMatches = teachers;
+  // const searchMatches = searchField
+  //   ? teachers.filter((user) =>
+  //         new RegExp(searchField.toLowerCase()).test(
+  //             user.name.toLowerCase()
+  //         )
+  //     )
+  //   : users;
 
-    const filteredTeachers = selectedSubject
-      ? searchMatches.filter(
-          (teacher) =>
-            JSON.stringify(teacher.subject) ===
-            JSON.stringify(selectedSubject.subject)
-        )
-      : searchMatches;
-    const sortedTeachers = _.orderBy(
-      filteredTeachers,
-      [sortBy.path],
-      [sortBy.order]
-    );
-    teachersCrop = paginate(sortedTeachers, currentPage, pageSize);
-    // console.log(teachersCrop);
+  const filteredTeachers = selectedSubject
+    ? searchMatches.filter(
+        (teacher) =>
+          JSON.stringify(teacher.subject) ===
+          JSON.stringify(selectedSubject.subject)
+      )
+    : searchMatches;
 
-    const count = teachersCrop.length;
-  }
-  // const count = filteredUsers.length;
+  const sortedTeachers = _.orderBy(
+    filteredTeachers,
+    [sortBy.path],
+    [sortBy.order]
+  );
+
+  teachersCrop = paginate(sortedTeachers, currentPage, pageSize);
+  // console.log(teachersCrop);
+
+  const count = sortedTeachers.length;
+
   const clearFilter = () => {
     // setSelectedProf();
   };
@@ -71,6 +86,14 @@ const ManagmentList = () => {
               {teachersCrop.map((teacher) => {
                 return <PersonalCard key={teacher.uuid} {...teacher} />;
               })}
+            </div>
+            <div>
+              <Pagination
+                itemsCount={count}
+                pageSize={pageSize}
+                currentPage={currentPage}
+                onPageChange={handlePageChange}
+              />
             </div>
           </div>
         </div>
