@@ -7,7 +7,8 @@ import Events from "./layouts/events";
 import Managment from "./layouts/managment";
 import Faq from "./layouts/faq";
 import Login from "./layouts/login";
-import About from "./layouts/aboutContact";
+// import About from "./layouts/aboutContact";
+import LearnerProfile from "./layouts/learnerProfile";
 
 import { ToastContainer } from "react-toastify";
 
@@ -23,7 +24,8 @@ function App() {
         <Route path="/events" component={Events} />
         <Route path="/managment" component={Managment} />
         <Route path="/faq" component={Faq} />
-        <Route path="/about" component={About} />
+        {/* <Route path="/about" component={About} /> */}
+        <Route path="/about" component={LearnerProfile} />
         <Route path="/login" component={Login} />
         <Route render={() => <h1>Loading</h1>} />
       </Switch>
