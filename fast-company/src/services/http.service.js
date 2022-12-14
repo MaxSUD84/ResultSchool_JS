@@ -19,14 +19,16 @@ http.interceptors.request.use(
             const containSlash = /\/$/gi.test(config.url);
             config.url =
                 (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
+
             const expairesDate = localStorageService.getTokenExpiresDate();
             const refreshToken = localStorageService.getRefreshToken();
             if (refreshToken && expairesDate > Date.now()) {
-                const { data } = await httpAuth.post("token", {
+                const url = `https://identitytoolkit.googleapis.com/v1/token?key=${process.env.REACT_APP_FIREBASE_KEY}`;
+                const { data } = await httpAuth.post(url, {
                     grant_type: "refresh_token",
                     refresh_token: refreshToken
                 });
-                console.log(data);
+                // console.log(data);
                 localStorageService.setTokens({
                     refreshToken: data.refresh_token,
                     idToken: data.id_token,
@@ -35,6 +37,10 @@ http.interceptors.request.use(
                 });
             }
 
+            const accessToken = localStorageService.getAccessToken();
+            if (accessToken) {
+                config.params = { ...config.params, auth: accessToken };
+            }
             // console.log(config.url);
         }
 
