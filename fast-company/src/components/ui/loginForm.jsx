@@ -101,7 +101,12 @@ const LoginForm = () => {
 
         try {
             await signIn(data);
-            history.push("/");
+            // console.log(history.location.state);
+            history.push(
+                history.location.state
+                    ? history.location.state.from.pathname
+                    : "/"
+            );
         } catch (error) {
             // console.log(error);
             setErrors(error);
