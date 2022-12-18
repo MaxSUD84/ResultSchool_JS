@@ -23,6 +23,10 @@ export const UserProvider = ({ children }) => {
         }
     }, [error]);
 
+    function getUserById(userId) {
+        return users.find((u) => u._id === userId);
+    }
+
     async function getUsers() {
         try {
             const { content } = await userService.get();
@@ -38,7 +42,7 @@ export const UserProvider = ({ children }) => {
     }
 
     return (
-        <UserContext.Provider value={{ users }}>
+        <UserContext.Provider value={{ users, getUserById }}>
             {!isLoading ? children : "Loading..."}
         </UserContext.Provider>
     );

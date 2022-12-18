@@ -1,3 +1,5 @@
+import { func } from "prop-types";
+
 const TOKEN_KEY = "jwt-token";
 const REFRESH_KEY = "jwt-refresh-token";
 const EXPIRES_KEY = "jwt-expires";
@@ -28,13 +30,20 @@ export function getTokenExpiresDate() {
 export function getUserId() {
     return localStorage.getItem(USERID_KEY);
 }
+export function removeAuthData() {
+    localStorage.removeItem(USERID_KEY);
+    localStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(REFRESH_KEY);
+    localStorage.removeItem(EXPIRES_KEY);
+}
 
 const localStorageService = {
     setTokens,
     getUserId,
     getAccessToken,
     getRefreshToken,
-    getTokenExpiresDate
+    getTokenExpiresDate,
+    removeAuthData
 };
 
 export default localStorageService;

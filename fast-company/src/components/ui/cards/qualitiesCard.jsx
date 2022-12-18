@@ -19,9 +19,13 @@ const QualitiesCard = ({ qualities }) => {
 };
 
 QualitiesCard.propTypes = {
+    // qualities: PropTypes.oneOfType([
+    //     PropTypes.arrayOf(PropTypes.object),
+    //     PropTypes.object
+    // ])
     qualities: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.object),
-        PropTypes.object
+        PropTypes.arrayOf(PropTypes.string),
+        PropTypes.string
     ])
 };
 

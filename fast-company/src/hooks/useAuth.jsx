@@ -2,8 +2,13 @@ import React, { useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import userService from "../services/user.service";
 import { toast } from "react-toastify";
-import { setTokens, getAccessToken } from "../services/localStorage.service";
+import {
+    setTokens,
+    getAccessToken,
+    removeAuthData
+} from "../services/localStorage.service";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 export const httpAuth = axios.create({
     // baseUrl: `https://identitytoolkit.googleapis.com/v1/`,
@@ -20,6 +25,7 @@ const AuthProvider = ({ children }) => {
     const [currentUser, setUser] = useState();
     const [error, setError] = useState(null);
     const [isLoading, setLoading] = useState(true);
+    const history = useHistory();
 
     function randomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -40,6 +46,11 @@ const AuthProvider = ({ children }) => {
                 email,
                 rate: randomInt(1, 5),
                 completedMeetings: randomInt(0, 200),
+                image: `https://avatars.dicebear.com/api/avataaars/${(
+                    Math.random() + 1
+                )
+                    .toString(36)
+                    .substring(7)}.svg`,
                 ...rest
             });
             // console.log(data);
@@ -97,6 +108,12 @@ const AuthProvider = ({ children }) => {
         }
     }
 
+    function signOut() {
+        removeAuthData();
+        setUser(null);
+        history.push("/");
+    }
+
     async function createUser(data) {
         try {
             const { content } = await userService.create(data);
@@ -138,7 +155,7 @@ const AuthProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ signUp, signIn, currentUser }}>
+        <AuthContext.Provider value={{ signUp, signIn, signOut, currentUser }}>
             {!isLoading ? children : "Loading..."}
         </AuthContext.Provider>
     );

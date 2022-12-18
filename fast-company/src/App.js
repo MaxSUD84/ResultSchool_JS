@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import { ProfessionProvider } from "./hooks/useProfessions";
 import AuthProvider from "./hooks/useAuth";
 import ProtectedRoute from "./components/common/protectedRoute";
+import LogOut from "../src/layouts/logOut";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                             component={Users}
                         />
                         <Route path="/login/:type?" component={Login} />
+                        <Route path="/logout" component={LogOut} />
                         <Route exact path="/" component={Main} />
                         <Route render={() => <h1>Loading</h1>} />
                     </Switch>

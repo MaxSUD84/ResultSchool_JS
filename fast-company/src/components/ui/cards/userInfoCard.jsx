@@ -1,33 +1,42 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
+import { useProfessions } from "../../../hooks/useProfessions";
+import { useAuth } from "../../../hooks/useAuth";
 
-const UserInfoCard = ({ name, profession, rate }) => {
+const UserInfoCard = ({ name, profession: professionId, rate, image, _id }) => {
+    const { currentUser } = useAuth();
     const history = useHistory();
     const handleEditUser = () => {
         history.push(`/users/${id}/edit`);
     };
 
+    const { getProfession } = useProfessions();
+    const profession = getProfession(professionId);
+
+    // console.log(name, professionId, rate, image);
+
     return (
         <div className="card mb-3">
             <div className="card-body">
-                <button className="position-absolute top-0 end-0 btn btn-light btn-sm">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        className="bi bi-gear"
-                        viewBox="0 0 16 16"
-                        type="button"
-                        onClick={handleEditUser}
-                    >
-                        <path
-                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 
+                {currentUser._id === _id && (
+                    <button className="position-absolute top-0 end-0 btn btn-light btn-sm">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-gear"
+                            viewBox="0 0 16 16"
+                            type="button"
+                            onClick={handleEditUser}
+                        >
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 
                         2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
-                        />
-                        <path
-                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 
+                            />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 
                         1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 
                         1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 
                         1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 
@@ -41,16 +50,13 @@ const UserInfoCard = ({ name, profession, rate }) => {
                         0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
                         1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 
                         4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
-                        />
-                    </svg>
-                </button>
+                            />
+                        </svg>
+                    </button>
+                )}
                 <div className="d-flex flex-column align-items-center text-center position-relative">
                     <img
-                        src={`https://avatars.dicebear.com/api/avataaars/${(
-                            Math.random() + 1
-                        )
-                            .toString(36)
-                            .substring(7)}.svg`}
+                        src={image}
                         className="rounded-circle shadow-1-strong me-3"
                         alt="avatar"
                         width="150"
@@ -99,8 +105,11 @@ const UserInfoCard = ({ name, profession, rate }) => {
 
 UserInfoCard.propTypes = {
     name: PropTypes.string,
-    profession: PropTypes.object,
-    rate: PropTypes.number || PropTypes.string
+    profession: PropTypes.string,
+    // profession: PropTypes.object,
+    rate: PropTypes.number || PropTypes.string,
+    _id: PropTypes.string,
+    image: PropTypes.string
 };
 
 export default UserInfoCard;

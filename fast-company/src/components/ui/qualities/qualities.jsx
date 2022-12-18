@@ -9,7 +9,7 @@ const Qualities = ({ qualities }) => {
         qualities === "string"
             ? new Array().push(getQuality(qualities))
             : qualities.map((id) => getQuality(id));
-    console.log("Qualities: ", qualitiesObjArr);
+    // console.log("Qualities: ", qualitiesObjArr);
 
     return (
         <>
