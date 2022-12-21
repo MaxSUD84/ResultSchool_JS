@@ -5,7 +5,8 @@ import { toast } from "react-toastify";
 import {
     setTokens,
     getAccessToken,
-    removeAuthData
+    removeAuthData,
+    getUserId
 } from "../services/localStorage.service";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
@@ -53,6 +54,35 @@ const AuthProvider = ({ children }) => {
                     .substring(7)}.svg`,
                 ...rest
             });
+            // console.log(data);
+        } catch (error) {
+            console.log(error);
+            errorCather(error);
+            const { code, message } = error.response.data.error;
+            // console.log(code, message);
+            if (code === 400) {
+                if (message === "EMAIL_EXISTS") {
+                    const errorObject = {
+                        email: "Пользователь с таким email уже существует"
+                    };
+                    throw errorObject;
+                }
+            }
+        }
+    }
+
+    async function editUser({ ...rest }) {
+        console.log(rest.name, rest.email);
+        // const url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_FIREBASE_KEY}`;
+        try {
+            //     // const { data } = await httpAuth.post("accounts:signUp", {
+            //     const { data } = await httpAuth.post(url, {
+            //         email,
+            //         password,
+            //         returnSecureToken: true
+            //     });
+            // setTokens(data);
+            await setUserData({ ...rest });
             // console.log(data);
         } catch (error) {
             console.log(error);
@@ -123,6 +153,16 @@ const AuthProvider = ({ children }) => {
         }
     }
 
+    async function setUserData(data) {
+        try {
+            const { content } = await userService.setCurrentUser(data);
+            console.log(content);
+            setUser(content);
+        } catch (error) {
+            errorCather(error);
+        }
+    }
+
     async function getUserData() {
         try {
             const { content } = await userService.getCurrentUser();
@@ -155,7 +195,9 @@ const AuthProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ signUp, signIn, signOut, currentUser }}>
+        <AuthContext.Provider
+            value={{ signUp, signIn, signOut, currentUser, editUser }}
+        >
             {!isLoading ? children : "Loading..."}
         </AuthContext.Provider>
     );

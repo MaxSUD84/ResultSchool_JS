@@ -3,29 +3,49 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
-import api from "../../api";
+// import api from "../../api";
 import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
-// import CustomReactSelect from "./styles/customReactSelect";
+
 import { customStyles, getColourOptions } from "../ui/styles/data";
+import { useProfessions } from "../../hooks/useProfessions";
+import { useQualities } from "../../hooks/useQualities";
+import { useAuth } from "../../hooks/useAuth";
+
+const convertProfession = (professionData) => ({
+    label: professionData.name,
+    value: professionData._id
+});
+
+const convertQuality = (qualityData) => ({
+    label: qualityData.name,
+    value: qualityData._id,
+    color: qualityData.color
+});
 
 const EditForm = () => {
-    const params = useParams();
-    const { id } = params;
+    // const params = useParams();
     const history = useHistory();
 
-    const [data, setData] = useState({});
-    const [errors, setErrors] = useState({ email: "", password: "" });
-    const [professions, setProfessions] = useState();
-    const [qualities, setQualities] = useState([]);
+    const [data, setData] = useState(false);
+    const [errors, setErrors] = useState({ email: "", name: "" }); // { email: "", password: "" }
+    const { currentUser, editUser } = useAuth();
+    const {
+        isLoading: isProfLoading,
+        professions,
+        getProfession
+    } = useProfessions();
+    const { isLoading: isQualLoading, qualities, getQuality } = useQualities();
 
     const handleChange = (target) => {
-        setData((prevState) => ({
-            ...prevState,
-            [target.name]: target.value
-        }));
+        setData((prevState) => {
+            return {
+                ...prevState,
+                [target.name]: target.value
+            };
+        });
     };
 
     const handleShowUser = () => {
@@ -33,43 +53,28 @@ const EditForm = () => {
     };
 
     useEffect(() => {
-        api.professions.fetchAll().then((data) => {
-            const professionsList = Object.keys(data).map((professionName) => ({
-                label: data[professionName].name,
-                value: data[professionName]._id
-            }));
-            setProfessions(professionsList);
-        });
-        api.qualities.fetchAll().then((data) => {
-            const qualitiesList = Object.keys(data).map((optionName) => ({
-                label: data[optionName].name,
-                value: data[optionName]._id,
-                color: data[optionName].color
-            }));
-            setQualities(qualitiesList);
-        });
+        if (currentUser && !isQualLoading) {
+            const qual = currentUser.qualities.map((qual) =>
+                convertQuality(getQuality(qual))
+            );
 
-        api.users.default.getById(id).then((data) => {
-            if (data) {
-                setData({
-                    name: data.name,
-                    email: data.email,
-                    profession: data.profession._id,
-                    sex: data.sex,
-                    qualities: getColourOptions(
-                        Object.keys(data.qualities).map(
-                            (optionName) => ({
-                                color: data.qualities[optionName].color,
-                                label: data.qualities[optionName].name,
-                                value: data.qualities[optionName]._id,
-                            })
-                        ))
-                });
-            }
-        });
-    }, []);
+            setData({
+                ...currentUser,
+                qualities: getColourOptions(qual)
+            });
+        }
+    }, [currentUser, isQualLoading, getQuality]);
 
     const validatorConfig = {
+        name: {
+            isRequired: {
+                message: "Имя обязательно для заполнения"
+            },
+            min: {
+                message: "Имя должно состоять минимум из 3 символов",
+                value: 3
+            }
+        },
         email: {
             isRequired: {
                 message: "Электронная почта обязательна для заполнения"
@@ -118,29 +123,30 @@ const EditForm = () => {
         validate();
     }, [data]);
 
-    const getProfessionById = (id) => {
-        for (const prof of professions) {
-            if (prof.value === id) {
-                return { _id: prof.value, name: prof.label };
-            }
-        }
-    };
-    const getQualities = (elements) => {
-        const qualitiesArray = [];
-        for (const elem of elements) {
-            for (const quality in qualities) {
-                // if (elem.value === qualities[quality].value) {
-                if (elem._id === qualities[quality].value) {
-                    qualitiesArray.push({
-                        _id: qualities[quality].value,
-                        name: qualities[quality].label,
-                        color: qualities[quality].color
-                    });
-                }
-            }
-        }
-        return qualitiesArray;
-    };
+    // const getProfessionById = (id) => {
+    //     for (const prof of professions) {
+    //         if (prof.value === id) {
+    //             return { _id: prof.value, name: prof.label };
+    //         }
+    //     }
+    // };
+
+    // const getQualities = (elements) => {
+    //     const qualitiesArray = [];
+    //     for (const elem of elements) {
+    //         for (const quality in qualities) {
+    //             // if (elem.value === qualities[quality].value) {
+    //             if (elem._id === qualities[quality].value) {
+    //                 qualitiesArray.push({
+    //                     _id: qualities[quality].value,
+    //                     name: qualities[quality].label,
+    //                     color: qualities[quality].color
+    //                 });
+    //             }
+    //         }
+    //     }
+    //     return qualitiesArray;
+    // };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -152,16 +158,18 @@ const EditForm = () => {
 
         const newData = {
             ...data,
-            profession: getProfessionById(profession),
-            qualities: getQualities(qualities)
+            // profession: getProfession(profession),
+            qualities: qualities.map((qual) => qual._id)
         };
         console.log(newData);
 
-        api.users.default.update(id, newData).finally(handleShowUser());
+        editUser(newData);
+
+        // api.users.default.update(id, newData).finally(handleShowUser());
     };
 
     const handlerReturn = () => {
-            history.push(".");
+        history.push(".");
     };
 
     /*
@@ -177,22 +185,19 @@ const EditForm = () => {
             bookmark: false
         }
     */
+    // console.log(data);
+    // console.log(currentUser);
 
-    let isDataReady =
-        data.name &&
-        data.email &&
-        data.sex &&
-        data.profession &&
-        data.qualities;
+    let isDataReady = !isProfLoading && !isQualLoading && data;
 
     return (
         <div className="container mt-5">
             <div className="row">
                 <div className="col-md-2 p-1 ">
-                    <button 
+                    <button
                         className="btn btn-primary shadow p-2"
-                        type="button" 
-                        onClick={handlerReturn} 
+                        type="button"
+                        onClick={handlerReturn}
                     >
                         Назад
                     </button>
@@ -207,7 +212,7 @@ const EditForm = () => {
                                     name="name"
                                     value={data.name}
                                     onChange={handleChange}
-                                    // error={errors.password}
+                                    error={errors.name}
                                 />
                                 <TextField
                                     label="Электронная почта"
@@ -220,7 +225,9 @@ const EditForm = () => {
                                     label="Профессию:"
                                     defaultOption="Выбирите..."
                                     name="profession"
-                                    options={professions}
+                                    options={professions.map((p) =>
+                                        convertProfession(p)
+                                    )}
                                     onChange={handleChange}
                                     value={data.profession}
                                     error={errors.profession}
@@ -238,7 +245,9 @@ const EditForm = () => {
                                 />
                                 <MultiSelectField
                                     defaultValue={data.qualities}
-                                    options={getColourOptions(qualities)}
+                                    options={getColourOptions(
+                                        qualities.map((q) => convertQuality(q))
+                                    )}
                                     styles={customStyles}
                                     name="qualities"
                                     onChange={handleChange}

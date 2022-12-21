@@ -8,7 +8,7 @@ const UserInfoCard = ({ name, profession: professionId, rate, image, _id }) => {
     const { currentUser } = useAuth();
     const history = useHistory();
     const handleEditUser = () => {
-        history.push(`/users/${id}/edit`);
+        history.push(`/users/${currentUser._id}/edit`);
     };
 
     const { getProfession } = useProfessions();
