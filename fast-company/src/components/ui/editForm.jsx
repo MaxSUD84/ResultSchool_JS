@@ -31,7 +31,7 @@ const EditForm = () => {
 
     const [data, setData] = useState(false);
     const [errors, setErrors] = useState({ email: "", name: "" }); // { email: "", password: "" }
-    const { currentUser, editUser } = useAuth();
+    const { currentUser, setUserData } = useAuth();
     const {
         isLoading: isProfLoading,
         professions,
@@ -154,7 +154,7 @@ const EditForm = () => {
         const isValid = validate();
         if (!isValid) return;
         // console.log(data);
-        const { profession, qualities } = data;
+        const { qualities } = data;
 
         const newData = {
             ...data,
@@ -163,7 +163,7 @@ const EditForm = () => {
         };
         console.log(newData);
 
-        editUser(newData);
+        setUserData(newData);
 
         // api.users.default.update(id, newData).finally(handleShowUser());
     };
@@ -218,8 +218,9 @@ const EditForm = () => {
                                     label="Электронная почта"
                                     name="email"
                                     value={data.email}
-                                    onChange={handleChange}
-                                    error={errors.email}
+                                    onChange={() => data.email}
+                                    // onChange={handleChange}
+                                    // error={errors.email}
                                 />
                                 <SelectField
                                     label="Профессию:"

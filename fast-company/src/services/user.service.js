@@ -21,10 +21,10 @@ const userService = {
         );
         return data;
     },
-    setCurrentUser: async (payload) => {
-        const { data } = await httpService.post(
-            userEndpoint + payload._id,
-            payload
+    setCurrentUser: async (userData) => {
+        const { data } = await httpService.patch(
+            userEndpoint + userData._id,
+            userData
         );
         return data;
     }
