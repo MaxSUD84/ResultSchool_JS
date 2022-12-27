@@ -1,12 +1,17 @@
 import { createStore } from "redux";
-import { taskReducer } from "./taskReducer";
+import taskReducer from "./task";
 
-const initialState = [
-  { id: 1, title: "Task 1", completed: false },
-  { id: 2, title: "Task 2", completed: false },
-  { id: 3, title: "Task 3", completed: false },
-];
+// const initialState = [
+//     { id: 1, title: "Task 1", completed: false },
+//     { id: 2, title: "Task 2", completed: false },
+//     { id: 3, title: "Task 3", completed: false },
+// ];
 
-export function initiateStore() {
-  return createStore(taskReducer, initialState);
+// export function initiateStore() {
+//     return createStore(taskReducer, initialState);
+// }
+function configureStore() {
+    return createStore(taskReducer);
 }
+
+export default configureStore;
