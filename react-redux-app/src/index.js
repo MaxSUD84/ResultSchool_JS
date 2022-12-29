@@ -8,7 +8,9 @@ import { completeTask } from "./store/task";
 const store = configureStore();
 
 const App = (params) => {
-    const state = useSelector((state) => state);
+    const state = useSelector((state) => state.entities);
+    const isLoading = useSelector((state) => state.isLoading);
+    const error = useSelector((state) => state.error);
     //const [state, setState] = useState(store.getState());
     const dispatch = useDispatch();
 
@@ -37,6 +39,17 @@ const App = (params) => {
         dispatch(taskDeleted(taskId));
         // store.dispatch(taskDeleted(taskId));
     };
+
+    if (isLoading) {
+        return <h1>Loading</h1>;
+    }
+    if (error) {
+        return (
+            <h3>
+                Error: <p>{error}</p>
+            </h3>
+        );
+    }
 
     return (
         <>
