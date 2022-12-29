@@ -1,5 +1,8 @@
-import { createStore } from "redux";
+// import { applyMiddleware, compose, createStore } from "redux";
 import taskReducer from "./task";
+import { logger } from "./middleware/logger";
+// import { thunk } from "./middleware/thunk";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 
 // const initialState = [
 //     { id: 1, title: "Task 1", completed: false },
@@ -10,8 +13,23 @@ import taskReducer from "./task";
 // export function initiateStore() {
 //     return createStore(taskReducer, initialState);
 // }
-function configureStore() {
-    return createStore(taskReducer);
+
+// const middwareEnhancer = applyMiddleware(logger, thunk);
+
+// function configureStore() {
+//     return createStore(
+//         taskReducer,
+//         compose(middwareEnhancer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+//     );
+// }
+
+function createStore() {
+    return configureStore({
+        reducer: taskReducer,
+        middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+        devTools: process.env.NODE_ENV !== "production",
+    });
 }
 
-export default configureStore;
+// export default configureStore;
+export default createStore;
