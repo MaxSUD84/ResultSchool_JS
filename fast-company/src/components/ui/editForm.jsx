@@ -1,13 +1,12 @@
 /* eslint-disable multiline-ternary */
 import React, { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
 // import api from "../../api";
 import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
-import CheckBoxField from "../common/form/checkBoxField";
 
 import { customStyles, getColourOptions } from "../ui/styles/data";
 import { useProfessions } from "../../hooks/useProfessions";
@@ -32,11 +31,7 @@ const EditForm = () => {
     const [data, setData] = useState(false);
     const [errors, setErrors] = useState({ email: "", name: "" }); // { email: "", password: "" }
     const { currentUser, setUserData } = useAuth();
-    const {
-        isLoading: isProfLoading,
-        professions,
-        getProfession
-    } = useProfessions();
+    const { isLoading: isProfLoading, professions } = useProfessions();
     const { isLoading: isQualLoading, qualities, getQuality } = useQualities();
 
     const handleChange = (target) => {
@@ -161,10 +156,10 @@ const EditForm = () => {
             // profession: getProfession(profession),
             qualities: qualities.map((qual) => qual._id)
         };
-        console.log(newData);
+        // console.log(newData);
 
         setUserData(newData);
-
+        history.replace(".");
         // api.users.default.update(id, newData).finally(handleShowUser());
     };
 
