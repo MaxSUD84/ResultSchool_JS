@@ -10,8 +10,10 @@ import MultiSelectField from "../common/form/multiSelectField";
 
 import { customStyles, getColourOptions } from "../ui/styles/data";
 import { useProfessions } from "../../hooks/useProfessions";
-import { useQualities } from "../../hooks/useQualities";
+// import { useQualities } from "../../hooks/useQualities";
 import { useAuth } from "../../hooks/useAuth";
+import { useSelector } from "react-redux";
+import { getQualities, getQualitiesLoadingStatus } from "../../store/qualities";
 
 const convertProfession = (professionData) => ({
     label: professionData.name,
@@ -24,6 +26,10 @@ const convertQuality = (qualityData) => ({
     color: qualityData.color
 });
 
+function getQuality(qualities, id) {
+    return qualities.find((p) => p._id === id);
+}
+
 const EditForm = () => {
     // const params = useParams();
     const history = useHistory();
@@ -32,7 +38,11 @@ const EditForm = () => {
     const [errors, setErrors] = useState({ email: "", name: "" }); // { email: "", password: "" }
     const { currentUser, setUserData } = useAuth();
     const { isLoading: isProfLoading, professions } = useProfessions();
-    const { isLoading: isQualLoading, qualities, getQuality } = useQualities();
+
+    // const { isLoading: isQualLoading, qualities, getQuality } = useQualities();
+
+    const qualities = useSelector(getQualities());
+    const isQualLoading = useSelector(getQualitiesLoadingStatus());
 
     const handleChange = (target) => {
         setData((prevState) => {
@@ -50,7 +60,7 @@ const EditForm = () => {
     useEffect(() => {
         if (currentUser && !isQualLoading) {
             const qual = currentUser.qualities.map((qual) =>
-                convertQuality(getQuality(qual))
+                convertQuality(getQuality(qualities, qual))
             );
 
             setData({
@@ -58,7 +68,7 @@ const EditForm = () => {
                 qualities: getColourOptions(qual)
             });
         }
-    }, [currentUser, isQualLoading, getQuality]);
+    }, [currentUser, isQualLoading]);
 
     const validatorConfig = {
         name: {

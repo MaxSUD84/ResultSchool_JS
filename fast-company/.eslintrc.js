@@ -7,23 +7,17 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:react/jsx-runtime",
-        // "plugin:prettier/recommended"
         "prettier"
     ],
-    // extends: ["plugin:react/recommended", "standard"],
     overrides: [],
-    // extends: ["airbnb-base", "plugin:prettier/recommended"],
     parserOptions: {
         ecmaFeatures: {
             jsx: true
         },
-        ecmaVersion: "latest",
+        ecmaVersion: 11,
         sourceType: "module"
     },
-    plugins: [
-        "react"
-        // "prettier"
-    ],
+    plugins: ["react", "prettier"],
     rules: {
         indent: [
             "warn",

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
 
@@ -6,7 +7,10 @@ import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
-import { useQualities } from "../../hooks/useQualities";
+
+// import { useQualities } from "../../hooks/useQualities";
+import { getQualities } from "../../store/qualities";
+
 import { useProfessions } from "../../hooks/useProfessions";
 import { useAuth } from "../../hooks/useAuth";
 import { useHistory } from "react-router-dom";
@@ -30,7 +34,10 @@ const RegisterForm = () => {
         label: p.name,
         value: p._id
     }));
-    const { qualities } = useQualities();
+
+    // const { qualities } = useQualities();
+    const qualities = useSelector(getQualities());
+
     const qualitiesList = qualities.map((q) => ({
         label: q.name,
         value: q._id
