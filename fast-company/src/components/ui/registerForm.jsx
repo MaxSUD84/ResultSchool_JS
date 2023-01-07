@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import TextField from "../common/form/textField";
-import { validator } from "../../utils/validator";
+import { useDispatch, useSelector } from "react-redux";
+// import { useHistory } from "react-router-dom";
 
+import { validator } from "../../utils/validator";
+import TextField from "../common/form/textField";
 import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
 
+// import { useAuth } from "../../hooks/useAuth";
 // import { useQualities } from "../../hooks/useQualities";
+// import { useProfessions } from "../../hooks/useProfessions";
 import { getQualities } from "../../store/qualities";
-
-import { useProfessions } from "../../hooks/useProfessions";
-import { useAuth } from "../../hooks/useAuth";
-import { useHistory } from "react-router-dom";
+import { getProfessions } from "../../store/professions";
+import { signUp } from "../../store/users";
 
 const RegisterForm = () => {
-    const history = useHistory();
+    // const history = useHistory();
+    const dispatch = useDispatch();
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -27,9 +29,11 @@ const RegisterForm = () => {
         licence: false
     });
 
-    const { signUp } = useAuth();
+    // const { signUp } = useAuth();
     const [errors, setErrors] = useState({ email: "", password: "" });
-    const { professions } = useProfessions();
+
+    // const { professions } = useProfessions();
+    const professions = useSelector(getProfessions());
     const professionsList = professions.map((p) => ({
         label: p.name,
         value: p._id
@@ -110,7 +114,7 @@ const RegisterForm = () => {
         validate();
     }, [data]);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         // validate(); // Валидация данных в момент отправки сообщения
         const isValid = validate();
@@ -120,14 +124,9 @@ const RegisterForm = () => {
             ...data,
             qualities: data.qualities.map((q) => q.value)
         };
-        // console.log(newData);
-        try {
-            await signUp(newData);
-            history.push("/");
-        } catch (error) {
-            console.log(error);
-            setErrors(error);
-        }
+
+        dispatch(signUp(newData));
+        // history.push("/");
     };
 
     return (

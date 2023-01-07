@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Comment from "./comment";
 import NewCommentForm from "./newCommentForm";
-import { useComments } from "../../../hooks/useComments";
+// import { useComments } from "../../../hooks/useComments";
 import { useParams } from "react-router-dom";
 import { orderBy } from "lodash";
+import { nanoid } from "nanoid";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    createComment,
+    deleteComment,
+    getComments,
+    getCommentsLoadingStatus,
+    loadCommentsList
+} from "../../../store/comments";
+import { getCurrentUserId } from "../../../store/users";
 
 const createAt = (ms) => {
     const nowTime = new Date(); // Date.now();
@@ -33,15 +43,34 @@ const createAt = (ms) => {
 };
 
 const CommentsList = () => {
-    const { createComment, removeComment, comments } = useComments();
+    const { id: userId } = useParams();
+    const dispatch = useDispatch();
+    // console.log(userId);
+    useEffect(() => {
+        dispatch(loadCommentsList(userId));
+    }, []);
+
+    const isLoading = useSelector(getCommentsLoadingStatus());
+    const comments = useSelector(getComments());
+    const currentUserId = useSelector(getCurrentUserId());
+    // const { createComment, removeComment } = useComments();
 
     const handleSubmit = (data) => {
-        createComment(data);
+        // createComment(data);
+        const comment = {
+            ...data,
+            _id: nanoid(),
+            pageId: userId,
+            userId: currentUserId,
+            created_at: Date.now()
+        };
+        dispatch(createComment(comment));
     };
 
     const handleRemoveComment = (id) => {
         // console.log(id);
-        removeComment(id);
+        // removeComment(id);
+        dispatch(deleteComment(id));
     };
 
     const sortedComments = (comments) =>
@@ -62,21 +91,23 @@ const CommentsList = () => {
                     <div className="card-body ">
                         <h2>Comments</h2>
                         <hr />
-                        {sortedComments(comments).map((cm) => (
-                            <Comment
-                                key={cm._id}
-                                _id={cm._id}
-                                // userName={
-                                //     usersList.filter(
-                                //         (c) => c._id === cm.userId
-                                //     )[0].name
-                                // }
-                                userId={cm.userId}
-                                content={cm.content}
-                                createAt={createAt(cm.created_at)}
-                                onDelete={handleRemoveComment}
-                            />
-                        ))}
+                        {!isLoading
+                            ? sortedComments(comments).map((cm) => (
+                                  <Comment
+                                      key={cm._id}
+                                      _id={cm._id}
+                                      // userName={
+                                      //     usersList.filter(
+                                      //         (c) => c._id === cm.userId
+                                      //     )[0].name
+                                      // }
+                                      userId={cm.userId}
+                                      content={cm.content}
+                                      createAt={createAt(cm.created_at)}
+                                      onDelete={handleRemoveComment}
+                                  />
+                              ))
+                            : "Loading ..."}
                     </div>
                 </div>
             )}
@@ -87,7 +118,7 @@ const CommentsList = () => {
 CommentsList.propTypes = {
     comments: PropTypes.arrayOf(PropTypes.object),
     usersList: PropTypes.arrayOf(PropTypes.object),
-    userCurId: PropTypes.string.isRequired,
+    userCurId: PropTypes.string,
     onAddComment: PropTypes.func,
     onDeleteComment: PropTypes.func
 };

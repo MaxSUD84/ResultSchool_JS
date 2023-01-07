@@ -9,11 +9,21 @@ import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
 
 import { customStyles, getColourOptions } from "../ui/styles/data";
-import { useProfessions } from "../../hooks/useProfessions";
+// import { useProfessions } from "../../hooks/useProfessions";
 // import { useQualities } from "../../hooks/useQualities";
 import { useAuth } from "../../hooks/useAuth";
-import { useSelector } from "react-redux";
-import { getQualities, getQualitiesLoadingStatus } from "../../store/qualities";
+
+import {
+    getQualities,
+    getQualitiesLoadingStatus
+    // getQualitiesByIds
+} from "../../store/qualities";
+import {
+    getProfessions,
+    getProfessionsLoadingStatus
+} from "../../store/professions";
+import { useDispatch, useSelector } from "react-redux";
+import { getCurrentUserData, updateUser } from "../../store/users";
 
 const convertProfession = (professionData) => ({
     label: professionData.name,
@@ -36,13 +46,20 @@ const EditForm = () => {
 
     const [data, setData] = useState(false);
     const [errors, setErrors] = useState({ email: "", name: "" }); // { email: "", password: "" }
-    const { currentUser, setUserData } = useAuth();
-    const { isLoading: isProfLoading, professions } = useProfessions();
 
+    const dispatch = useDispatch();
+    const currentUser = useSelector(getCurrentUserData());
+
+    // const { setUserData } = useAuth();
+    // const { isLoading: isProfLoading, professions } = useProfessions();
     // const { isLoading: isQualLoading, qualities, getQuality } = useQualities();
+
+    const professions = useSelector(getProfessions());
+    const isProfLoading = useSelector(getProfessionsLoadingStatus());
 
     const qualities = useSelector(getQualities());
     const isQualLoading = useSelector(getQualitiesLoadingStatus());
+    // const getQualitiesList = useSelector(getQualitiesByIds());
 
     const handleChange = (target) => {
         setData((prevState) => {
@@ -128,49 +145,22 @@ const EditForm = () => {
         validate();
     }, [data]);
 
-    // const getProfessionById = (id) => {
-    //     for (const prof of professions) {
-    //         if (prof.value === id) {
-    //             return { _id: prof.value, name: prof.label };
-    //         }
-    //     }
-    // };
-
-    // const getQualities = (elements) => {
-    //     const qualitiesArray = [];
-    //     for (const elem of elements) {
-    //         for (const quality in qualities) {
-    //             // if (elem.value === qualities[quality].value) {
-    //             if (elem._id === qualities[quality].value) {
-    //                 qualitiesArray.push({
-    //                     _id: qualities[quality].value,
-    //                     name: qualities[quality].label,
-    //                     color: qualities[quality].color
-    //                 });
-    //             }
-    //         }
-    //     }
-    //     return qualitiesArray;
-    // };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         // validate(); // Валидация данных в момент отправки сообщения
         const isValid = validate();
         if (!isValid) return;
-        // console.log(data);
         const { qualities } = data;
 
         const newData = {
             ...data,
-            // profession: getProfession(profession),
             qualities: qualities.map((qual) => qual._id)
         };
         // console.log(newData);
 
-        setUserData(newData);
-        history.replace(".");
-        // api.users.default.update(id, newData).finally(handleShowUser());
+        // setUserData(newData);
+        dispatch(updateUser(newData));
+        // history.replace(".");
     };
 
     const handlerReturn = () => {

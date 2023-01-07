@@ -1,25 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useHistory } from "react-router-dom";
-import { useProfessions } from "../../../hooks/useProfessions";
-import { useAuth } from "../../../hooks/useAuth";
+// import { useProfessions } from "../../../hooks/useProfessions";
+import { getProfessionsById } from "../../../store/professions";
+import { useSelector } from "react-redux";
+import history from "../../../utils/history";
+
+// import { useAuth } from "../../../hooks/useAuth";
+import { getCurrentUserId } from "../../../store/users";
 
 const UserInfoCard = ({ name, profession: professionId, rate, image, _id }) => {
-    const { currentUser } = useAuth();
-    const history = useHistory();
+    const currentUserId = useSelector(getCurrentUserId());
+
     const handleEditUser = () => {
-        history.push(`/users/${currentUser._id}/edit`);
+        history.push(`/users/${currentUserId}/edit`);
     };
 
-    const { getProfession } = useProfessions();
-    const profession = getProfession(professionId);
+    // const { getProfession } = useProfessions();
+    // const profession = getProfession(professionId);
 
-    // console.log(name, professionId, rate, image);
+    const profession = useSelector(getProfessionsById(professionId));
 
     return (
         <div className="card mb-3">
             <div className="card-body">
-                {currentUser._id === _id && (
+                {currentUserId === _id && (
                     <button className="position-absolute top-0 end-0 btn btn-light btn-sm">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

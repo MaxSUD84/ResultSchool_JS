@@ -21,7 +21,7 @@ const userService = {
         );
         return data;
     },
-    setCurrentUser: async (userData) => {
+    updateUser: async (userData) => {
         const { data } = await httpService.patch(
             userEndpoint + userData._id,
             userData

@@ -1,38 +1,41 @@
-// import React, { Component } from 'react'
+import React from "react";
 import { useParams, Redirect } from "react-router-dom";
-import { UserProvider } from "../hooks/useUsers";
+import UsersListPage from "../components/page/usersListPage";
 import UserPage from "../components/page/userPage";
 import EditForm from "../components/ui/editForm";
-import UsersListPage from "../components/page/usersListPage";
-import { QualityProvider } from "../hooks/useQualities";
-import { useAuth } from "../hooks/useAuth";
+// import { UserProvider } from "../hooks/useUsers";
+// import { QualityProvider } from "../hooks/useQualities";
+// import { useAuth } from "../hooks/useAuth";
+import { useSelector } from "react-redux";
+import { getCurrentUserId } from "../store/users";
+import UsersLoader from "../components/ui/hoc/usersLoader";
 
 const Users = () => {
     const params = useParams();
     const { id, edit } = params;
-    const { currentUser } = useAuth();
+    const currentUserId = useSelector(getCurrentUserId());
 
     return (
         <>
-            <UserProvider>
-                <QualityProvider>
-                    {id ? (
-                        edit ? (
-                            id === currentUser._id ? (
-                                <EditForm />
-                            ) : (
-                                <Redirect
-                                    to={`/users/${currentUser._id}/edit`}
-                                />
-                            )
+            <UsersLoader>
+                {/* <UserProvider> */}
+                {/* <QualityProvider> */}
+                {id ? (
+                    edit ? (
+                        id === currentUserId ? (
+                            <EditForm />
                         ) : (
-                            <UserPage userId={id} />
+                            <Redirect to={`/users/${currentUserId}/edit`} />
                         )
                     ) : (
-                        <UsersListPage />
-                    )}
-                </QualityProvider>
-            </UserProvider>
+                        <UserPage userId={id} />
+                    )
+                ) : (
+                    <UsersListPage />
+                )}
+                {/* </QualityProvider> */}
+                {/* </UserProvider> */}
+            </UsersLoader>
         </>
     );
 };

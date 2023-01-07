@@ -3,23 +3,45 @@ import GroupList from "../../common/groupList";
 import { paginate } from "../../../utils/paginate";
 import Pagination from "../../common/pagination";
 import SearchStatus from "../../ui/searchStatus";
-// import api from "../../../api";
 import PropTypes from "prop-types";
 import UserTable from "../../ui/usersTable";
-import { useUser } from "../../../hooks/useUsers";
-import { useProfessions } from "../../../hooks/useProfessions";
-import { useQualities } from "../../../hooks/useQualities";
-import { useAuth } from "../../../hooks/useAuth";
+// import { useUser } from "../../../hooks/useUsers";
+// import { useProfessions } from "../../../hooks/useProfessions";
+// import { useQualities } from "../../../hooks/useQualities";
+// import {
+//     getQualities,
+//     getQualitiesLoadingStatus
+//     // getQualitiesByIds
+// } from "../../../store/qualities";
+// import { useAuth } from "../../../hooks/useAuth";
+
+import {
+    getProfessions,
+    getProfessionsLoadingStatus
+} from "../../../store/professions";
+import { getCurrentUserId, getUsers } from "../../../store/users";
+
+import { useSelector } from "react-redux";
 
 const UsersListPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
     const [searchField, setSearchField] = useState("");
-    const { qualities } = useQualities();
-    const { isLoading: professionsLoading, professions } = useProfessions();
-    const { users } = useUser();
-    const { currentUser } = useAuth();
+    // const { users } = useUser();
+    // const { currentUser } = useAuth();
+    // const { qualities } = useQualities();
+    // const { isLoading: professionsLoading, professions } = useProfessions();
+
+    const currentUserId = useSelector(getCurrentUserId());
+    const users = useSelector(getUsers());
+
+    const professions = useSelector(getProfessions());
+    const professionsLoading = useSelector(getProfessionsLoadingStatus());
+
+    // const qualities = useSelector(getQualities());
+    // const isQualLoading = useSelector(getQualitiesLoadingStatus());
+
     const pageSize = 6;
 
     const handleToggleBookMark = (id) => {
@@ -68,12 +90,11 @@ const UsersListPage = () => {
                       JSON.stringify(selectedProf._id)
               )
             : data;
-        return searchMatches.filter((u) => u._id !== currentUser._id);
+        return searchMatches.filter((u) => u._id !== currentUserId);
     }
 
-    const filteredUsers = filterUsers(users);
-
     if (users) {
+        const filteredUsers = filterUsers(users);
         const sortedUsers = _.orderBy(
             filteredUsers,
             [sortBy.path],

@@ -3,8 +3,9 @@ import { func } from "prop-types";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import configFile from "../config.json";
-import { httpAuth } from "../hooks/useAuth";
+import authService from "./auth.service";
 import localStorageService from "./localStorage.service";
+// import { httpAuth } from "../hooks/useAuth";
 
 // использовать только для обращения к статическому адресу BackEnd Server'а
 // axios.defaults.baseURL = configFile.apiEndpoint;
@@ -23,11 +24,13 @@ http.interceptors.request.use(
             const expairesDate = localStorageService.getTokenExpiresDate();
             const refreshToken = localStorageService.getRefreshToken();
             if (refreshToken && expairesDate > Date.now()) {
-                const url = `https://identitytoolkit.googleapis.com/v1/token?key=${process.env.REACT_APP_FIREBASE_KEY}`;
-                const { data } = await httpAuth.post(url, {
-                    grant_type: "refresh_token",
-                    refresh_token: refreshToken
-                });
+                // const url = `https://identitytoolkit.googleapis.com/v1/token?key=${process.env.REACT_APP_FIREBASE_KEY}`;
+                // const { data } = await httpAuth.post(url, {
+                //     grant_type: "refresh_token",
+                //     refresh_token: refreshToken
+                // });
+                const data = await authService.refresh();
+
                 // console.log(data);
                 localStorageService.setTokens({
                     refreshToken: data.refresh_token,

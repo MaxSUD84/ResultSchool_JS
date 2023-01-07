@@ -2,18 +2,23 @@ import React, { useState, useEffect } from "react";
 import TextField from "../common/form/textField";
 import { validator } from "../../utils/validator";
 import CheckBoxField from "../common/form/checkBoxField";
-import { useHistory } from "react-router-dom";
-import { useAuth } from "../../hooks/useAuth";
+
+// import { useAuth } from "../../hooks/useAuth";
+import history from "../../utils/history";
+import { getAuthErrors, login } from "../../store/users";
+import { useDispatch, useSelector } from "react-redux";
 // import * as yup from "yup";  // Библиотека валидация (npm install -s yup)
 
 const LoginForm = () => {
-    const history = useHistory();
     const [data, setData] = useState({
         email: "",
         password: "",
         stayOn: false
     });
-    const { signIn } = useAuth();
+    // const { signIn } = useAuth();
+    const dispatch = useDispatch();
+
+    const loginError = useSelector(getAuthErrors());
     const [errors, setErrors] = useState({ email: "", password: "" });
     // errors
     const handleChange = (target) => {
@@ -22,31 +27,6 @@ const LoginForm = () => {
             [target.name]: target.value
         }));
     };
-
-    /*** Валидация с помощью Yup ***
-    let validateScheme = yup.object().shape({
-        password: yup
-            .string()
-            .required("Пароль обязателен для заполнения")
-            .matches(
-                /(?=.*[A-Z])/,
-                "Пароль должен содержать хотябы одну заглавную букву"
-            )
-            .matches(/(?=.*[0-9])/, "Пароль должен содержать хотябы одну цифру")
-            .matches(
-                /(?=.*[!@#$%^&*])/,
-                "Пароль должен содержать хотябы один из специальных символ:!@#$%^&*"
-            )
-            .matches(
-                /(?=.{8,})/,
-                "Пароль должен состоять минимум из 8 символов"
-            ),
-        email: yup
-            .string()
-            .required("Электронная почта обязательна для заполнения")
-            .email("email введен не корректно")
-    });
-    // *** Yup ***  */
 
     const validatorConfig = {
         email: {
@@ -75,12 +55,6 @@ const LoginForm = () => {
     };
 
     const validate = () => {
-        // *** Валидация с помощью Yup ***
-        // validateScheme
-        //     .validate(data)
-        //     .then(() => setErrors({}))
-        //     .catch((err) => setErrors({ [err.path]: err.message }));
-        // *** Yup ***
         const terrors = validator(data, validatorConfig);
         setErrors(terrors);
         return Object.keys(errors).length === 0;
@@ -92,25 +66,17 @@ const LoginForm = () => {
         validate();
     }, [data]);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         // validate(); // Валидация данных в момент отправки сообщения
         const isValid = validate();
         if (!isValid) return;
-        console.log(data);
+        // console.log(data);
+        const redirect = history.location.state
+            ? history.location.state.from.pathname
+            : "/";
 
-        try {
-            await signIn(data);
-            // console.log(history.location.state);
-            history.push(
-                history.location.state
-                    ? history.location.state.from.pathname
-                    : "/"
-            );
-        } catch (error) {
-            // console.log(error);
-            setErrors(error);
-        }
+        dispatch(login({ payload: data, redirect: redirect }));
     };
 
     return (
@@ -137,6 +103,7 @@ const LoginForm = () => {
             >
                 Оставаться в системе
             </CheckBoxField>
+            {loginError && <p className="text-danger">{loginError}</p>}
             <button
                 type="submit"
                 disabled={!isValid}

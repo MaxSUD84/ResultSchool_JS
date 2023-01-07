@@ -1,13 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useUser } from "../../../hooks/useUsers";
-import { useAuth } from "../../../hooks/useAuth";
+// import { useAuth } from "../../../hooks/useAuth";
+// import { useUser } from "../../../hooks/useUsers";
+
+import { getCurrentUserId, getUserbyId } from "../../../store/users";
+import { useSelector } from "react-redux";
 
 const Comment = ({ _id, userId, content, createAt, onDelete }) => {
     // console.log(first)
-    const { currentUser } = useAuth();
-    const { getUserById } = useUser();
-    const user = getUserById(userId);
+    // const { currentUser } = useAuth();
+
+    const currentUserId = useSelector(getCurrentUserId());
+    const user = useSelector(getUserbyId(userId));
 
     return (
         <div className="bg-light card-body  mb-3">
@@ -31,7 +35,7 @@ const Comment = ({ _id, userId, content, createAt, onDelete }) => {
                                             {createAt}
                                         </span>
                                     </p>
-                                    {currentUser._id === userId && (
+                                    {currentUserId === userId && (
                                         <button className="btn btn-sm text-primary d-flex align-items-center">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"

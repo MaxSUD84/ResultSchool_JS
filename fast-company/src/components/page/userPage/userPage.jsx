@@ -5,47 +5,31 @@ import UserInfoCard from "../../ui/cards/userInfoCard";
 import QualitiesCard from "../../ui/cards/qualitiesCard";
 import MeetingsCard from "../../ui/cards/meetingsCard";
 import CommentsList from "../../ui/comments/commentsList";
-import { useUser } from "../../../hooks/useUsers";
-import { CommentsProvider, useComments } from "../../../hooks/useComments";
+// import { CommentsProvider, useComments } from "../../../hooks/useComments";
+// import { useUser } from "../../../hooks/useUsers";
+
+import { useSelector } from "react-redux";
+import {
+    getUserbyId,
+    getUsersLoadingStatus,
+    getUsers
+} from "../../../store/users";
 
 const UserPage = ({ userId: id }) => {
-    const { comments } = useComments;
-    const { users, getUserById } = useUser();
-    const user = getUserById(id);
-    const usersList = users;
+    // const { users, getUserById } = useUser();
+    // const user = getUserById(id);
+    // const usersList = users;
 
-    const history = useHistory();
+    const user = useSelector(getUserbyId(id));
+    const usersList = useSelector(getUsers());
+    const usersLoading = useSelector(getUsersLoadingStatus());
 
-    // const handleShowAllUsers = () => {
-    //     history.replace("/users");
-    // };
-
-    // const UpdateCommentList = () =>
-    //     api.comments
-    //         .fetchCommentsForUser(id)
-    //         .then((data) => setComments(sortComment(data)));
-
-    // const handleAddComment = ({ userId, pageId, content }) => {
-    //     api.comments.add({ userId, pageId, content });
-    //     UpdateCommentList();
-    //     // console.log(userId, pageId, content);
-    // };
-
-    // const handleDeleteComment = (CommentId) => {
-    //     api.comments.remove(CommentId);
-    //     UpdateCommentList();
-    //     // console.log(CommentId);
-    // };
-
-    // const handleEditUser = () => {
-    //     history.replace(`/users/${id}/edit`);
-    // };
-
-    // console.log("choosen user: ", user);
+    // const history = useHistory();
 
     return (
         <>
-            {user && usersList ? (
+            {/* {user && usersList ? ( */}
+            {!usersLoading ? (
                 <div className="container">
                     <div className="row gutters-sm">
                         <div className="col-md-4 mb-3">
@@ -55,19 +39,9 @@ const UserPage = ({ userId: id }) => {
                                 completedMeetings={user.completedMeetings}
                             />
                         </div>
-                        <CommentsProvider>
-                            <div className="col-md-8">
-                                <CommentsList
-                                    userCurId={id}
-                                    comments={comments}
-                                    usersList={usersList}
-                                    // onAddComment={handleAddComment}
-                                    onDeleteComment={(id) =>
-                                        handleDeleteComment(id)
-                                    }
-                                />
-                            </div>
-                        </CommentsProvider>
+                        <div className="col-md-8">
+                            <CommentsList />
+                        </div>
                     </div>
                 </div>
             ) : (
