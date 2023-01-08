@@ -27,7 +27,6 @@ export const TeacherProvider = ({ children }) => {
   async function getTeachers() {
     try {
       const content = await teachersService.get();
-      console.log(content);
       setTeachers(content);
       setLoading(false);
     } catch (error) {

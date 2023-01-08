@@ -1,6 +1,7 @@
 // import React from "react";
 import _ from "lodash";
 import PropTypes from "prop-types";
+import styles from "../../styles/styles";
 
 const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pageCount = Math.ceil(itemsCount / pageSize);
@@ -9,15 +10,18 @@ const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   //   console.log(pages);
 
   return (
-    <div className="flex flex-center">
+    <div className={`${styles.flexCenter} pt-4`}>
       <nav>
-        <ul className="p-4">
+        <ul className="flex flex-row">
           {pages.map((page) => (
             <li
-              className={"border-1 " + (currentPage === page ? "active" : "")}
+              className={"ring-2" + (currentPage === page ? "" : "")}
               key={"page_" + page}
             >
-              <button className="page-link" onClick={() => onPageChange(page)}>
+              <button
+                className={`${styles.btnPrmLight}`}
+                onClick={() => onPageChange(page)}
+              >
                 {page}
               </button>
             </li>

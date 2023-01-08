@@ -1,6 +1,6 @@
 {
+    "host": "localhost",
     "port": 4000,
-    "watch": "./db/db_01122022.json",
-    "delay": 200
-
+    "watch": true,
+    "delay": 500
 }

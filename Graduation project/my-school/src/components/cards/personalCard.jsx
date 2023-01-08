@@ -58,7 +58,7 @@ PersonalCard.propTypes = {
   full_name: PropTypes.string,
   experience_education: PropTypes.string,
   subject: PropTypes.string,
-  education_rating: PropTypes.string,
+  education_rating: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   uuid_mentor: PropTypes.string
 };
 

@@ -7,18 +7,13 @@ import configFile from "../config.json";
 
 const httpClient = axios.create({
   baseURL: configFile.apiEndpoint,
-  timeout: 2000,
+  timeout: 3000,
   headers: { "Content-Type": "application/json" }
 });
 
 httpClient.interceptors.request.use(
   function (config) {
-    if (configFile.isFireBase) {
-      const containSlash = /\/$/gi.test(config.url);
-      config.url =
-        (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
-      // console.log(config.url);
-    }
+    // console.log(config);
     return config;
   },
   function (error) {
@@ -26,17 +21,12 @@ httpClient.interceptors.request.use(
   }
 );
 
-function transformData(data) {
-  return data ? Object.keys(data).map((key) => ({ ...data[key] })) : [];
-}
+// function transformData(data) {
+//   return data ? Object.keys(data).map((key) => ({ ...data[key] })) : [];
+// }
 
 httpClient.interceptors.response.use(
   (res) => {
-    // перехватчик контента ОТВЕТА (для FireBase)
-    if (configFile.isFireBase) {
-      res.data = { content: transformData(res.data) };
-      // console.log(res.data);
-    }
     return res;
   },
   function (error) {

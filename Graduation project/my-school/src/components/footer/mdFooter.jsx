@@ -9,7 +9,6 @@ import { Close } from "../../assets/icons";
 import _ from "lodash";
 
 const MediumFooter = (props) => {
-  console.log(close);
   return (
     <div
       className={`${style.flexCenter} mt-6 pb-6 w-full bg-primary-2 shadow-1`}

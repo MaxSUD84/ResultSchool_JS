@@ -341,7 +341,7 @@ module.exports = function () {
             teacher_uuid: tempArr
               .filter((tempData) => tempData.class_uuid === cls.uuid)[0]
               .class_teachers.filter(
-                (teacher) => teacher.subject === sub.name
+                (_teacher) => _teacher.subject === sub.name
               )[0].uuid
           }))
         };
