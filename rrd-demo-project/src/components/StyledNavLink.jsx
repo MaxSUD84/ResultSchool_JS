@@ -18,14 +18,10 @@ const StyledNavLink = ({ children, to, styleType = "default", className }) => {
     return (
         <NavLink
             className={(isActive) =>
-                twMerge(
-                    className || "",
-                    getLinkStyle(styleType),
-                    styleType === "default" && isActive && "text-blue-300"
-                )
+                twMerge(className || "", getLinkStyle(styleType), styleType === "default" && isActive && "text-blue-300")
             }
             to={to}
-            exact
+            // exact
         >
             {children}
         </NavLink>
