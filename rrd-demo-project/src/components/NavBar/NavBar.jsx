@@ -9,25 +9,31 @@ import NavBarLinkList from "./NavBarLinkList";
 import NavBarLogo from "./NavBarLogo";
 
 const NavBar = () => {
-    const isLoggedIn = useSelector(isLoggedInSelector());
-    return (
-        <NavBarWrapper>
-            <NavBarLogo link="/" src="/assets/img/rr-logo.svg" label="React Router v5" />
-            <NavBarLinkList>
-                {isLoggedIn ? (
-                    <>
-                        <StyledNavLink to="/some">Something</StyledNavLink>
-                        <StyledNavLink to="/posts">Posts</StyledNavLink>
-                        <NavBarDropdown />
-                    </>
-                ) : (
-                    <StyledNavLink to="/auth/signup" styleType="button">
-                        SignUp
-                    </StyledNavLink>
-                )}
-            </NavBarLinkList>
-        </NavBarWrapper>
-    );
+  const isLoggedIn = useSelector(isLoggedInSelector());
+  return (
+    <NavBarWrapper>
+      <NavBarLogo
+        link="/"
+        src="/assets/img/rr-logo.svg"
+        label="React Router v5"
+      />
+      <NavBarLinkList>
+        {isLoggedIn ? (
+          <>
+            <StyledNavLink to="/">Something</StyledNavLink>
+            <StyledNavLink to="/posts" end>
+              Posts
+            </StyledNavLink>
+            <NavBarDropdown />
+          </>
+        ) : (
+          <StyledNavLink to="/auth/signup" styleType="button">
+            SignUp
+          </StyledNavLink>
+        )}
+      </NavBarLinkList>
+    </NavBarWrapper>
+  );
 };
 
 export default NavBar;
