@@ -7,9 +7,9 @@ import { ToastContainer } from "react-toastify";
 import { QualitiesProvider } from "./hooks/useQualities";
 
 const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-        return <Route path={prop.path} component={prop.component} key={key} />;
-    });
+  return routes.map((prop, key) => {
+    return <Route path={prop.path} component={prop.component} key={key} />;
+  });
 };
 
 // const QualitiesLoading = ({ children }) => {
@@ -21,24 +21,18 @@ const getRoutes = (routes) => {
 // };
 
 function App() {
-    return (
-        <div className="App">
-            <NavBar routes={routes} />
-
-            <QualitiesProvider>
-                {/* <QualitiesLoading> */}
-                <Container>
-                    <Switch>
-                        {getRoutes(routes)}
-                        <Redirect to="/" />
-                    </Switch>
-                </Container>
-                {/* </QualitiesLoading> */}
-            </QualitiesProvider>
-
-            <ToastContainer />
-        </div>
-    );
+  return (
+    <div className="App">
+      <NavBar routes={routes} />
+      <Container>
+        <Switch>
+          {getRoutes(routes)}
+          <Redirect to="/" />
+        </Switch>
+      </Container>
+      <ToastContainer />
+    </div>
+  );
 }
 
 export default App;
