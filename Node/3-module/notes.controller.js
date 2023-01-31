@@ -1,7 +1,3 @@
-// const fs = require("fs/promises");
-// const path = require("path");
-// const chalk = require("chalk.js");
-
 import chalk from "chalk";
 import fs from "fs/promises";
 import path from "path";
@@ -10,6 +6,7 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+/*************************************************/
 
 const notesPath = path.join(__dirname, "db.json");
 
@@ -32,19 +29,21 @@ async function getNotes() {
     return Array.isArray(JSON.parse(notes)) ? JSON.parse(notes) : [];
 }
 
+async function removeNote(id) {
+    const notes = await getNotes();
+    const _notes = notes.filter((n) => n.id !== `${id}`);
+    // console.log(_notes);
+    await fs.writeFile(notesPath, JSON.stringify(_notes));
+    console.log(chalk.greenBright(`Note ID: ${id} was removed!`));
+}
+
 async function printNotes() {
     const notes = await getNotes();
 
     console.log(chalk.bgBlue("List notes:"));
     notes.forEach((note) => {
-        console.log(chalk.green(note.title));
+        console.log(chalk.cyanBright(note.id), chalk.green(note.title));
     });
 }
 
-// module.exports = {
-//     getNotes,
-//     printNotes,
-//     addNote,
-// };
-
-export { getNotes, printNotes, addNote };
+export { getNotes, printNotes, addNote, removeNote };

@@ -1,15 +1,11 @@
-// const yargs = require("yargs");
-// const pkg = require("./package.json");
-// const { addNote, printNotes } = require("./notes.controller");
-
-import yargs from "yargs";
-import { addNote, printNotes } from "./notes.controller.js";
-
+import _yargs from "yargs";
+import { hideBin } from "yargs/helpers";
+import { addNote, printNotes, removeNote } from "./notes.controller.js";
 import pkg from "./package.json" assert { type: "json" };
 
-// const yargs = _yargs();
+const yargs = _yargs(hideBin(process.argv));
 
-// yargs.version(pkg.version);
+yargs.version(pkg.version);
 
 yargs.command({
     command: "add",
@@ -31,6 +27,21 @@ yargs.command({
     describe: "Print all notes",
     async handler() {
         printNotes();
+    },
+});
+
+yargs.command({
+    command: "remove",
+    describe: "Remove note by index",
+    builder: {
+        id: {
+            type: "number",
+            describe: "Note ID",
+            demandOption: true,
+        },
+    },
+    async handler({ id }) {
+        removeNote(id);
     },
 });
 
