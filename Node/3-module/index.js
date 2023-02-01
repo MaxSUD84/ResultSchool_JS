@@ -1,48 +1,65 @@
-import _yargs from "yargs";
-import { hideBin } from "yargs/helpers";
-import { addNote, printNotes, removeNote } from "./notes.controller.js";
-import pkg from "./package.json" assert { type: "json" };
+import express from "express";
+import chalk from "chalk";
+import { addNote, getNotes, removeNote, editNote } from "./notes.controller.js";
 
-const yargs = _yargs(hideBin(process.argv));
+import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+/*************************************************/
+// const basePath = path.join(__dirname, "pages");
 
-yargs.version(pkg.version);
+const port = 3000;
+const app = express();
 
-yargs.command({
-    command: "add",
-    describe: "Add new note to list",
-    builder: {
-        title: {
-            type: "string",
-            describe: "Note title",
-            demandOption: true,
-        },
-    },
-    handler({ title }) {
-        addNote(title);
-    },
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/pages"));
+
+app.use(express.static(path.resolve(__dirname, "public")));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.get("/", async (req, res) => {
+    res.render("index", {
+        title: "Express App",
+        notes: await getNotes(),
+        created: false,
+    });
+    // res.sendFile(path.join(basePath, "index.html"));
 });
 
-yargs.command({
-    command: "list",
-    describe: "Print all notes",
-    async handler() {
-        printNotes();
-    },
+app.post("/", async (req, res) => {
+    await addNote(req.body.title);
+    res.render("index", {
+        title: "Express App",
+        notes: await getNotes(),
+        created: true,
+    });
+    // res.sendFile(path.join(basePath, "index.html"));
 });
 
-yargs.command({
-    command: "remove",
-    describe: "Remove note by index",
-    builder: {
-        id: {
-            type: "number",
-            describe: "Note ID",
-            demandOption: true,
-        },
-    },
-    async handler({ id }) {
-        removeNote(id);
-    },
+app.delete("/:id", async (req, res) => {
+    await removeNote(req.params.id);
+    console.log(req.params.id);
+    res.render("index", {
+        title: "Express App",
+        notes: await getNotes(),
+        created: false,
+    });
 });
 
-yargs.parse();
+app.put("/:id", async (req, res) => {
+    // console.log(req.params.id, req.body.title);
+
+    await editNote(req.params.id, req.body);
+
+    res.render("index", {
+        title: "Express App",
+        notes: await getNotes(),
+        created: false,
+    });
+});
+
+app.listen(port, () => {
+    console.log(chalk.green(`Server has been started on port ${port} ...`));
+});
