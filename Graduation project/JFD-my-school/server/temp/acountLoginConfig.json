@@ -1,0 +1,143 @@
+[
+    {
+       "className":"5А",
+       "mentor":{
+          "id":"63f73a8eb71d2ee4eda7003c",
+          "fullName":"Романоваa Инна Борисовна",
+          "email":"Romanova_Inna82@yandex.ru",
+          "password":"R0m@n_IInn@_2Va8",
+          "hashed_password":"$2a$12$Rk2waNo0kjZ89xABUeSNq.XC3sbiLVgvb4iyaP5rSAG1al26jD61S"
+       },
+       "learner_list":[
+          {
+             "id":"63f73a8eb71d2ee4eda70088",
+             "fullName":"Мясникова Галина",
+             "email":"myasnikova.galina.3234@gmail.com",
+             "password":"9Антонина92",
+             "hashed_password":"$2a$12$CVXpAOFtTO4bf./h9BRQTucY0FhLpBNYyzYwFkp/mw8Bp77j8NqTq"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda700a8",
+             "fullName":"Уварова Лада",
+             "email":"uvarova.lada_3400@ya.ru",
+             "password":"4Людмила71",
+             "hashed_password":"$2a$12$CszG7haWxdWBH/19pmA5Jumu3S6uDRkKiZydjxILdvWocAUgfAG9K"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda7009d",
+             "fullName":"Самойлова Марта",
+             "email":"samoylova.marta_3973@narod.ru",
+             "password":"3Ева45",
+             "hashed_password":"$2a$12$NUEJFF6RxlpysDZAWFHMxOOaBPOHSbD2rHVKQ78ouX34uoKb6wCyq"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda700b5",
+             "fullName":"Субботин Клим",
+             "email":"subbotin.klim4302@gmail.com",
+             "password":"6Людмила05",
+             "hashed_password":"$2a$12$mffPpqA77L6WUrYoYrKTRuGl6EEuvYrDaeMl9X85UPxm1Qa3JlPUy"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda70096",
+             "fullName":"Кондратьева Тамара",
+             "email":"kondrateva.tamara_3045@gmail.com",
+             "password":"7Клементина54",
+             "hashed_password":"$2a$12$KYsG0BIE6O0Gyteno5A8GOVJqufncTaUFCHxU6tbmor1ajgXysYnS"
+          }
+       ]
+    },
+    {
+       "className":"5К",
+       "mentor":{
+          "id":"63f73a94b71d2ee4eda7040d",
+          "fullName":"Шароваа Инна Борисовна",
+          "email":"sharora.inna.85@mail.ru",
+          "password":"$HaR0v_1nn@_V8",
+          "hashed_password":"$2a$12$J.U6R8idm1W0eNA9fkQPaujYIxjRcnSasJ9totF2dje0/DBdXsNMS"
+       },
+       "learner_list":[
+          {
+             "id":"63f73a8eb71d2ee4eda700b2",
+             "fullName":"Пахомова Юлия",
+             "email":"pahomova.yuliya_3395@list.ru",
+             "password":"9Марина66",
+             "hashed_password":"$2a$12$wofuimCwcA6Ar0mEa5iexOy.TMQJqVOn6fWmCzzSUgbhHlr8rsvRq"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda7005c",
+             "fullName":"Потапов Валериан",
+             "email":"potapov.valerian_3147@inbox.ru",
+             "password":"4Анжелика57",
+             "hashed_password":"$2a$12$A/hIyriJU46t7xQQtzzHDeo3n76OMjN7SlXZ6iCFF0V4x/yLjdcCe"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda70056",
+             "fullName":"Пестова Марина",
+             "email":"pestova.marina_2010@rambler.ru",
+             "password":"9Василиса18",
+             "hashed_password":"$2a$12$UNOssRdfiasF.d4vGJRvxe.0Z1mdPlc0NriDWOm.q26IoqBM1ZLhC"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda70055",
+             "fullName":"Уварова София",
+             "email":"uvarova.sofiya3338@yandex.ru",
+             "password":"2Искра76",
+             "hashed_password":"$2a$12$e/LTtbF7FcgabGarM9oS8uQNFdhLz9jLiEdYpxb3ui/.KJUUAlRR6"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda700af",
+             "fullName":"Орлов Артур",
+             "email":"orlov.artur.4156@mail.ru",
+             "password":"4Елена15",
+             "hashed_password":"$2a$12$xGfFabY2h57bNgf6N5JnuevB5.emkp1bfCIz.fjo8XBgbqMaMplXW"
+          }
+       ]
+    },
+    {
+       "className":"6Б",
+       "mentor":{
+          "id":"63f73a8eb71d2ee4eda70035",
+          "fullName":"Романова Инна Борисовна",
+          "email":"Romanova_Inna82@yandex.ru",
+          "password":"R0m@n_IInn@_2Va8",
+          "hashed_password":"$2a$12$C4Ju0b/oc6rliUXcFC/fxe1c/ry2K4PINrY4OjATEtXWC8n9TkCmG"
+       },
+       "learner_list":[
+          {
+             "id":"63f73a8eb71d2ee4eda70057",
+             "fullName":"Михайлов Прохор",
+             "email":"mihaylov.prohor_3095@bk.ru",
+             "password":"2Жанна11",
+             "hashed_password":"$2a$12$made6iW0WqbQHsOnuZn2XuLsZH7H41SRNZ3XO2dTcDrbwbFEbZlFO"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda7006f",
+             "fullName":"Шарапов Георгий",
+             "email":"sharapov.georgiy2939@mail.ru",
+             "password":"0Эмилия89",
+             "hashed_password":"$2a$12$Tgr1.r0qytyGE7yDXJd40.oEs3f16zi6QEHApncO1RIflfnMRaU5O"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda7008f",
+             "fullName":"Кузнецов Ефим",
+             "email":"kuznecov.efim.4279@narod.ru",
+             "password":"9Надежда36",
+             "hashed_password":"$2a$12$epRpO5sCFt7Trf0DSXSaPexiqX3PtrBsSk56nc22EyM6x3a9quUYq"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda700a0",
+             "fullName":"Шубина Лидия",
+             "email":"shubina.lidiya3893@inbox.ru",
+             "password":"2Раиса26",
+             "hashed_password":"$2a$12$7.1OMfZhNJ6Ii0uiT0.UFeVV8N/kZEMzorFzCv71/aA3/4gTXENBK"
+          },
+          {
+             "id":"63f73a8eb71d2ee4eda70066",
+             "fullName":"Сафонова Лада",
+             "email":"safonova.lada_4227@bk.ru",
+             "password":"3Дина20",
+             "hashed_password":"$2a$12$OuE0AFlx3s9WK9g54UGX6.esIOf0X/ToTFZ//WW3yhqggQFGl1YGS"
+          }
+       ]
+    }
+ ]

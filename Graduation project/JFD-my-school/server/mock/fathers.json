@@ -1,0 +1,902 @@
+[
+  {
+    "uuid": "975e4107-83da-40c9-b979-e28480a252c2",
+    "full_name": "Уваров Август",
+    "phone": "(495) 385-4533",
+    "email": "uvarov.avgust2309@hotmail.com",
+    "password": "2Екатерина60",
+    "address": "683194aa-dfa3-4e92-8246-fe306020f733",
+    "messages": []
+  },
+  {
+    "uuid": "a08598b5-e8ba-4761-b74a-d31cf0f7e259",
+    "full_name": "Пестов Клим",
+    "phone": "(35222) 74-0283",
+    "email": "pestov.klim_2984@yandex.ru",
+    "password": "5Рада43",
+    "address": "d21fc7d0-4531-41bb-bbce-8b0d4238da7b",
+    "messages": []
+  },
+  {
+    "uuid": "bd555858-5881-4640-873e-3d46310b2814",
+    "full_name": "Михайлов Иммануил",
+    "phone": "(35222) 08-9182",
+    "email": "mihaylov.immanuil_4285@list.ru",
+    "password": "1Антонина17",
+    "address": "314f44c7-4eac-4abc-97c0-213e552c34d9",
+    "messages": []
+  },
+  {
+    "uuid": "0ce53256-8e74-41f7-bcb3-e8469618f6df",
+    "full_name": "Стрелков Лаврентий",
+    "phone": "8-800-283-4517",
+    "email": "strelkov.lavrentiy.4008@bk.ru",
+    "password": "3Флорентина52",
+    "address": "b6f996ce-efe3-407b-8360-ef87f9f95102",
+    "messages": []
+  },
+  {
+    "uuid": "d9c5f4e5-888b-4e91-a845-7b21d2890a56",
+    "full_name": "Фомин Витольд",
+    "phone": "+7 (922) 316-0473",
+    "email": "fomin.vitold.2166@yandex.ru",
+    "password": "6Евгения46",
+    "address": "d65869b2-e65d-4f97-8940-b14c45685144",
+    "messages": []
+  },
+  {
+    "uuid": "ffcc25cf-a034-40a6-ae63-c88b914ba4cb",
+    "full_name": "Владимиров Адриан",
+    "phone": "(35222) 37-1572",
+    "email": "vladimirov.adrian.4560@yandex.ru",
+    "password": "0Нелли51",
+    "address": "0e433e48-e7cd-4236-aba2-8848d61cd259",
+    "messages": []
+  },
+  {
+    "uuid": "7f3c2f87-c275-42c5-994b-9e339779ce76",
+    "full_name": "Ефремов Степан",
+    "phone": "(35222) 74-2857",
+    "email": "efremov.stepan.1972@list.ru",
+    "password": "4Нонна02",
+    "address": "1345e98d-ebb3-4e88-a9be-fba59dbf3fda",
+    "messages": []
+  },
+  {
+    "uuid": "1ec2b4bb-a91f-40e4-aea6-1531ff620b3c",
+    "full_name": "Потапов Игнат",
+    "phone": "(495) 859-9412",
+    "email": "potapov.ignat_4027@inbox.ru",
+    "password": "0Светлана84",
+    "address": "d6cbdf84-bf44-4bdc-8c83-2a6b21dd43c5",
+    "messages": []
+  },
+  {
+    "uuid": "acf200e3-2b7b-4a8e-ae02-713a5f1a465b",
+    "full_name": "Ковалёв Святослав",
+    "phone": "(35222) 81-2688",
+    "email": "kovalev.svyatoslav_3736@list.ru",
+    "password": "8Вера24",
+    "address": "0ee98de3-8295-4420-bc81-033a1df6380f",
+    "messages": []
+  },
+  {
+    "uuid": "02606b7f-aa92-4ff5-a497-404209fac6b3",
+    "full_name": "Беляков Георгий",
+    "phone": "+7 (922) 776-3920",
+    "email": "belyakov.georgiy2641@mail.ru",
+    "password": "8Инесса90",
+    "address": "d2902323-945c-4cba-9144-ac4947a30573",
+    "messages": []
+  },
+  {
+    "uuid": "1ad6e9db-ac69-46a2-9928-7f4395a1bed8",
+    "full_name": "Гришин Милан",
+    "phone": "+7 (922) 219-6831",
+    "email": "grishin.milan.3395@list.ru",
+    "password": "6Ольга21",
+    "address": "4890f18b-ed32-43fc-aa2d-2ccf687eb14c",
+    "messages": []
+  },
+  {
+    "uuid": "39ccf210-9b52-4d93-8db5-eba50b25b2ba",
+    "full_name": "Кононов Максим",
+    "phone": "(35222) 10-3968",
+    "email": "kononov.maksim.2434@list.ru",
+    "password": "5Мария37",
+    "address": "39f5c81f-9991-4c25-9d08-ff16b2546311",
+    "messages": []
+  },
+  {
+    "uuid": "40fef0e1-51ba-4a7b-bd40-8699815e8870",
+    "full_name": "Кулагин Валериан",
+    "phone": "+7 (922) 416-1976",
+    "email": "kulagin.valerian4234@ya.ru",
+    "password": "4Варвара86",
+    "address": "af90baf9-4c0b-4dac-a9e6-d4c184878a53",
+    "messages": []
+  },
+  {
+    "uuid": "d09b93b9-bc37-426e-82b5-8e695eee53be",
+    "full_name": "Голубев Макар",
+    "phone": "(35222) 63-4123",
+    "email": "golubev.makar4119@ya.ru",
+    "password": "9Надежда52",
+    "address": "8eb9173c-b99d-4511-b714-d88c376f9509",
+    "messages": []
+  },
+  {
+    "uuid": "a62dac47-e805-41e8-98ba-4bb4d98758bc",
+    "full_name": "Фокин Платон",
+    "phone": "(35222) 72-7882",
+    "email": "fokin.platon_4779@rambler.ru",
+    "password": "4Вероника37",
+    "address": "7634e38b-0773-4bb1-ab14-e3275b18e6fa",
+    "messages": []
+  },
+  {
+    "uuid": "51ee9fd6-d980-46f5-b76f-77002db82186",
+    "full_name": "Прохоров Фёдор",
+    "phone": "(495) 141-7144",
+    "email": "prohorov.fedor_3938@gmail.com",
+    "password": "5Галина99",
+    "address": "d112040b-361d-48f0-8420-7052515d2bab",
+    "messages": []
+  },
+  {
+    "uuid": "4a4ef484-e75c-44a8-aff1-72b2f68f872a",
+    "full_name": "Новиков Валентин",
+    "phone": "(35222) 97-2078",
+    "email": "novikov.valentin.4946@rambler.ru",
+    "password": "5Полина64",
+    "address": "30227340-efc3-4d92-a61d-e94f62dde970",
+    "messages": []
+  },
+  {
+    "uuid": "e21f2453-5967-4434-a70c-73153d9d8198",
+    "full_name": "Сафонов Гарри",
+    "phone": "(35222) 36-8698",
+    "email": "safonov.garri2079@inbox.ru",
+    "password": "4Капитолина01",
+    "address": "1cc7fe0f-26a8-4a8a-987d-3b411ae89d50",
+    "messages": []
+  },
+  {
+    "uuid": "4d5f0da0-de2e-4b1c-bc49-d7883ab06688",
+    "full_name": "Кулагин Вениамин",
+    "phone": "(35222) 61-7517",
+    "email": "kulagin.veniamin4129@ya.ru",
+    "password": "0Елена39",
+    "address": "9a8a9c3d-4402-4f06-a8e0-67a1e68c558a",
+    "messages": []
+  },
+  {
+    "uuid": "02237f12-cbc3-473f-8ac5-316b3fd33155",
+    "full_name": "Анисимов Святослав",
+    "phone": "+7 (922) 547-0156",
+    "email": "anisimov.svyatoslav.2463@hotmail.com",
+    "password": "1Вера05",
+    "address": "43d370f8-c957-49a5-a5c2-7809fb5f6fc8",
+    "messages": []
+  },
+  {
+    "uuid": "2f1faab9-8323-4e35-8a90-2b51d16135db",
+    "full_name": "Кулаков Август",
+    "phone": "+7 (922) 537-3373",
+    "email": "kulakov.avgust_4372@rambler.ru",
+    "password": "5Жанна58",
+    "address": "d1b1e092-d082-4aac-9fde-48bb13b699a4",
+    "messages": []
+  },
+  {
+    "uuid": "31d667a3-c0bc-438f-9c4f-05b105b4c017",
+    "full_name": "Логинов Григорий",
+    "phone": "(495) 377-2905",
+    "email": "loginov.grigoriy3934@narod.ru",
+    "password": "5Изольда06",
+    "address": "4f2b2646-2c8c-4e11-9ad3-3a122ac1aa0c",
+    "messages": []
+  },
+  {
+    "uuid": "0de63774-ada2-4017-8309-997c6060ae20",
+    "full_name": "Гришин Гарри",
+    "phone": "+7 (922) 298-5358",
+    "email": "grishin.garri.3089@yandex.ru",
+    "password": "5Федосья86",
+    "address": "9e42d71f-0991-42df-b523-193e6d81151f",
+    "messages": []
+  },
+  {
+    "uuid": "7fbb9e03-e75a-4f68-81a9-eca0a5a4ab12",
+    "full_name": "Кошелев Эдуард",
+    "phone": "+7 (922) 258-7303",
+    "email": "koshelev.eduard4040@inbox.ru",
+    "password": "4Фаина24",
+    "address": "cd2e6fcb-b973-4ff9-9d96-89d0f4075e7b",
+    "messages": []
+  },
+  {
+    "uuid": "52779b5d-c82a-46bb-a6ed-f7854275c0cb",
+    "full_name": "Шубин Фёдор",
+    "phone": "+7 (922) 013-4165",
+    "email": "shubin.fedor.4928@bk.ru",
+    "password": "4Зинаида41",
+    "address": "f8fde072-a9d0-4e25-a7ef-d23a5e7fcc63",
+    "messages": []
+  },
+  {
+    "uuid": "6ccc544d-d6f7-4b47-945f-435940fde487",
+    "full_name": "Максимов Феликс",
+    "phone": "(35222) 58-0911",
+    "email": "maksimov.feliks.3647@rambler.ru",
+    "password": "8Варвара53",
+    "address": "78f2477f-4540-4751-8a48-3f18e2d71ed2",
+    "messages": []
+  },
+  {
+    "uuid": "0e04434c-9911-4ae1-b05c-139480d8b638",
+    "full_name": "Шарапов Артём",
+    "phone": "(35222) 71-0219",
+    "email": "sharapov.artem.2366@inbox.ru",
+    "password": "2Нина41",
+    "address": "35b0e2d4-ee4f-45b9-a814-52664338391a",
+    "messages": []
+  },
+  {
+    "uuid": "fa9bbd40-915e-41cd-b239-7d4e2f0f80e0",
+    "full_name": "Самсонов Георгий",
+    "phone": "(35222) 06-9563",
+    "email": "samsonov.georgiy.3101@mail.ru",
+    "password": "8Алла24",
+    "address": "a0c73ec1-a003-47bd-8861-92035aa3332c",
+    "messages": []
+  },
+  {
+    "uuid": "c576f01b-31b5-4034-84e2-bcb7b06d4838",
+    "full_name": "Коновалов Герасим",
+    "phone": "+7 (922) 880-6802",
+    "email": "konovalov.gerasim4270@gmail.com",
+    "password": "5Зинаида77",
+    "address": "61803944-10e8-4f35-82b7-9c2d3d52a144",
+    "messages": []
+  },
+  {
+    "uuid": "7fc41a58-3c41-458a-891e-b8a37aeddf6c",
+    "full_name": "Кулаков Ростислав",
+    "phone": "+7 (922) 872-3205",
+    "email": "kulakov.rostislav.2025@rambler.ru",
+    "password": "7Мальвина27",
+    "address": "207789c0-7395-478c-a3c9-1d52f1667972",
+    "messages": []
+  },
+  {
+    "uuid": "2aa744f8-30ad-4a0f-aa08-87434caaf97d",
+    "full_name": "Виноградов Григорий",
+    "phone": "(495) 720-2885",
+    "email": "vinogradov.grigoriy2015@gmail.com",
+    "password": "8Ксения64",
+    "address": "c0d4bc2d-baad-4d2b-99c4-f3711a98aaeb",
+    "messages": []
+  },
+  {
+    "uuid": "6fb4eef4-860d-4bcd-8de2-79972e0b3ec7",
+    "full_name": "Капустин Бронислав",
+    "phone": "8-800-772-3186",
+    "email": "kapustin.bronislav_4831@narod.ru",
+    "password": "3Лариса99",
+    "address": "f82283ca-32af-4d16-aed8-c38a5f2029c7",
+    "messages": []
+  },
+  {
+    "uuid": "2a8b860b-9af2-410c-823c-789e19c68a7b",
+    "full_name": "Борисов Степан",
+    "phone": "(35222) 07-4594",
+    "email": "borisov.stepan3981@narod.ru",
+    "password": "2Оксана94",
+    "address": "ab669996-4ae0-45bd-90f3-4000c6539943",
+    "messages": []
+  },
+  {
+    "uuid": "be11bbc5-0699-49de-ba22-a7f5ff183fe3",
+    "full_name": "Родионов Игнат",
+    "phone": "(812) 101-49-90",
+    "email": "rodionov.ignat.2512@list.ru",
+    "password": "5Вера46",
+    "address": "1b4b580c-6c31-463f-80e1-56e98806798d",
+    "messages": []
+  },
+  {
+    "uuid": "69886133-80f1-4b1e-8ae1-ac5e4b8b1f08",
+    "full_name": "Сорокин Мирослав",
+    "phone": "+7 (922) 733-4216",
+    "email": "sorokin.miroslav.4668@hotmail.com",
+    "password": "8Дина22",
+    "address": "c2a61c2a-256d-4238-ad80-7c7c436af2a2",
+    "messages": []
+  },
+  {
+    "uuid": "d8453f46-c697-461b-aad7-b0e45fa7a230",
+    "full_name": "Шарапов Вячеслав",
+    "phone": "(35222) 39-1084",
+    "email": "sharapov.vyacheslav.4935@narod.ru",
+    "password": "9Ульяна94",
+    "address": "63c29b60-64a7-4ddc-96fb-053239744518",
+    "messages": []
+  },
+  {
+    "uuid": "9cd9de29-e44c-42b9-be6b-9803f80e676d",
+    "full_name": "Осипов Игнатий",
+    "phone": "(35222) 29-8322",
+    "email": "osipov.ignatiy3671@narod.ru",
+    "password": "9Капитолина31",
+    "address": "91fb1807-9b55-4651-ab8d-93ca3c9140c6",
+    "messages": []
+  },
+  {
+    "uuid": "b8c88bd2-e158-4f3c-be78-8a165091fa84",
+    "full_name": "Уваров Сергей",
+    "phone": "(495) 315-0180",
+    "email": "uvarov.sergey.2577@mail.ru",
+    "password": "2Доминика48",
+    "address": "cf605e6a-6228-42d0-90dd-0d4f12b57b98",
+    "messages": []
+  },
+  {
+    "uuid": "d65efd9a-68e8-424c-825e-5e5380cac760",
+    "full_name": "Крылов Даниил",
+    "phone": "+7 (922) 773-6988",
+    "email": "krylov.daniil.3766@mail.ru",
+    "password": "4Доминика35",
+    "address": "91313c67-5415-422f-8a57-6491a808ab3a",
+    "messages": []
+  },
+  {
+    "uuid": "cdf70fae-0fc0-43ee-a60c-3bd6d9d323ae",
+    "full_name": "Марков Аким",
+    "phone": "(35222) 36-0405",
+    "email": "markov.akim4080@gmail.com",
+    "password": "3Галина07",
+    "address": "91d6f56f-2bcd-43c6-9616-c6d092e05436",
+    "messages": []
+  },
+  {
+    "uuid": "a33f9035-2425-45e5-b400-5d586a7d64a6",
+    "full_name": "Бобылёв Афанасий",
+    "phone": "(495) 250-6336",
+    "email": "bobylev.afanasiy3994@mail.ru",
+    "password": "0Мария39",
+    "address": "5dd5b82c-47de-40fc-afcc-acceb90a4b02",
+    "messages": []
+  },
+  {
+    "uuid": "2f843fce-01c7-4898-a2e8-abe6fa3b9865",
+    "full_name": "Носов Степан",
+    "phone": "(35222) 70-1705",
+    "email": "nosov.stepan_4477@gmail.com",
+    "password": "0Оксана24",
+    "address": "aae769ad-ccb6-4849-b130-0ba6d45b1fe7",
+    "messages": []
+  },
+  {
+    "uuid": "120a44e1-76af-4a2e-b298-73f96e05d34f",
+    "full_name": "Кулаков Богдан",
+    "phone": "(812) 976-07-08",
+    "email": "kulakov.bogdan2907@yandex.ru",
+    "password": "0Антонина93",
+    "address": "6e8f0e0a-4928-45eb-a750-6b2628d00f83",
+    "messages": []
+  },
+  {
+    "uuid": "67ae357b-319b-4974-b3e1-c214a772248d",
+    "full_name": "Гущин Назар",
+    "phone": "(495) 716-4943",
+    "email": "guschin.nazar_1950@inbox.ru",
+    "password": "8Флорентина69",
+    "address": "a2b5148f-1604-4e1b-8d62-bd73e2c0c216",
+    "messages": []
+  },
+  {
+    "uuid": "b7a859d8-fcc3-4294-a048-7434ca2b7d3e",
+    "full_name": "Тарасов Ростислав",
+    "phone": "+7 (922) 888-6731",
+    "email": "tarasov.rostislav.3710@yandex.ru",
+    "password": "1Софья14",
+    "address": "9fc74bc1-1bc9-484d-86f1-6f3df8fd92de",
+    "messages": []
+  },
+  {
+    "uuid": "583b40ba-6ca3-4ae3-87c4-252635faef28",
+    "full_name": "Ситников Ираклий",
+    "phone": "(495) 150-3678",
+    "email": "sitnikov.irakliy.2963@hotmail.com",
+    "password": "7Владлена79",
+    "address": "75b4caf2-943d-468c-b2f2-713f1ee68fb1",
+    "messages": []
+  },
+  {
+    "uuid": "8961df14-deed-4bcb-a1a0-06908ff160f5",
+    "full_name": "Кондратьев Никодим",
+    "phone": "(812) 078-71-78",
+    "email": "kondratev.nikodim.2406@inbox.ru",
+    "password": "4Валентина50",
+    "address": "c06adc01-fa4b-4509-bcc5-eccd8235d96c",
+    "messages": []
+  },
+  {
+    "uuid": "5268616d-8694-4a38-a4cf-c6b4622ff913",
+    "full_name": "Антонов Константин",
+    "phone": "(812) 319-70-78",
+    "email": "antonov.konstantin1996@mail.ru",
+    "password": "4Галина24",
+    "address": "48c211b8-c61e-4651-bedc-87646410a89b",
+    "messages": []
+  },
+  {
+    "uuid": "11b34748-cb27-4318-b0bd-552fc6ab68b1",
+    "full_name": "Панфилов Валерий",
+    "phone": "+7 (922) 243-4782",
+    "email": "panfilov.valeriy3307@bk.ru",
+    "password": "7Нина80",
+    "address": "5b5e63ce-919f-4f87-a024-1a3159da9a0c",
+    "messages": []
+  },
+  {
+    "uuid": "a88008b8-2819-4876-9fea-83f3e89bd6c7",
+    "full_name": "Исаев Альберт",
+    "phone": "+7 (922) 515-1234",
+    "email": "isaev.albert_2666@ya.ru",
+    "password": "4Клара93",
+    "address": "8b3c403c-42ab-4499-9fe6-4d4af3a706b9",
+    "messages": []
+  },
+  {
+    "uuid": "6afa1f04-5e7d-4ef3-906c-b8be7bd97646",
+    "full_name": "Жданов Глеб",
+    "phone": "+7 (922) 323-3081",
+    "email": "zhdanov.gleb.4871@inbox.ru",
+    "password": "8Дина63",
+    "address": "001ae9a9-f5b5-4886-99ec-f4e6b7a28597",
+    "messages": []
+  },
+  {
+    "uuid": "fb550219-6850-4a6f-b46c-3c12b6edbd41",
+    "full_name": "Мясников Владимир",
+    "phone": "(495) 216-3982",
+    "email": "myasnikov.vladimir.2690@mail.ru",
+    "password": "3Алина87",
+    "address": "f9f0a7af-fc3d-474e-b804-222ce2857530",
+    "messages": []
+  },
+  {
+    "uuid": "fdcca003-36d3-4d39-ad22-2d7d0efd3c83",
+    "full_name": "Воробьёв Максим",
+    "phone": "8-800-812-4081",
+    "email": "vorobev.maksim.4607@narod.ru",
+    "password": "8Оксана03",
+    "address": "3c35ed1e-4f71-4a18-b4d2-7635de9be9d7",
+    "messages": []
+  },
+  {
+    "uuid": "b9dff44b-b46d-4b6a-a96e-2a06b4e62b93",
+    "full_name": "Кудрявцев Евгений",
+    "phone": "(35222) 01-1262",
+    "email": "kudryavcev.evgeniy.3935@rambler.ru",
+    "password": "7Клара46",
+    "address": "c10c4d70-fc79-4972-9c40-808b489b856c",
+    "messages": []
+  },
+  {
+    "uuid": "7eb27be7-007a-4880-8919-815eee8073b4",
+    "full_name": "Беспалов Фёдор",
+    "phone": "(495) 642-9499",
+    "email": "bespalov.fedor3352@ya.ru",
+    "password": "6Жанна36",
+    "address": "c7c5b996-a854-4c24-8b2b-22fb842b7e94",
+    "messages": []
+  },
+  {
+    "uuid": "2f467c3a-29af-44a9-914e-75aeec1099db",
+    "full_name": "Анисимов Иммануил",
+    "phone": "(35222) 17-2365",
+    "email": "anisimov.immanuil.3838@inbox.ru",
+    "password": "6Елизавета67",
+    "address": "385c0050-6abd-464f-a5b8-90bf35d89216",
+    "messages": []
+  },
+  {
+    "uuid": "5924c6d2-3fca-4bc2-a167-cfa459e09941",
+    "full_name": "Шарапов Богдан",
+    "phone": "(495) 938-0083",
+    "email": "sharapov.bogdan.2442@inbox.ru",
+    "password": "3Лада83",
+    "address": "03b7733d-55fa-47da-b2be-75590ae6f29f",
+    "messages": []
+  },
+  {
+    "uuid": "0bc22d42-fce1-4c6e-b523-18a4d75fb21d",
+    "full_name": "Сергеев Гордей",
+    "phone": "8-800-186-2897",
+    "email": "sergeev.gordey.3899@inbox.ru",
+    "password": "5Валентина11",
+    "address": "29b950ba-e2f2-41a0-9dc5-227ceed2becf",
+    "messages": []
+  },
+  {
+    "uuid": "8fdcdece-6964-402d-a87a-e33ff9ebf87f",
+    "full_name": "Кузнецов Добрыня",
+    "phone": "(812) 905-33-27",
+    "email": "kuznecov.dobrynya_4509@yandex.ru",
+    "password": "0Владлена77",
+    "address": "5ed4cf0a-3b76-4e5f-9f00-fde421e41799",
+    "messages": []
+  },
+  {
+    "uuid": "5c7b7edb-5bea-4d1c-be06-004a80903da5",
+    "full_name": "Калашников Григорий",
+    "phone": "(495) 358-9053",
+    "email": "kalashnikov.grigoriy.3779@narod.ru",
+    "password": "4Юлия08",
+    "address": "9b6e2f53-e5e3-4b6f-b2b6-a37f70e68abd",
+    "messages": []
+  },
+  {
+    "uuid": "656b1971-8c2b-4a5e-a6e1-7c9ae0cf90e1",
+    "full_name": "Моисеев Прохор",
+    "phone": "(812) 449-94-19",
+    "email": "moiseev.prohor3419@gmail.com",
+    "password": "0Алёна35",
+    "address": "3112ce3e-292e-472b-8c46-4f06ffab6392",
+    "messages": []
+  },
+  {
+    "uuid": "2a36bb99-4929-49a5-86ea-686e83b105dc",
+    "full_name": "Белов Никодим",
+    "phone": "+7 (922) 343-3855",
+    "email": "belov.nikodim.2637@rambler.ru",
+    "password": "5Раиса59",
+    "address": "1b693313-2d1c-4413-b51d-e28ae93e1544",
+    "messages": []
+  },
+  {
+    "uuid": "59f3bf9a-2944-400b-abbe-fe9ecc47f27c",
+    "full_name": "Брагин Георгий",
+    "phone": "(495) 422-2740",
+    "email": "bragin.georgiy_4607@rambler.ru",
+    "password": "6Искра20",
+    "address": "282975c7-e6e9-4c9d-bc4f-947cf0f10875",
+    "messages": []
+  },
+  {
+    "uuid": "89f2c85b-ca2c-4f8e-9bbb-1ca3dc3e66b5",
+    "full_name": "Наумов Ананий",
+    "phone": "(35222) 01-0303",
+    "email": "naumov.ananiy2711@inbox.ru",
+    "password": "4Флорентина66",
+    "address": "5a217ee1-81ea-4df4-9cef-6c116b6f3b0f",
+    "messages": []
+  },
+  {
+    "uuid": "e88a01db-4971-4bd0-8381-d104e116e8ca",
+    "full_name": "Потапов Вениамин",
+    "phone": "(812) 668-49-07",
+    "email": "potapov.veniamin2307@inbox.ru",
+    "password": "0Оксана71",
+    "address": "0a1f8fcf-285c-414a-8c9a-859a22831f69",
+    "messages": []
+  },
+  {
+    "uuid": "c2bf55b8-80ee-489f-a539-ddf098f2f360",
+    "full_name": "Кондратьев Родион",
+    "phone": "+7 (922) 656-6671",
+    "email": "kondratev.rodion4875@gmail.com",
+    "password": "9Галина13",
+    "address": "4368244a-dbda-4960-b740-6ad39c5c998a",
+    "messages": []
+  },
+  {
+    "uuid": "17fccfc5-acd6-430e-807a-19e1e0ec51b7",
+    "full_name": "Кулагин Нестор",
+    "phone": "(35222) 43-6361",
+    "email": "kulagin.nestor_2825@ya.ru",
+    "password": "1Ульяна50",
+    "address": "24c2e67f-51db-4e3c-8767-fc9b29adf3b8",
+    "messages": []
+  },
+  {
+    "uuid": "3dcb85ed-6409-4b2b-9dfb-19d21605312f",
+    "full_name": "Лапин Макар",
+    "phone": "(495) 022-3378",
+    "email": "lapin.makar_3733@bk.ru",
+    "password": "5Алла56",
+    "address": "dcc115d5-4559-4a24-9572-82b0ff1e778a",
+    "messages": []
+  },
+  {
+    "uuid": "43cfc0a1-20c9-4e1c-a9b6-e8e639d21865",
+    "full_name": "Кононов Степан",
+    "phone": "8-800-749-0297",
+    "email": "kononov.stepan_3058@mail.ru",
+    "password": "4Кристина57",
+    "address": "599e2f83-156b-47f1-83fe-6384c042db8b",
+    "messages": []
+  },
+  {
+    "uuid": "8aed27ce-aa73-49fb-90ae-80cae5906cb4",
+    "full_name": "Данилов Глеб",
+    "phone": "(812) 422-58-70",
+    "email": "danilov.gleb.3769@yandex.ru",
+    "password": "3Алёна19",
+    "address": "7d1be2d8-ef89-4ccc-ac1d-39b53f43d94d",
+    "messages": []
+  },
+  {
+    "uuid": "9e52b5fd-4969-4236-955c-fd26434d7a9d",
+    "full_name": "Блохин Даниил",
+    "phone": "(495) 278-4133",
+    "email": "blohin.daniil3206@mail.ru",
+    "password": "1Любовь17",
+    "address": "489d45bc-c8a4-4f72-a1cb-9627c29810c3",
+    "messages": []
+  },
+  {
+    "uuid": "a093773f-95e3-48a3-ba98-de2b22ac0e2e",
+    "full_name": "Соболев Егор",
+    "phone": "8-800-966-8790",
+    "email": "sobolev.egor.4302@list.ru",
+    "password": "8Нина20",
+    "address": "cc19a491-7ea0-453f-9493-c92f5c231c5c",
+    "messages": []
+  },
+  {
+    "uuid": "c80bc9f5-49f2-4291-99af-1cf2aae56279",
+    "full_name": "Самойлов Назар",
+    "phone": "(495) 730-3552",
+    "email": "samoylov.nazar_3389@ya.ru",
+    "password": "2Татьяна57",
+    "address": "1e6983ba-5494-41fa-81ad-3298344d4668",
+    "messages": []
+  },
+  {
+    "uuid": "510bd7b8-e8ba-49ae-bf72-7e96f377d858",
+    "full_name": "Кудрявцев Богдан",
+    "phone": "8-800-961-6671",
+    "email": "kudryavcev.bogdan.2254@yandex.ru",
+    "password": "7Ксения02",
+    "address": "9daa49b9-4062-4381-9ea8-bc635b07149d",
+    "messages": []
+  },
+  {
+    "uuid": "27bd558f-3b8a-4026-b7aa-d51a64d15d76",
+    "full_name": "Лаврентьев Вениамин",
+    "phone": "(812) 000-51-48",
+    "email": "lavrentev.veniamin.3461@narod.ru",
+    "password": "8Оксана39",
+    "address": "39b465e8-da1c-4631-b3dc-1dacda9b5689",
+    "messages": []
+  },
+  {
+    "uuid": "e6ab6cb4-b56a-4f3c-a566-a671c998914e",
+    "full_name": "Шубин Герман",
+    "phone": "8-800-329-5462",
+    "email": "shubin.german2383@rambler.ru",
+    "password": "0Антонина87",
+    "address": "a034a10f-a1ec-46eb-997c-8250cd18d6e0",
+    "messages": []
+  },
+  {
+    "uuid": "b0949c78-6fab-432d-8d06-928d063eb4d9",
+    "full_name": "Носов Кирилл",
+    "phone": "(495) 415-1437",
+    "email": "nosov.kirill.4502@mail.ru",
+    "password": "3Изабелла52",
+    "address": "da5a1e80-45fe-441b-b290-4b7c7d8a3b85",
+    "messages": []
+  },
+  {
+    "uuid": "06576c4b-9b80-4664-9c76-1d7eb7494182",
+    "full_name": "Анисимов Юлиан",
+    "phone": "(495) 703-4555",
+    "email": "anisimov.yulian2966@yandex.ru",
+    "password": "1Клара82",
+    "address": "6db90707-36c0-49a1-a8ee-2c0b9791a1eb",
+    "messages": []
+  },
+  {
+    "uuid": "96e1f627-aa3b-460f-b82d-ca5ddffd2853",
+    "full_name": "Яковлев Михаил",
+    "phone": "(495) 220-0649",
+    "email": "yakovlev.mihail3362@rambler.ru",
+    "password": "7Рада57",
+    "address": "29bad8cd-f787-46d9-9350-7ee0ed0b2c48",
+    "messages": []
+  },
+  {
+    "uuid": "ecd7e36c-f589-45ae-9cec-9cfab535c7dd",
+    "full_name": "Щукин Матвей",
+    "phone": "(812) 915-52-98",
+    "email": "schukin.matvey_3538@rambler.ru",
+    "password": "7Дина89",
+    "address": "e5148c22-e6ea-49f0-94bd-f7ac0f44008f",
+    "messages": []
+  },
+  {
+    "uuid": "5186e02a-320a-40a3-a900-7b2d2cb23051",
+    "full_name": "Лаврентьев Герман",
+    "phone": "(35222) 53-8283",
+    "email": "lavrentev.german_3257@bk.ru",
+    "password": "9Инесса12",
+    "address": "69baa612-b841-4bbb-a88a-d0883a089134",
+    "messages": []
+  },
+  {
+    "uuid": "4df7d2cd-2254-4ba3-8232-61cd8611a7ac",
+    "full_name": "Михеев Тарас",
+    "phone": "8-800-173-6398",
+    "email": "miheev.taras.2433@narod.ru",
+    "password": "1Зинаида09",
+    "address": "483fb66e-bead-44f4-96f7-26e10ccb99a8",
+    "messages": []
+  },
+  {
+    "uuid": "f0a4c906-9042-473f-a6cd-bbc112c1d98e",
+    "full_name": "Потапов Аркадий",
+    "phone": "+7 (922) 512-5514",
+    "email": "potapov.arkadiy3043@hotmail.com",
+    "password": "0Людмила04",
+    "address": "f1e98b8e-0436-419a-bb32-a5935e2d0d23",
+    "messages": []
+  },
+  {
+    "uuid": "29e15c45-2c86-4312-9cf3-5937ee1e24d6",
+    "full_name": "Уваров Николай",
+    "phone": "(495) 614-1081",
+    "email": "uvarov.nikolay.4780@yandex.ru",
+    "password": "1Дарья85",
+    "address": "391752a4-a6ab-4002-ac3e-73f092f7a28f",
+    "messages": []
+  },
+  {
+    "uuid": "5097bf98-4eed-4cf4-80e4-e98e8dd5d0f5",
+    "full_name": "Авдеев Антон",
+    "phone": "(35222) 71-1630",
+    "email": "avdeev.anton.2858@inbox.ru",
+    "password": "0Дина73",
+    "address": "a73b44d4-d817-45a9-b1f5-a057c09fdd46",
+    "messages": []
+  },
+  {
+    "uuid": "e89a0256-cd45-4c4d-bdb3-d3aafcd0df60",
+    "full_name": "Евсеев Адриан",
+    "phone": "(495) 877-5299",
+    "email": "evseev.adrian2439@mail.ru",
+    "password": "9Искра85",
+    "address": "c8a2e1ec-3d4c-40f7-83dd-c667eb596711",
+    "messages": []
+  },
+  {
+    "uuid": "36897bc9-725c-4169-9ea6-55f422d4ddb3",
+    "full_name": "Дьячков Радислав",
+    "phone": "(812) 158-20-01",
+    "email": "dyachkov.radislav.2602@gmail.com",
+    "password": "6Татьяна53",
+    "address": "28d89fb6-36f8-4063-bfac-6da07680266b",
+    "messages": []
+  },
+  {
+    "uuid": "69abf8e2-66ce-4ad8-837f-2712f3615eca",
+    "full_name": "Журавлёв Всеволод",
+    "phone": "(35222) 71-9111",
+    "email": "zhuravlev.vsevolod4017@ya.ru",
+    "password": "4София92",
+    "address": "050199ea-a1ff-4807-8a7e-73c0752fed31",
+    "messages": []
+  },
+  {
+    "uuid": "e7e0c80f-fa88-442f-8d60-f779a082a959",
+    "full_name": "Попов Аполлон",
+    "phone": "(495) 820-4395",
+    "email": "popov.apollon_2431@inbox.ru",
+    "password": "2Клара45",
+    "address": "b8a4ab8b-f361-49ee-a601-c3f6354b4644",
+    "messages": []
+  },
+  {
+    "uuid": "57d49499-3608-4df3-aa79-8dfbc7db96f8",
+    "full_name": "Игнатов Гордей",
+    "phone": "8-800-593-0969",
+    "email": "ignatov.gordey2634@inbox.ru",
+    "password": "4Мария23",
+    "address": "13cd3a78-f382-435e-bca8-a3d2531f842f",
+    "messages": []
+  },
+  {
+    "uuid": "4d987805-9fe6-4187-b0f0-92b116dfd8fe",
+    "full_name": "Орлов Влад",
+    "phone": "(35222) 71-1691",
+    "email": "orlov.vlad.2440@bk.ru",
+    "password": "2Кристина04",
+    "address": "483ab2bc-8831-4f3b-9164-bae69acc2b35",
+    "messages": []
+  },
+  {
+    "uuid": "9e63d5de-8337-4263-898d-71c1afe71cd0",
+    "full_name": "Логинов Константин",
+    "phone": "(495) 271-4336",
+    "email": "loginov.konstantin3351@gmail.com",
+    "password": "5Вероника97",
+    "address": "51d9258d-1ee9-44a9-9aa7-3cb201b1349e",
+    "messages": []
+  },
+  {
+    "uuid": "fee1b98a-8485-4b50-bb67-675a6cb9c78b",
+    "full_name": "Бобылёв Тимофей",
+    "phone": "(35222) 77-4260",
+    "email": "bobylev.timofey_4533@list.ru",
+    "password": "6Злата75",
+    "address": "3d118615-d8d7-4a20-a43a-1f3c328abec5",
+    "messages": []
+  },
+  {
+    "uuid": "f13cf71b-f43b-4f4e-8e42-52411a58f957",
+    "full_name": "Пахомов Вячеслав",
+    "phone": "8-800-072-7007",
+    "email": "pahomov.vyacheslav.4132@hotmail.com",
+    "password": "5Юлия35",
+    "address": "6f7de09f-14e2-4f1d-bd37-675918077921",
+    "messages": []
+  },
+  {
+    "uuid": "a01b64cd-af76-4c65-8c82-0cdb02a7ef2b",
+    "full_name": "Артемьев Игорь",
+    "phone": "(35222) 88-4258",
+    "email": "artemev.igor2397@list.ru",
+    "password": "1Эмилия37",
+    "address": "e7b9a15e-b0a2-4800-95a9-4298f94b92e1",
+    "messages": []
+  },
+  {
+    "uuid": "b81d77c7-f011-4bbd-abda-fe691bec5ff2",
+    "full_name": "Коновалов Эрик",
+    "phone": "+7 (922) 641-5524",
+    "email": "konovalov.erik2407@rambler.ru",
+    "password": "4Яна98",
+    "address": "b9b644fb-3c4c-45a6-abcd-083b11eb1d93",
+    "messages": []
+  },
+  {
+    "uuid": "f4d42251-38a7-47e6-a462-d7c259e865fa",
+    "full_name": "Субботин Сергей",
+    "phone": "(35222) 50-3042",
+    "email": "subbotin.sergey3536@narod.ru",
+    "password": "4Алина64",
+    "address": "a110e4ff-15e9-470e-84e3-3de55ac5a974",
+    "messages": []
+  },
+  {
+    "uuid": "955929fc-ba3f-4347-b19d-57a8e67d0046",
+    "full_name": "Гордеев Клим",
+    "phone": "+7 (922) 844-9284",
+    "email": "gordeev.klim.4386@hotmail.com",
+    "password": "4Надежда66",
+    "address": "3cf5ec43-5747-4736-9c2f-8edb79f09ab3",
+    "messages": []
+  },
+  {
+    "uuid": "8d6f1bbe-3c69-4b79-ade9-13efa10211d1",
+    "full_name": "Крюков Григорий",
+    "phone": "+7 (922) 588-5283",
+    "email": "kryukov.grigoriy_2634@gmail.com",
+    "password": "6Оксана25",
+    "address": "de864c96-6d7f-4e9d-b6c5-479d3b3f1124",
+    "messages": []
+  },
+  {
+    "uuid": "6e24c8a2-2e8b-42cd-b6f7-77106157162a",
+    "full_name": "Ермаков Макар",
+    "phone": "+7 (922) 076-9735",
+    "email": "ermakov.makar.4586@yandex.ru",
+    "password": "1Дарья94",
+    "address": "8dcd62ce-4f7a-4cf5-8e27-83ad7c3d6b59",
+    "messages": []
+  }
+]

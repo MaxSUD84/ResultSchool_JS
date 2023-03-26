@@ -1,0 +1,3577 @@
+[
+  {
+    "uuid": "7470f911-fcc1-4e23-b68c-497146a345fc",
+    "sex": "w",
+    "first_name": "София",
+    "last_name": "Уварова",
+    "phone": "(812) 024-95-86",
+    "email": "uvarova.sofiya3338@yandex.ru",
+    "password": "2Искра76",
+    "address": "683194aa-dfa3-4e92-8246-fe306020f733",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 26,
+      "month": "8",
+      "year": 2012
+    },
+    "parents": {
+      "father": "975e4107-83da-40c9-b979-e28480a252c2",
+      "mother": "c853d3de-de1c-47fc-9e80-36e31068b864"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "06ead01d-e907-4f83-92f4-b16bb15b1f5b",
+    "sex": "w",
+    "first_name": "Марина",
+    "last_name": "Пестова",
+    "phone": "(812) 789-43-93",
+    "email": "pestova.marina_2010@rambler.ru",
+    "password": "9Василиса18",
+    "address": "d21fc7d0-4531-41bb-bbce-8b0d4238da7b",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "12",
+      "year": 2012
+    },
+    "parents": {
+      "father": "a08598b5-e8ba-4761-b74a-d31cf0f7e259",
+      "mother": "39c709bd-1a34-404e-a48f-1fb39027434e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c07b73fe-0aba-4a87-90de-30128d3aaa60",
+    "sex": "m",
+    "first_name": "Прохор",
+    "last_name": "Михайлов",
+    "phone": "(35222) 32-8391",
+    "email": "mihaylov.prohor_3095@bk.ru",
+    "password": "2Жанна11",
+    "address": "314f44c7-4eac-4abc-97c0-213e552c34d9",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "9",
+      "year": 2011
+    },
+    "parents": {
+      "father": "bd555858-5881-4640-873e-3d46310b2814",
+      "mother": "8255809c-ad6f-4cca-95d1-0bc6ec27ea72"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "8455ad42-af3a-42c6-84a3-30c90390940c",
+    "sex": "w",
+    "first_name": "Маргарита",
+    "last_name": "Стрелкова",
+    "phone": "(812) 977-79-75",
+    "email": "strelkova.margarita.4969@inbox.ru",
+    "password": "3Клементина91",
+    "address": "b6f996ce-efe3-407b-8360-ef87f9f95102",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "2",
+      "year": 2012
+    },
+    "parents": {
+      "father": "0ce53256-8e74-41f7-bcb3-e8469618f6df",
+      "mother": "a8be1a8e-06c8-4cf0-8585-6b7523404aa1"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "1afcb4f6-2dcb-46a0-a28c-8e1422c9beba",
+    "sex": "w",
+    "first_name": "Нелли",
+    "last_name": "Фомина",
+    "phone": "(35222) 61-4878",
+    "email": "fomina.nelli.2368@gmail.com",
+    "password": "1Клавдия29",
+    "address": "d65869b2-e65d-4f97-8940-b14c45685144",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 22,
+      "month": "3",
+      "year": 2013
+    },
+    "parents": {
+      "father": "d9c5f4e5-888b-4e91-a845-7b21d2890a56",
+      "mother": "eed3ef6e-bcea-40cf-b1c8-f8d068fc5cc2"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "801e9367-cca7-43a9-9e46-673d73d84349",
+    "sex": "w",
+    "first_name": "Искра",
+    "last_name": "Владимирова",
+    "phone": "(35222) 37-2771",
+    "email": "vladimirova.iskra.4535@yandex.ru",
+    "password": "5Регина64",
+    "address": "0e433e48-e7cd-4236-aba2-8848d61cd259",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 15,
+      "month": "11",
+      "year": 2012
+    },
+    "parents": {
+      "father": "ffcc25cf-a034-40a6-ae63-c88b914ba4cb",
+      "mother": "6da3ecdc-de92-4765-b763-5238979364bc"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "0721dfb9-a3bc-4884-b289-1cb6632a1f5b",
+    "sex": "w",
+    "first_name": "Марта",
+    "last_name": "Ефремова",
+    "phone": "(35222) 92-0617",
+    "email": "efremova.marta.2822@list.ru",
+    "password": "7Владлена65",
+    "address": "1345e98d-ebb3-4e88-a9be-fba59dbf3fda",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 20,
+      "month": "12",
+      "year": 2010
+    },
+    "parents": {
+      "father": "7f3c2f87-c275-42c5-994b-9e339779ce76",
+      "mother": "c06b8672-4159-474a-869e-cc514de0d60b"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2fbfc235-19d0-4271-97b6-9f94a5407e53",
+    "sex": "m",
+    "first_name": "Валериан",
+    "last_name": "Потапов",
+    "phone": "+7 (922) 699-5349",
+    "email": "potapov.valerian_3147@inbox.ru",
+    "password": "4Анжелика57",
+    "address": "d6cbdf84-bf44-4bdc-8c83-2a6b21dd43c5",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "2",
+      "year": 2011
+    },
+    "parents": {
+      "father": "1ec2b4bb-a91f-40e4-aea6-1531ff620b3c",
+      "mother": "156a0911-2af7-4be6-ac27-962ba8b33f01"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "8ad9ee7b-a3b7-4d41-a1cf-80472424d0de",
+    "sex": "w",
+    "first_name": "Анжелика",
+    "last_name": "Ковалёва",
+    "phone": "(35222) 57-0345",
+    "email": "kovaleva.anzhelika_1959@yandex.ru",
+    "password": "1Лидия23",
+    "address": "0ee98de3-8295-4420-bc81-033a1df6380f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "7",
+      "year": 2011
+    },
+    "parents": {
+      "father": "acf200e3-2b7b-4a8e-ae02-713a5f1a465b",
+      "mother": "a3e7319d-233b-4570-98d1-b66e99d74f5c"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "1e76e775-79ce-4bd0-b315-ce9f51d876ca",
+    "sex": "m",
+    "first_name": "Давид",
+    "last_name": "Беляков",
+    "phone": "(35222) 53-6722",
+    "email": "belyakov.david2830@yandex.ru",
+    "password": "1Марина70",
+    "address": "d2902323-945c-4cba-9144-ac4947a30573",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 14,
+      "month": "5",
+      "year": 2011
+    },
+    "parents": {
+      "father": "02606b7f-aa92-4ff5-a497-404209fac6b3",
+      "mother": "4d1c9ee8-4d8d-4bbd-ae3b-0adc5b3632d2"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ee82cfd0-999a-4e9a-a5fb-dcd3c7984116",
+    "sex": "w",
+    "first_name": "Анфиса",
+    "last_name": "Гришина",
+    "phone": "8-800-257-3018",
+    "email": "grishina.anfisa_3790@yandex.ru",
+    "password": "3Ольга99",
+    "address": "4890f18b-ed32-43fc-aa2d-2ccf687eb14c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 15,
+      "month": "2",
+      "year": 2011
+    },
+    "parents": {
+      "father": "1ad6e9db-ac69-46a2-9928-7f4395a1bed8",
+      "mother": "9b9ce5d1-69bb-4f36-884b-af6fdeb1190d"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "fee27972-f157-4621-92d4-939d232a88ac",
+    "sex": "m",
+    "first_name": "Дан",
+    "last_name": "Кононов",
+    "phone": "(35222) 26-6494",
+    "email": "kononov.dan_4888@rambler.ru",
+    "password": "6Варвара65",
+    "address": "39f5c81f-9991-4c25-9d08-ff16b2546311",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 26,
+      "month": "1",
+      "year": 2012
+    },
+    "parents": {
+      "father": "39ccf210-9b52-4d93-8db5-eba50b25b2ba",
+      "mother": "484a64a7-bb87-4876-a27b-da75c108dd7e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ce462f0b-aefa-4637-ae70-8d385d2cd8a6",
+    "sex": "w",
+    "first_name": "Софья",
+    "last_name": "Кулагина",
+    "phone": "+7 (922) 328-5151",
+    "email": "kulagina.sofya.4443@rambler.ru",
+    "password": "8Марта18",
+    "address": "af90baf9-4c0b-4dac-a9e6-d4c184878a53",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 2,
+      "month": "3",
+      "year": 2013
+    },
+    "parents": {
+      "father": "40fef0e1-51ba-4a7b-bd40-8699815e8870",
+      "mother": "d63ab94e-2a09-4b80-b297-104f1b3ddf9a"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "8be12e30-445e-45fe-a364-ddd9949ac9a5",
+    "sex": "w",
+    "first_name": "Дарья",
+    "last_name": "Голубева",
+    "phone": "(35222) 98-4332",
+    "email": "golubeva.darya.2402@yandex.ru",
+    "password": "2Татьяна83",
+    "address": "8eb9173c-b99d-4511-b714-d88c376f9509",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "5",
+      "year": 2012
+    },
+    "parents": {
+      "father": "d09b93b9-bc37-426e-82b5-8e695eee53be",
+      "mother": "444797dd-b2a9-4a22-9e3b-f655a123cdb8"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "720cda6c-94a5-46cd-b665-423750934c72",
+    "sex": "m",
+    "first_name": "Донат",
+    "last_name": "Фокин",
+    "phone": "(495) 735-9520",
+    "email": "fokin.donat_3344@mail.ru",
+    "password": "4София09",
+    "address": "7634e38b-0773-4bb1-ab14-e3275b18e6fa",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "7",
+      "year": 2013
+    },
+    "parents": {
+      "father": "a62dac47-e805-41e8-98ba-4bb4d98758bc",
+      "mother": "d24a5827-4e67-4aa0-800e-19305cbbeefe"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "b3123342-cda2-4280-add8-e1a51e280469",
+    "sex": "m",
+    "first_name": "Лаврентий",
+    "last_name": "Прохоров",
+    "phone": "(495) 547-8980",
+    "email": "prohorov.lavrentiy2448@rambler.ru",
+    "password": "6Эмма15",
+    "address": "d112040b-361d-48f0-8420-7052515d2bab",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 13,
+      "month": "3",
+      "year": 2012
+    },
+    "parents": {
+      "father": "51ee9fd6-d980-46f5-b76f-77002db82186",
+      "mother": "3cef8e2a-4f85-4b1b-ac7f-a53512ca630a"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2bfb4177-9db2-4902-a3eb-de6fd702fd31",
+    "sex": "m",
+    "first_name": "Гавриил",
+    "last_name": "Новиков",
+    "phone": "(495) 430-7961",
+    "email": "novikov.gavriil_2573@list.ru",
+    "password": "1Ника22",
+    "address": "30227340-efc3-4d92-a61d-e94f62dde970",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 3,
+      "month": "5",
+      "year": 2011
+    },
+    "parents": {
+      "father": "4a4ef484-e75c-44a8-aff1-72b2f68f872a",
+      "mother": "1dc691c4-3c3d-4d6c-95db-b42c46b1122b"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "cdd1ea33-feae-41d7-a4dc-d4946715b6db",
+    "sex": "w",
+    "first_name": "Лада",
+    "last_name": "Сафонова",
+    "phone": "(35222) 58-4379",
+    "email": "safonova.lada_4227@bk.ru",
+    "password": "3Дина20",
+    "address": "1cc7fe0f-26a8-4a8a-987d-3b411ae89d50",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 3,
+      "month": "11",
+      "year": 2011
+    },
+    "parents": {
+      "father": "e21f2453-5967-4434-a70c-73153d9d8198",
+      "mother": "bcc71f65-4ad2-4cca-aa9f-19c3eb46d806"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "578eced5-3ef0-43da-ad96-eb4d063ea69d",
+    "sex": "w",
+    "first_name": "Лариса",
+    "last_name": "Кулагина",
+    "phone": "+7 (922) 518-5376",
+    "email": "kulagina.larisa_3098@inbox.ru",
+    "password": "9Ирина60",
+    "address": "9a8a9c3d-4402-4f06-a8e0-67a1e68c558a",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "9",
+      "year": 2011
+    },
+    "parents": {
+      "father": "4d5f0da0-de2e-4b1c-bc49-d7883ab06688",
+      "mother": "4c01d193-018b-49fe-b78c-25b79b8116a6"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "d560af86-2c65-4bb0-8364-9ca308356ce4",
+    "sex": "w",
+    "first_name": "Искра",
+    "last_name": "Анисимова",
+    "phone": "(812) 055-83-26",
+    "email": "anisimova.iskra_2269@ya.ru",
+    "password": "0Зоя50",
+    "address": "43d370f8-c957-49a5-a5c2-7809fb5f6fc8",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 24,
+      "month": "5",
+      "year": 2010
+    },
+    "parents": {
+      "father": "02237f12-cbc3-473f-8ac5-316b3fd33155",
+      "mother": "e1bd6003-8eca-4d05-b361-d9f941a623bc"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "5888e266-890e-42ca-8663-f976790c7814",
+    "sex": "m",
+    "first_name": "Ян",
+    "last_name": "Кулаков",
+    "phone": "(35222) 49-4674",
+    "email": "kulakov.yan.3883@narod.ru",
+    "password": "8Марта86",
+    "address": "d1b1e092-d082-4aac-9fde-48bb13b699a4",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 12,
+      "month": "9",
+      "year": 2012
+    },
+    "parents": {
+      "father": "2f1faab9-8323-4e35-8a90-2b51d16135db",
+      "mother": "5d3c1d16-9f94-4253-9399-52e15e010d35"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6f5db6ca-3346-41a5-9575-4dd17bd6d8e6",
+    "sex": "m",
+    "first_name": "Платон",
+    "last_name": "Логинов",
+    "phone": "+7 (922) 094-4531",
+    "email": "loginov.platon2180@rambler.ru",
+    "password": "7Надежда97",
+    "address": "4f2b2646-2c8c-4e11-9ad3-3a122ac1aa0c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 26,
+      "month": "7",
+      "year": 2012
+    },
+    "parents": {
+      "father": "31d667a3-c0bc-438f-9c4f-05b105b4c017",
+      "mother": "8be2acb4-f3e3-413c-b376-888da91d59dd"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c89aa91b-2a89-4fe4-bad5-6f4b70653ebe",
+    "sex": "m",
+    "first_name": "Юлий",
+    "last_name": "Гришин",
+    "phone": "8-800-830-2955",
+    "email": "grishin.yuliy4307@inbox.ru",
+    "password": "8Инга51",
+    "address": "9e42d71f-0991-42df-b523-193e6d81151f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "4",
+      "year": 2013
+    },
+    "parents": {
+      "father": "0de63774-ada2-4017-8309-997c6060ae20",
+      "mother": "9e1fb0f7-a567-4c62-99e5-20eb6f4c0951"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "a42d4b32-b959-4017-b3f1-f433c1576e38",
+    "sex": "w",
+    "first_name": "Изольда",
+    "last_name": "Кошелева",
+    "phone": "(35222) 10-0011",
+    "email": "kosheleva.izolda_2981@list.ru",
+    "password": "8Клара11",
+    "address": "cd2e6fcb-b973-4ff9-9d96-89d0f4075e7b",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 24,
+      "month": "11",
+      "year": 2012
+    },
+    "parents": {
+      "father": "7fbb9e03-e75a-4f68-81a9-eca0a5a4ab12",
+      "mother": "4b1531ed-c870-4a12-adc3-9dff054465c6"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "22de1895-41c0-4ff0-80df-2fe2c36d9d7e",
+    "sex": "w",
+    "first_name": "Ксения",
+    "last_name": "Шубина",
+    "phone": "+7 (922) 449-0023",
+    "email": "shubina.kseniya.3741@gmail.com",
+    "password": "4Доминика49",
+    "address": "f8fde072-a9d0-4e25-a7ef-d23a5e7fcc63",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 4,
+      "month": "3",
+      "year": 2011
+    },
+    "parents": {
+      "father": "52779b5d-c82a-46bb-a6ed-f7854275c0cb",
+      "mother": "79b9fa94-56eb-4e38-829b-d2c103d067dc"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "e000c69e-8a05-4350-85e7-c8311dc5d81b",
+    "sex": "m",
+    "first_name": "Клим",
+    "last_name": "Максимов",
+    "phone": "(812) 061-60-03",
+    "email": "maksimov.klim_2343@gmail.com",
+    "password": "5Альбина03",
+    "address": "78f2477f-4540-4751-8a48-3f18e2d71ed2",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "4",
+      "year": 2013
+    },
+    "parents": {
+      "father": "6ccc544d-d6f7-4b47-945f-435940fde487",
+      "mother": "91054c61-fbce-4967-930d-16f4e7f27ed0"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "1fd841b2-4c8c-4400-9f9e-1e5db84aa816",
+    "sex": "m",
+    "first_name": "Георгий",
+    "last_name": "Шарапов",
+    "phone": "+7 (922) 549-9299",
+    "email": "sharapov.georgiy2939@mail.ru",
+    "password": "0Эмилия89",
+    "address": "35b0e2d4-ee4f-45b9-a814-52664338391a",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "1",
+      "year": 2012
+    },
+    "parents": {
+      "father": "0e04434c-9911-4ae1-b05c-139480d8b638",
+      "mother": "779798f0-165b-4d85-ac95-720ce8756012"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "5cc8a7f2-2b3a-4bc5-bcc8-c1bb856b7919",
+    "sex": "m",
+    "first_name": "Ираклий",
+    "last_name": "Самсонов",
+    "phone": "+7 (922) 200-9724",
+    "email": "samsonov.irakliy_4862@ya.ru",
+    "password": "3Маргарита87",
+    "address": "a0c73ec1-a003-47bd-8861-92035aa3332c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 4,
+      "month": "9",
+      "year": 2013
+    },
+    "parents": {
+      "father": "fa9bbd40-915e-41cd-b239-7d4e2f0f80e0",
+      "mother": "d2d3dca6-8ece-4f4f-809d-3111c55e0d52"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "9d1f94c3-a290-4bbc-aaa9-8962515e66c5",
+    "sex": "w",
+    "first_name": "Дарья",
+    "last_name": "Коновалова",
+    "phone": "(495) 794-7389",
+    "email": "konovalova.darya2972@rambler.ru",
+    "password": "3Светлана54",
+    "address": "61803944-10e8-4f35-82b7-9c2d3d52a144",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 5,
+      "month": "10",
+      "year": 2012
+    },
+    "parents": {
+      "father": "c576f01b-31b5-4034-84e2-bcb7b06d4838",
+      "mother": "54abc4f3-a21e-4c1f-8dfb-f097e4d85dbf"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "242d6fad-6400-4a1c-8d1d-8cee2adeec39",
+    "sex": "m",
+    "first_name": "Сава",
+    "last_name": "Кулаков",
+    "phone": "(35222) 41-2209",
+    "email": "kulakov.sava_4756@hotmail.com",
+    "password": "9Ольга08",
+    "address": "207789c0-7395-478c-a3c9-1d52f1667972",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 8,
+      "month": "9",
+      "year": 2012
+    },
+    "parents": {
+      "father": "7fc41a58-3c41-458a-891e-b8a37aeddf6c",
+      "mother": "6de92461-27b4-4731-9dbf-becfa5629e30"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "7eb60516-8e3f-4c12-9316-81ced59ef880",
+    "sex": "w",
+    "first_name": "Валерия",
+    "last_name": "Виноградова",
+    "phone": "(812) 167-97-94",
+    "email": "vinogradova.valeriya4576@hotmail.com",
+    "password": "2Клавдия29",
+    "address": "c0d4bc2d-baad-4d2b-99c4-f3711a98aaeb",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "6",
+      "year": 2011
+    },
+    "parents": {
+      "father": "2aa744f8-30ad-4a0f-aa08-87434caaf97d",
+      "mother": "9012bde0-c89e-43ac-a937-4a0d336de3e8"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ac31a61d-7c9b-4ddc-9700-d9333cb3a528",
+    "sex": "m",
+    "first_name": "Болеслав",
+    "last_name": "Капустин",
+    "phone": "+7 (922) 533-4508",
+    "email": "kapustin.boleslav2221@narod.ru",
+    "password": "4Анжелика84",
+    "address": "f82283ca-32af-4d16-aed8-c38a5f2029c7",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 25,
+      "month": "7",
+      "year": 2011
+    },
+    "parents": {
+      "father": "6fb4eef4-860d-4bcd-8de2-79972e0b3ec7",
+      "mother": "84a684d4-32d4-4002-87d3-64a48faa8b8b"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "0c266e39-7831-43c8-a305-b4e1d1440868",
+    "sex": "m",
+    "first_name": "Игорь",
+    "last_name": "Борисов",
+    "phone": "(35222) 15-7552",
+    "email": "borisov.igor3477@narod.ru",
+    "password": "2Фаина47",
+    "address": "ab669996-4ae0-45bd-90f3-4000c6539943",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "8",
+      "year": 2013
+    },
+    "parents": {
+      "father": "2a8b860b-9af2-410c-823c-789e19c68a7b",
+      "mother": "b30bd999-b8c9-4f14-8358-ffaded512b0e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "08f09744-5aa9-4dd1-8dc1-6937244aeac1",
+    "sex": "m",
+    "first_name": "Вениамин",
+    "last_name": "Родионов",
+    "phone": "+7 (922) 439-3676",
+    "email": "rodionov.veniamin_4786@mail.ru",
+    "password": "6Эмилия83",
+    "address": "1b4b580c-6c31-463f-80e1-56e98806798d",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 4,
+      "month": "11",
+      "year": 2011
+    },
+    "parents": {
+      "father": "be11bbc5-0699-49de-ba22-a7f5ff183fe3",
+      "mother": "66ee3c4f-18ff-4817-af8a-4aa19f960b62"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "417f6700-3c4b-4b0a-a406-4a73dd62f0dd",
+    "sex": "w",
+    "first_name": "Мария",
+    "last_name": "Сорокина",
+    "phone": "(35222) 70-0570",
+    "email": "sorokina.mariya_2533@ya.ru",
+    "password": "2Василиса15",
+    "address": "c2a61c2a-256d-4238-ad80-7c7c436af2a2",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 18,
+      "month": "2",
+      "year": 2011
+    },
+    "parents": {
+      "father": "69886133-80f1-4b1e-8ae1-ac5e4b8b1f08",
+      "mother": "c243d915-84cb-449f-bb9b-736812fda0c4"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2338aeea-2017-4dbf-8fb2-79ebb0f109fb",
+    "sex": "m",
+    "first_name": "Антон",
+    "last_name": "Шарапов",
+    "phone": "+7 (922) 418-8516",
+    "email": "sharapov.anton4180@list.ru",
+    "password": "2Вера01",
+    "address": "63c29b60-64a7-4ddc-96fb-053239744518",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 3,
+      "month": "10",
+      "year": 2010
+    },
+    "parents": {
+      "father": "d8453f46-c697-461b-aad7-b0e45fa7a230",
+      "mother": "e632d1d7-0d20-402f-a00e-8ef911838779"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "0380dd42-bced-4ad6-afa5-1d6718298735",
+    "sex": "w",
+    "first_name": "Ольга",
+    "last_name": "Осипова",
+    "phone": "(495) 943-0010",
+    "email": "osipova.olga_3046@rambler.ru",
+    "password": "5Флорентина41",
+    "address": "91fb1807-9b55-4651-ab8d-93ca3c9140c6",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 15,
+      "month": "10",
+      "year": 2012
+    },
+    "parents": {
+      "father": "9cd9de29-e44c-42b9-be6b-9803f80e676d",
+      "mother": "07adfdda-ec98-4120-83d4-baed8c5aef0c"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "4be33dfe-30f7-47b8-886b-16dbcd708546",
+    "sex": "m",
+    "first_name": "Абрам",
+    "last_name": "Уваров",
+    "phone": "+7 (922) 238-3781",
+    "email": "uvarov.abram1963@bk.ru",
+    "password": "1Нонна13",
+    "address": "cf605e6a-6228-42d0-90dd-0d4f12b57b98",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "12",
+      "year": 2012
+    },
+    "parents": {
+      "father": "b8c88bd2-e158-4f3c-be78-8a165091fa84",
+      "mother": "23aa659f-d071-4eb5-b568-1dd05cf3e51d"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "f6c4c215-061c-4da5-9225-05ab7fd53f72",
+    "sex": "m",
+    "first_name": "Адриан",
+    "last_name": "Крылов",
+    "phone": "(35222) 75-0042",
+    "email": "krylov.adrian_4698@ya.ru",
+    "password": "4Александра79",
+    "address": "91313c67-5415-422f-8a57-6491a808ab3a",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 20,
+      "month": "5",
+      "year": 2013
+    },
+    "parents": {
+      "father": "d65efd9a-68e8-424c-825e-5e5380cac760",
+      "mother": "b63f94db-7e3a-4648-9c92-16c11820c872"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "338bc01b-7293-498a-9fec-26e8e8f9b6c5",
+    "sex": "m",
+    "first_name": "Богдан",
+    "last_name": "Марков",
+    "phone": "+7 (922) 864-0987",
+    "email": "markov.bogdan4063@yandex.ru",
+    "password": "3Раиса73",
+    "address": "91d6f56f-2bcd-43c6-9616-c6d092e05436",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 25,
+      "month": "7",
+      "year": 2011
+    },
+    "parents": {
+      "father": "cdf70fae-0fc0-43ee-a60c-3bd6d9d323ae",
+      "mother": "84baa2ec-ef58-4f01-9fcd-fd8454bb3091"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2bad0951-a8a0-4c3f-b0a0-399978e33d8c",
+    "sex": "m",
+    "first_name": "Вениамин",
+    "last_name": "Бобылёв",
+    "phone": "8-800-409-5552",
+    "email": "bobylev.veniamin.2568@inbox.ru",
+    "password": "4Зоя69",
+    "address": "5dd5b82c-47de-40fc-afcc-acceb90a4b02",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "11",
+      "year": 2012
+    },
+    "parents": {
+      "father": "a33f9035-2425-45e5-b400-5d586a7d64a6",
+      "mother": "7cf0a1c8-c907-4b50-a412-e1ed7be88bc2"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "382cea54-bbd2-407b-9b39-f77ac8580004",
+    "sex": "w",
+    "first_name": "Дина",
+    "last_name": "Носова",
+    "phone": "+7 (922) 740-1646",
+    "email": "nosova.dina2198@narod.ru",
+    "password": "5Ника82",
+    "address": "aae769ad-ccb6-4849-b130-0ba6d45b1fe7",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 13,
+      "month": "10",
+      "year": 2011
+    },
+    "parents": {
+      "father": "2f843fce-01c7-4898-a2e8-abe6fa3b9865",
+      "mother": "66011d3b-70f9-40ae-a4c0-8757b8e445e4"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "7659073e-e7dd-4f7e-b700-1bcb7d3762a8",
+    "sex": "w",
+    "first_name": "Фаина",
+    "last_name": "Кулакова",
+    "phone": "(495) 430-0510",
+    "email": "kulakova.faina_2687@narod.ru",
+    "password": "9Зоя30",
+    "address": "6e8f0e0a-4928-45eb-a750-6b2628d00f83",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 18,
+      "month": "8",
+      "year": 2010
+    },
+    "parents": {
+      "father": "120a44e1-76af-4a2e-b298-73f96e05d34f",
+      "mother": "d49cf6ec-4189-4c48-a4de-058825393c2f"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "4c2329c7-e63f-4b60-8a11-561ca2e02793",
+    "sex": "w",
+    "first_name": "Варвара",
+    "last_name": "Гущина",
+    "phone": "(495) 670-7903",
+    "email": "guschina.varvara3322@list.ru",
+    "password": "8Искра79",
+    "address": "a2b5148f-1604-4e1b-8d62-bd73e2c0c216",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 27,
+      "month": "5",
+      "year": 2010
+    },
+    "parents": {
+      "father": "67ae357b-319b-4974-b3e1-c214a772248d",
+      "mother": "5303daaa-f185-47f2-a67a-862acc4ead2e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "4f0b8bf5-f308-4912-b86f-33b326ef3f2d",
+    "sex": "w",
+    "first_name": "Кристина",
+    "last_name": "Тарасова",
+    "phone": "+7 (922) 441-5600",
+    "email": "tarasova.kristina_3252@mail.ru",
+    "password": "7Инесса09",
+    "address": "9fc74bc1-1bc9-484d-86f1-6f3df8fd92de",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 19,
+      "month": "7",
+      "year": 2011
+    },
+    "parents": {
+      "father": "b7a859d8-fcc3-4294-a048-7434ca2b7d3e",
+      "mother": "cacddf11-1e07-4b4a-bc19-ca3d6e7cac04"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6ad42be1-88fe-4899-85d4-1454041196e7",
+    "sex": "m",
+    "first_name": "Болеслав",
+    "last_name": "Ситников",
+    "phone": "+7 (922) 101-8444",
+    "email": "sitnikov.boleslav.2710@inbox.ru",
+    "password": "6Жанна94",
+    "address": "75b4caf2-943d-468c-b2f2-713f1ee68fb1",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 16,
+      "month": "2",
+      "year": 2013
+    },
+    "parents": {
+      "father": "583b40ba-6ca3-4ae3-87c4-252635faef28",
+      "mother": "22a27b78-5e77-4af8-a760-274c1eef0421"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ccc5df61-e5b0-4670-b700-e3fc933179f3",
+    "sex": "w",
+    "first_name": "Ника",
+    "last_name": "Кондратьева",
+    "phone": "+7 (922) 941-7906",
+    "email": "kondrateva.nika.4434@ya.ru",
+    "password": "2Софья52",
+    "address": "c06adc01-fa4b-4509-bcc5-eccd8235d96c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "10",
+      "year": 2011
+    },
+    "parents": {
+      "father": "8961df14-deed-4bcb-a1a0-06908ff160f5",
+      "mother": "44d961bc-861a-462a-ae74-cd57f0cb92bf"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c28adb70-b7af-451f-b851-42e183594c53",
+    "sex": "w",
+    "first_name": "Инга",
+    "last_name": "Антонова",
+    "phone": "+7 (922) 187-8686",
+    "email": "antonova.inga_2881@mail.ru",
+    "password": "3Василиса32",
+    "address": "48c211b8-c61e-4651-bedc-87646410a89b",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 22,
+      "month": "12",
+      "year": 2012
+    },
+    "parents": {
+      "father": "5268616d-8694-4a38-a4cf-c6b4622ff913",
+      "mother": "6875dbb2-2055-410c-b968-53d0ba9e1be3"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "92032ac2-691b-43e7-9953-e01b284af67e",
+    "sex": "m",
+    "first_name": "Егор",
+    "last_name": "Панфилов",
+    "phone": "(495) 502-4874",
+    "email": "panfilov.egor.4184@rambler.ru",
+    "password": "7Рада43",
+    "address": "5b5e63ce-919f-4f87-a024-1a3159da9a0c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 18,
+      "month": "11",
+      "year": 2011
+    },
+    "parents": {
+      "father": "11b34748-cb27-4318-b0bd-552fc6ab68b1",
+      "mother": "21232207-34cc-421e-824b-7421ee4dfb20"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "433215b2-9ae0-45e4-bc71-04027a53e1c9",
+    "sex": "m",
+    "first_name": "Игорь",
+    "last_name": "Исаев",
+    "phone": "8-800-194-2459",
+    "email": "isaev.igor.4304@ya.ru",
+    "password": "8Жанна03",
+    "address": "8b3c403c-42ab-4499-9fe6-4d4af3a706b9",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 28,
+      "month": "12",
+      "year": 2012
+    },
+    "parents": {
+      "father": "a88008b8-2819-4876-9fea-83f3e89bd6c7",
+      "mother": "647f0133-a842-484d-920b-223d55e16afb"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "21d39530-caca-4de6-ae28-df582059ab35",
+    "sex": "w",
+    "first_name": "Валерия",
+    "last_name": "Жданова",
+    "phone": "(495) 454-1894",
+    "email": "zhdanova.valeriya.4571@bk.ru",
+    "password": "8Диана08",
+    "address": "001ae9a9-f5b5-4886-99ec-f4e6b7a28597",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 9,
+      "month": "6",
+      "year": 2012
+    },
+    "parents": {
+      "father": "6afa1f04-5e7d-4ef3-906c-b8be7bd97646",
+      "mother": "f3371efd-7d19-43ec-bdf6-3eec68953432"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c2f95476-90b5-47cf-8354-587c0806449f",
+    "sex": "w",
+    "first_name": "Галина",
+    "last_name": "Мясникова",
+    "phone": "+7 (922) 912-9995",
+    "email": "myasnikova.galina.3234@gmail.com",
+    "password": "9Антонина92",
+    "address": "f9f0a7af-fc3d-474e-b804-222ce2857530",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 13,
+      "month": "9",
+      "year": 2011
+    },
+    "parents": {
+      "father": "fb550219-6850-4a6f-b46c-3c12b6edbd41",
+      "mother": "f9c78d8e-5949-49dc-89e2-876ce8978248"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6f650987-d550-4b80-b621-ad9d733d1c63",
+    "sex": "w",
+    "first_name": "Фаина",
+    "last_name": "Воробьёва",
+    "phone": "(35222) 50-3003",
+    "email": "vorobeva.faina.1952@narod.ru",
+    "password": "0Таисия57",
+    "address": "3c35ed1e-4f71-4a18-b4d2-7635de9be9d7",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "5",
+      "year": 2012
+    },
+    "parents": {
+      "father": "fdcca003-36d3-4d39-ad22-2d7d0efd3c83",
+      "mother": "df6c5a68-deea-4680-904d-ef76b222f9e2"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ba04542a-d200-45a5-8e88-460d78be847a",
+    "sex": "w",
+    "first_name": "Лидия",
+    "last_name": "Кудрявцева",
+    "phone": "(495) 591-2056",
+    "email": "kudryavceva.lidiya.2514@inbox.ru",
+    "password": "8Тамара60",
+    "address": "c10c4d70-fc79-4972-9c40-808b489b856c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 23,
+      "month": "11",
+      "year": 2013
+    },
+    "parents": {
+      "father": "b9dff44b-b46d-4b6a-a96e-2a06b4e62b93",
+      "mother": "c4bcdd7e-d342-41b3-b627-289a85bf3002"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c4c265ca-4f0f-4b49-b7c0-ff2336d58b3c",
+    "sex": "w",
+    "first_name": "Наталья",
+    "last_name": "Беспалова",
+    "phone": "8-800-374-4519",
+    "email": "bespalova.natalya_2514@mail.ru",
+    "password": "0Марта22",
+    "address": "c7c5b996-a854-4c24-8b2b-22fb842b7e94",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 26,
+      "month": "11",
+      "year": 2012
+    },
+    "parents": {
+      "father": "7eb27be7-007a-4880-8919-815eee8073b4",
+      "mother": "25396972-f68c-460a-bbf4-50c70d32456a"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "fbeca65e-a85e-4f82-b268-b54cc2264a50",
+    "sex": "w",
+    "first_name": "Клавдия",
+    "last_name": "Анисимова",
+    "phone": "8-800-830-1164",
+    "email": "anisimova.klavdiya_3388@inbox.ru",
+    "password": "4Кристина47",
+    "address": "385c0050-6abd-464f-a5b8-90bf35d89216",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 11,
+      "month": "4",
+      "year": 2011
+    },
+    "parents": {
+      "father": "2f467c3a-29af-44a9-914e-75aeec1099db",
+      "mother": "1edf10be-cc1d-4d5b-b2bd-952e47f4715d"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "d1834ec1-cec3-4f67-a52f-68a6fb4aedfc",
+    "sex": "m",
+    "first_name": "Дан",
+    "last_name": "Шарапов",
+    "phone": "(495) 969-7347",
+    "email": "sharapov.dan_4013@rambler.ru",
+    "password": "5Лада23",
+    "address": "03b7733d-55fa-47da-b2be-75590ae6f29f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 13,
+      "month": "5",
+      "year": 2012
+    },
+    "parents": {
+      "father": "5924c6d2-3fca-4bc2-a167-cfa459e09941",
+      "mother": "969c3b81-9509-4e3f-95b0-724f8474da7e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "431a800a-43c4-408f-a778-d01bca462530",
+    "sex": "w",
+    "first_name": "Марта",
+    "last_name": "Сергеева",
+    "phone": "+7 (922) 906-6521",
+    "email": "sergeeva.marta_4319@bk.ru",
+    "password": "9Ольга67",
+    "address": "29b950ba-e2f2-41a0-9dc5-227ceed2becf",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 23,
+      "month": "6",
+      "year": 2011
+    },
+    "parents": {
+      "father": "0bc22d42-fce1-4c6e-b523-18a4d75fb21d",
+      "mother": "b2b03cc5-c4d1-4d92-87ed-a7bb63baf5d7"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "9497b984-05db-4228-86c9-47b2b96dccd9",
+    "sex": "m",
+    "first_name": "Ефим",
+    "last_name": "Кузнецов",
+    "phone": "(495) 485-4202",
+    "email": "kuznecov.efim.4279@narod.ru",
+    "password": "9Надежда36",
+    "address": "5ed4cf0a-3b76-4e5f-9f00-fde421e41799",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 12,
+      "month": "6",
+      "year": 2010
+    },
+    "parents": {
+      "father": "8fdcdece-6964-402d-a87a-e33ff9ebf87f",
+      "mother": "55714693-eb33-4fc3-9b53-41d9033850b7"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "9d0ec312-300d-42d5-8af7-ddfa376423b3",
+    "sex": "w",
+    "first_name": "Лилия",
+    "last_name": "Калашникова",
+    "phone": "(495) 932-3002",
+    "email": "kalashnikova.liliya4035@inbox.ru",
+    "password": "0Нонна53",
+    "address": "9b6e2f53-e5e3-4b6f-b2b6-a37f70e68abd",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 14,
+      "month": "11",
+      "year": 2011
+    },
+    "parents": {
+      "father": "5c7b7edb-5bea-4d1c-be06-004a80903da5",
+      "mother": "0b129c88-b798-4355-b0d9-32f4ad8d16b5"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "4a6d210d-7276-464c-8ba6-b175dd10f409",
+    "sex": "w",
+    "first_name": "Ярослава",
+    "last_name": "Моисеева",
+    "phone": "(495) 380-1400",
+    "email": "moiseeva.yaroslava_4639@list.ru",
+    "password": "6Галина35",
+    "address": "3112ce3e-292e-472b-8c46-4f06ffab6392",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 5,
+      "month": "5",
+      "year": 2010
+    },
+    "parents": {
+      "father": "656b1971-8c2b-4a5e-a6e1-7c9ae0cf90e1",
+      "mother": "1d5f0418-48ea-49ff-85a2-bae60bec4aa9"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "87cfdbe7-cf90-44e3-a769-ce5518678714",
+    "sex": "w",
+    "first_name": "Рената",
+    "last_name": "Белова",
+    "phone": "8-800-318-2076",
+    "email": "belova.renata3143@ya.ru",
+    "password": "4Анастасия01",
+    "address": "1b693313-2d1c-4413-b51d-e28ae93e1544",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 23,
+      "month": "4",
+      "year": 2012
+    },
+    "parents": {
+      "father": "2a36bb99-4929-49a5-86ea-686e83b105dc",
+      "mother": "d2f4f7a3-aa76-425e-91f8-a26c78dc43a5"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "7385d3a9-4fb2-4747-908a-3ec7a1af6928",
+    "sex": "w",
+    "first_name": "Варвара",
+    "last_name": "Брагина",
+    "phone": "(495) 719-6631",
+    "email": "bragina.varvara3592@mail.ru",
+    "password": "9Анна56",
+    "address": "282975c7-e6e9-4c9d-bc4f-947cf0f10875",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 20,
+      "month": "4",
+      "year": 2012
+    },
+    "parents": {
+      "father": "59f3bf9a-2944-400b-abbe-fe9ecc47f27c",
+      "mother": "5db7e9bf-fccc-4c5a-9e64-14676807c160"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "0005b624-644c-4a1a-b62c-0eb57e857528",
+    "sex": "m",
+    "first_name": "Всеволод",
+    "last_name": "Наумов",
+    "phone": "(495) 888-7646",
+    "email": "naumov.vsevolod_4078@mail.ru",
+    "password": "7Ярослава66",
+    "address": "5a217ee1-81ea-4df4-9cef-6c116b6f3b0f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 16,
+      "month": "7",
+      "year": 2012
+    },
+    "parents": {
+      "father": "89f2c85b-ca2c-4f8e-9bbb-1ca3dc3e66b5",
+      "mother": "4dadedb8-edea-49db-9bd6-ee06195f2a0a"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "fc729bbd-0825-428a-abbd-f10da67daea6",
+    "sex": "m",
+    "first_name": "Владислав",
+    "last_name": "Потапов",
+    "phone": "8-800-742-9337",
+    "email": "potapov.vladislav.4442@inbox.ru",
+    "password": "1Екатерина16",
+    "address": "0a1f8fcf-285c-414a-8c9a-859a22831f69",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "4",
+      "year": 2012
+    },
+    "parents": {
+      "father": "e88a01db-4971-4bd0-8381-d104e116e8ca",
+      "mother": "e5fd5dfb-a076-468c-bdd4-948820ffce67"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "8294597e-9b5e-4295-8305-5a6141878ebe",
+    "sex": "w",
+    "first_name": "Тамара",
+    "last_name": "Кондратьева",
+    "phone": "+7 (922) 896-5596",
+    "email": "kondrateva.tamara_3045@gmail.com",
+    "password": "7Клементина54",
+    "address": "4368244a-dbda-4960-b740-6ad39c5c998a",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 3,
+      "month": "1",
+      "year": 2011
+    },
+    "parents": {
+      "father": "c2bf55b8-80ee-489f-a539-ddf098f2f360",
+      "mother": "001a882a-6288-4b3e-8596-ec628cf159b1"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2fce31ec-30a5-4bca-b1c9-2a07e64439b7",
+    "sex": "m",
+    "first_name": "Вячеслав",
+    "last_name": "Кулагин",
+    "phone": "+7 (922) 052-4480",
+    "email": "kulagin.vyacheslav4869@bk.ru",
+    "password": "9Надежда89",
+    "address": "24c2e67f-51db-4e3c-8767-fc9b29adf3b8",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "4",
+      "year": 2011
+    },
+    "parents": {
+      "father": "17fccfc5-acd6-430e-807a-19e1e0ec51b7",
+      "mother": "56c1be53-4c10-4868-834a-56ae74d6513c"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c10b8bf4-32eb-4bb2-992c-044b3f9b947f",
+    "sex": "m",
+    "first_name": "Кузьма",
+    "last_name": "Лапин",
+    "phone": "(495) 469-2357",
+    "email": "lapin.kuzma_2031@inbox.ru",
+    "password": "3Розалина49",
+    "address": "dcc115d5-4559-4a24-9572-82b0ff1e778a",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 19,
+      "month": "10",
+      "year": 2010
+    },
+    "parents": {
+      "father": "3dcb85ed-6409-4b2b-9dfb-19d21605312f",
+      "mother": "455e298c-91dd-40a5-af5b-560c18ffdb1f"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "0720f665-d3a9-4176-984f-2c8c8d25adc5",
+    "sex": "w",
+    "first_name": "Нина",
+    "last_name": "Кононова",
+    "phone": "(495) 221-3735",
+    "email": "kononova.nina4236@hotmail.com",
+    "password": "3Валерия76",
+    "address": "599e2f83-156b-47f1-83fe-6384c042db8b",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "8",
+      "year": 2011
+    },
+    "parents": {
+      "father": "43cfc0a1-20c9-4e1c-a9b6-e8e639d21865",
+      "mother": "88961cf9-0584-454d-9554-4f19ceaf5bac"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "10b0854f-ab6c-450a-9d77-51daa75637ec",
+    "sex": "w",
+    "first_name": "Вероника",
+    "last_name": "Данилова",
+    "phone": "(35222) 51-5812",
+    "email": "danilova.veronika.2103@hotmail.com",
+    "password": "9Екатерина99",
+    "address": "7d1be2d8-ef89-4ccc-ac1d-39b53f43d94d",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "11",
+      "year": 2010
+    },
+    "parents": {
+      "father": "8aed27ce-aa73-49fb-90ae-80cae5906cb4",
+      "mother": "64aa2f39-a7c4-4ae1-b163-9616fb3ef2b6"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6707aed5-7db0-42a8-a486-243f4a82d738",
+    "sex": "w",
+    "first_name": "Дина",
+    "last_name": "Блохина",
+    "phone": "8-800-348-6942",
+    "email": "blohina.dina.3148@gmail.com",
+    "password": "0Ева68",
+    "address": "489d45bc-c8a4-4f72-a1cb-9627c29810c3",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 15,
+      "month": "6",
+      "year": 2011
+    },
+    "parents": {
+      "father": "9e52b5fd-4969-4236-955c-fd26434d7a9d",
+      "mother": "635b1930-a1db-4a85-b33f-45967395f282"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "82df0a97-5e68-4ed9-9587-877e826dc6dc",
+    "sex": "w",
+    "first_name": "Валерия",
+    "last_name": "Соболева",
+    "phone": "8-800-568-1872",
+    "email": "soboleva.valeriya_4115@bk.ru",
+    "password": "0Клавдия20",
+    "address": "cc19a491-7ea0-453f-9493-c92f5c231c5c",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "4",
+      "year": 2010
+    },
+    "parents": {
+      "father": "a093773f-95e3-48a3-ba98-de2b22ac0e2e",
+      "mother": "a4228ceb-2b58-4d30-b894-439b286bff1e"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6d7820d3-b8d7-422d-adf9-7a20d4b61764",
+    "sex": "w",
+    "first_name": "Марта",
+    "last_name": "Самойлова",
+    "phone": "(495) 667-0297",
+    "email": "samoylova.marta_3973@narod.ru",
+    "password": "3Ева45",
+    "address": "1e6983ba-5494-41fa-81ad-3298344d4668",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 25,
+      "month": "11",
+      "year": 2011
+    },
+    "parents": {
+      "father": "c80bc9f5-49f2-4291-99af-1cf2aae56279",
+      "mother": "2bc9890d-2679-437a-bda1-7bfe207a1b19"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "e8175a0f-7d58-4fce-8107-356102a220c3",
+    "sex": "w",
+    "first_name": "Евгения",
+    "last_name": "Кудрявцева",
+    "phone": "8-800-551-3376",
+    "email": "kudryavceva.evgeniya.4962@hotmail.com",
+    "password": "9Анжелика00",
+    "address": "9daa49b9-4062-4381-9ea8-bc635b07149d",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 27,
+      "month": "10",
+      "year": 2010
+    },
+    "parents": {
+      "father": "510bd7b8-e8ba-49ae-bf72-7e96f377d858",
+      "mother": "372db761-0b0f-4c32-9523-b4577daa1fff"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "72872079-c57d-46bb-acb2-d98f14690284",
+    "sex": "w",
+    "first_name": "Искра",
+    "last_name": "Лаврентьева",
+    "phone": "(35222) 28-3287",
+    "email": "lavrenteva.iskra_4103@yandex.ru",
+    "password": "0Алиса72",
+    "address": "39b465e8-da1c-4631-b3dc-1dacda9b5689",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 3,
+      "month": "9",
+      "year": 2010
+    },
+    "parents": {
+      "father": "27bd558f-3b8a-4026-b7aa-d51a64d15d76",
+      "mother": "5deca601-4506-4167-9ce3-7af400ba988b"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "fc2d2ca5-8c08-4e18-99cd-f0ecf1a4ea08",
+    "sex": "w",
+    "first_name": "Лидия",
+    "last_name": "Шубина",
+    "phone": "(35222) 83-2635",
+    "email": "shubina.lidiya3893@inbox.ru",
+    "password": "2Раиса26",
+    "address": "a034a10f-a1ec-46eb-997c-8250cd18d6e0",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 22,
+      "month": "10",
+      "year": 2011
+    },
+    "parents": {
+      "father": "e6ab6cb4-b56a-4f3c-a566-a671c998914e",
+      "mother": "0108bfea-ae78-44e8-b54b-e226661cee32"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "716e327a-1318-48dd-8d51-a91c6083bcd9",
+    "sex": "m",
+    "first_name": "Фёдор",
+    "last_name": "Носов",
+    "phone": "+7 (922) 734-1080",
+    "email": "nosov.fedor_4278@yandex.ru",
+    "password": "7Татьяна63",
+    "address": "da5a1e80-45fe-441b-b290-4b7c7d8a3b85",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "6",
+      "year": 2012
+    },
+    "parents": {
+      "father": "b0949c78-6fab-432d-8d06-928d063eb4d9",
+      "mother": "5f597dd7-2bd9-47f1-af85-7b827f516e04"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "83ea319b-1afb-4385-bebe-03b4481e11d2",
+    "sex": "w",
+    "first_name": "Жанна",
+    "last_name": "Анисимова",
+    "phone": "8-800-669-9780",
+    "email": "anisimova.zhanna4569@ya.ru",
+    "password": "9Ольга19",
+    "address": "6db90707-36c0-49a1-a8ee-2c0b9791a1eb",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 27,
+      "month": "11",
+      "year": 2012
+    },
+    "parents": {
+      "father": "06576c4b-9b80-4664-9c76-1d7eb7494182",
+      "mother": "39c39be6-4e44-462f-8460-2f82b1b75ce5"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "7aec3ff0-0cdb-40b1-a851-433b4e522da0",
+    "sex": "w",
+    "first_name": "Клавдия",
+    "last_name": "Яковлева",
+    "phone": "(35222) 82-2672",
+    "email": "yakovleva.klavdiya.4922@gmail.com",
+    "password": "7Софья02",
+    "address": "29bad8cd-f787-46d9-9350-7ee0ed0b2c48",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 7,
+      "month": "10",
+      "year": 2013
+    },
+    "parents": {
+      "father": "96e1f627-aa3b-460f-b82d-ca5ddffd2853",
+      "mother": "3ed42933-c1a9-4a29-8fbb-fd422895f913"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "95bc2c2c-cd79-4e56-a08d-6287351f3f98",
+    "sex": "m",
+    "first_name": "Вениамин",
+    "last_name": "Щукин",
+    "phone": "(812) 883-02-01",
+    "email": "schukin.veniamin_4830@list.ru",
+    "password": "1Марина17",
+    "address": "e5148c22-e6ea-49f0-94bd-f7ac0f44008f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 12,
+      "month": "8",
+      "year": 2010
+    },
+    "parents": {
+      "father": "ecd7e36c-f589-45ae-9cec-9cfab535c7dd",
+      "mother": "b13fac3a-bb3b-4825-8a08-fd940ebcf064"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "cec5b4a2-2b9f-4125-99e4-b1cb92d3a788",
+    "sex": "m",
+    "first_name": "Иосиф",
+    "last_name": "Лаврентьев",
+    "phone": "8-800-713-9976",
+    "email": "lavrentev.iosif_2525@mail.ru",
+    "password": "5Анастасия17",
+    "address": "69baa612-b841-4bbb-a88a-d0883a089134",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "4",
+      "year": 2012
+    },
+    "parents": {
+      "father": "5186e02a-320a-40a3-a900-7b2d2cb23051",
+      "mother": "d132dfbc-826d-4b73-8a59-99e632287b60"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "1461087d-c35f-49db-8922-113e6c8d828e",
+    "sex": "w",
+    "first_name": "Ольга",
+    "last_name": "Михеева",
+    "phone": "(812) 382-52-53",
+    "email": "miheeva.olga.2452@rambler.ru",
+    "password": "9Клементина02",
+    "address": "483fb66e-bead-44f4-96f7-26e10ccb99a8",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 14,
+      "month": "10",
+      "year": 2012
+    },
+    "parents": {
+      "father": "4df7d2cd-2254-4ba3-8232-61cd8611a7ac",
+      "mother": "7f762bbc-9d23-43f1-a0f2-2fdc18102258"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "a44df6c0-f9dc-4b25-af04-668407eb3ec0",
+    "sex": "m",
+    "first_name": "Август",
+    "last_name": "Потапов",
+    "phone": "+7 (922) 453-4867",
+    "email": "potapov.avgust_4153@ya.ru",
+    "password": "3Эльвира54",
+    "address": "f1e98b8e-0436-419a-bb32-a5935e2d0d23",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 2,
+      "month": "1",
+      "year": 2012
+    },
+    "parents": {
+      "father": "f0a4c906-9042-473f-a6cd-bbc112c1d98e",
+      "mother": "46039d98-3253-4104-b9e0-1d513689fdff"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "2c51e3c1-4253-4df6-913d-9d64206e2773",
+    "sex": "w",
+    "first_name": "Лада",
+    "last_name": "Уварова",
+    "phone": "8-800-582-8476",
+    "email": "uvarova.lada_3400@ya.ru",
+    "password": "4Людмила71",
+    "address": "391752a4-a6ab-4002-ac3e-73f092f7a28f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "10",
+      "year": 2011
+    },
+    "parents": {
+      "father": "29e15c45-2c86-4312-9cf3-5937ee1e24d6",
+      "mother": "3054838e-7ae1-41e2-8b95-68a422625ede"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "701b8bb5-ad95-465a-a02e-f7961c8c66b1",
+    "sex": "m",
+    "first_name": "Герасим",
+    "last_name": "Авдеев",
+    "phone": "(812) 444-64-43",
+    "email": "avdeev.gerasim4426@ya.ru",
+    "password": "3Галина12",
+    "address": "a73b44d4-d817-45a9-b1f5-a057c09fdd46",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 21,
+      "month": "4",
+      "year": 2010
+    },
+    "parents": {
+      "father": "5097bf98-4eed-4cf4-80e4-e98e8dd5d0f5",
+      "mother": "b3063dc4-e01b-425a-8ce3-e8463702e626"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "bf3595b0-6f4e-430e-a5c7-b8355fa6d860",
+    "sex": "w",
+    "first_name": "Марта",
+    "last_name": "Евсеева",
+    "phone": "(35222) 26-9222",
+    "email": "evseeva.marta4192@bk.ru",
+    "password": "7Лада34",
+    "address": "c8a2e1ec-3d4c-40f7-83dd-c667eb596711",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 22,
+      "month": "2",
+      "year": 2011
+    },
+    "parents": {
+      "father": "e89a0256-cd45-4c4d-bdb3-d3aafcd0df60",
+      "mother": "ad79ce3b-bd5d-4aeb-b126-f787c7f7ffa3"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "b405a138-4979-4251-8f57-621aaa4b021d",
+    "sex": "w",
+    "first_name": "Инна",
+    "last_name": "Дьячкова",
+    "phone": "8-800-543-8427",
+    "email": "dyachkova.inna_2258@yandex.ru",
+    "password": "6Валентина40",
+    "address": "28d89fb6-36f8-4063-bfac-6da07680266b",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 8,
+      "month": "8",
+      "year": 2010
+    },
+    "parents": {
+      "father": "36897bc9-725c-4169-9ea6-55f422d4ddb3",
+      "mother": "ac191311-c6a0-4c27-a4dc-86f7cde0eea4"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "d52d4a96-8f4d-46a8-90c2-83fbde93679d",
+    "sex": "w",
+    "first_name": "Ульяна",
+    "last_name": "Журавлёва",
+    "phone": "(35222) 53-5231",
+    "email": "zhuravleva.ulyana.2126@rambler.ru",
+    "password": "7Зоя46",
+    "address": "050199ea-a1ff-4807-8a7e-73c0752fed31",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 9,
+      "month": "3",
+      "year": 2011
+    },
+    "parents": {
+      "father": "69abf8e2-66ce-4ad8-837f-2712f3615eca",
+      "mother": "807d3734-dc36-4fed-865a-e52fdf16ba75"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "046e3597-d542-4238-9768-c1b86efe890f",
+    "sex": "w",
+    "first_name": "Марина",
+    "last_name": "Попова",
+    "phone": "(495) 674-4165",
+    "email": "popova.marina_4397@list.ru",
+    "password": "1Анна45",
+    "address": "b8a4ab8b-f361-49ee-a601-c3f6354b4644",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 27,
+      "month": "8",
+      "year": 2013
+    },
+    "parents": {
+      "father": "e7e0c80f-fa88-442f-8d60-f779a082a959",
+      "mother": "20030f72-7db1-4f82-861c-9d824687b4e3"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "22c7679f-3444-4baa-b126-c483e00f3ece",
+    "sex": "w",
+    "first_name": "Инесса",
+    "last_name": "Игнатова",
+    "phone": "8-800-045-9166",
+    "email": "ignatova.inessa.4401@bk.ru",
+    "password": "6Ника48",
+    "address": "13cd3a78-f382-435e-bca8-a3d2531f842f",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 9,
+      "month": "3",
+      "year": 2011
+    },
+    "parents": {
+      "father": "57d49499-3608-4df3-aa79-8dfbc7db96f8",
+      "mother": "ee3e29c1-2f4a-46ff-8df7-54b4d628c862"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "811ad3b6-bcc5-40c2-b411-35d7487d6773",
+    "sex": "m",
+    "first_name": "Артур",
+    "last_name": "Орлов",
+    "phone": "(812) 044-99-35",
+    "email": "orlov.artur.4156@mail.ru",
+    "password": "4Елена15",
+    "address": "483ab2bc-8831-4f3b-9164-bae69acc2b35",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 11,
+      "month": "6",
+      "year": 2012
+    },
+    "parents": {
+      "father": "4d987805-9fe6-4187-b0f0-92b116dfd8fe",
+      "mother": "722aa9d6-5bef-429a-9d99-639f2d716c0d"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "6258b159-2063-4342-9e89-3ca2eab7b158",
+    "sex": "w",
+    "first_name": "Ольга",
+    "last_name": "Логинова",
+    "phone": "8-800-963-7653",
+    "email": "loginova.olga.2273@bk.ru",
+    "password": "9Нелли73",
+    "address": "51d9258d-1ee9-44a9-9aa7-3cb201b1349e",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "8",
+      "year": 2010
+    },
+    "parents": {
+      "father": "9e63d5de-8337-4263-898d-71c1afe71cd0",
+      "mother": "9bd9794c-3f59-46dd-9661-cfb7703b7443"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "3c578b9b-c0e4-449d-bda3-c58a69d8bdbd",
+    "sex": "m",
+    "first_name": "Матвей",
+    "last_name": "Бобылёв",
+    "phone": "+7 (922) 614-5918",
+    "email": "bobylev.matvey2831@inbox.ru",
+    "password": "6Лариса58",
+    "address": "3d118615-d8d7-4a20-a43a-1f3c328abec5",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 19,
+      "month": "6",
+      "year": 2011
+    },
+    "parents": {
+      "father": "fee1b98a-8485-4b50-bb67-675a6cb9c78b",
+      "mother": "ac0f11dc-4d68-4ec7-8d7b-2eea7cf95e6d"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c0c73133-351c-4609-891d-430bf4d59c5e",
+    "sex": "w",
+    "first_name": "Юлия",
+    "last_name": "Пахомова",
+    "phone": "(495) 833-8404",
+    "email": "pahomova.yuliya_3395@list.ru",
+    "password": "9Марина66",
+    "address": "6f7de09f-14e2-4f1d-bd37-675918077921",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 5,
+      "month": "10",
+      "year": 2010
+    },
+    "parents": {
+      "father": "f13cf71b-f43b-4f4e-8e42-52411a58f957",
+      "mother": "2efeedce-9bb0-4527-9bbc-ce03c39e7887"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "ab5eb3e0-0207-4429-88de-8b78e5b7d4b0",
+    "sex": "m",
+    "first_name": "Адриан",
+    "last_name": "Артемьев",
+    "phone": "+7 (922) 340-4729",
+    "email": "artemev.adrian.2520@list.ru",
+    "password": "8Екатерина73",
+    "address": "e7b9a15e-b0a2-4800-95a9-4298f94b92e1",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 12,
+      "month": "4",
+      "year": 2010
+    },
+    "parents": {
+      "father": "a01b64cd-af76-4c65-8c82-0cdb02a7ef2b",
+      "mother": "02396935-a0a2-4ab6-af26-721eeec70e64"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "32278abe-6b2c-4acd-a965-84453d90b453",
+    "sex": "m",
+    "first_name": "Никита",
+    "last_name": "Коновалов",
+    "phone": "(495) 188-6466",
+    "email": "konovalov.nikita2545@bk.ru",
+    "password": "7Эмма65",
+    "address": "b9b644fb-3c4c-45a6-abcd-083b11eb1d93",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 6,
+      "month": "10",
+      "year": 2012
+    },
+    "parents": {
+      "father": "b81d77c7-f011-4bbd-abda-fe691bec5ff2",
+      "mother": "16a12b27-80e6-4c15-a6fb-740666dc1840"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "5165b2bd-71f7-4c13-8b13-76ec6b310a01",
+    "sex": "m",
+    "first_name": "Клим",
+    "last_name": "Субботин",
+    "phone": "(812) 118-08-84",
+    "email": "subbotin.klim4302@gmail.com",
+    "password": "6Людмила05",
+    "address": "a110e4ff-15e9-470e-84e3-3de55ac5a974",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 11,
+      "month": "12",
+      "year": 2012
+    },
+    "parents": {
+      "father": "f4d42251-38a7-47e6-a462-d7c259e865fa",
+      "mother": "ed7e9560-ef33-4da0-94e3-eb5ce541ead7"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "7f618104-0bb3-4589-bf23-c485af6954bc",
+    "sex": "m",
+    "first_name": "Болеслав",
+    "last_name": "Гордеев",
+    "phone": "(495) 045-7835",
+    "email": "gordeev.boleslav1978@hotmail.com",
+    "password": "9Кристина80",
+    "address": "3cf5ec43-5747-4736-9c2f-8edb79f09ab3",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 17,
+      "month": "2",
+      "year": 2012
+    },
+    "parents": {
+      "father": "955929fc-ba3f-4347-b19d-57a8e67d0046",
+      "mother": "9bbf40d8-7796-4509-97a3-082a134e7c93"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_class": "",
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "c6804e85-c675-49e9-9a6b-829a0d934345",
+    "sex": "m",
+    "first_name": "Никодим",
+    "last_name": "Крюков",
+    "phone": "+7 (922) 509-8711",
+    "email": "kryukov.nikodim4825@narod.ru",
+    "password": "9Ирина69",
+    "address": "de864c96-6d7f-4e9d-b6c5-479d3b3f1124",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 10,
+      "month": "6",
+      "year": 2011
+    },
+    "parents": {
+      "father": "8d6f1bbe-3c69-4b79-ade9-13efa10211d1",
+      "mother": "92bb8427-a80e-4089-ae79-8bb0dd10dd30"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  },
+  {
+    "uuid": "a5a49087-c4a1-49a2-b401-39aa1f08ac7e",
+    "sex": "w",
+    "first_name": "Люся",
+    "last_name": "Ермакова",
+    "phone": "(495) 992-7041",
+    "email": "ermakova.lyusya2136@mail.ru",
+    "password": "2Розалина12",
+    "address": "8dcd62ce-4f7a-4cf5-8e27-83ad7c3d6b59",
+    "hobby": [],
+    "add_education": [],
+    "achievements": [],
+    "study_subjects": [
+      "Математика",
+      "Русский язык",
+      "Литература",
+      "Англиский язык",
+      "Физика",
+      "Биология"
+    ],
+    "academic_progress_sum": 0,
+    "teacher_raiting": 0,
+    "birthday": {
+      "day": 24,
+      "month": "5",
+      "year": 2011
+    },
+    "parents": {
+      "father": "6e24c8a2-2e8b-42cd-b6f7-77106157162a",
+      "mother": "14934e9c-c0d2-45af-b0a1-cb663253a667"
+    },
+    "advices": [],
+    "messages": [],
+    "uuid_progress": ""
+  }
+]

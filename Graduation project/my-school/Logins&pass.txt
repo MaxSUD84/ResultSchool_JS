@@ -1,0 +1,46 @@
+teachers
+=================
+
+sharovaa.inna.2468@list.ru				5Анжелика09
+teterina.anatoliy_2590@yandex.ru		6Клавдия84
+samsonova.platon_2350@rambler.ru		0Анастасия99		+++
+konovalova.klim4214@bk.ru				9Алина70
+
+Класс 5К
+========
+Классный руководитель (63f9f3f4067c064c2ebcf400)
+savina.anton_4785@yandex.ru				0Рената54
+---
+Математика (63f9f3f4067c064c2ebcf401)
+doronina.aleksandr.4972@bk.ru			6Светлана15
+---
+Англиский язык (63f9f3f4067c064c2ebcf3fc)
+turovaa.oksana3524@narod.ru				3Мальвина02
+---
+Литература (63f9f3f4067c064c2ebcf3f5)
+davydovaa.kseniya4507@rambler.ru		7Надежда60
+---
+Физика (63f9f3f4067c064c2ebcf3fb)
+samsonova.platon_2350@rambler.ru		0Анастасия99
+---
+Биология (63f9f3f4067c064c2ebcf3f8)
+tarasovaa.vasilisa_3848@gmail.com		2Алёна43
+---
+Русский язык (63f9f3f4067c064c2ebcf3f7)
+mihaylovaa.inna_3600@ya.ru				3Диана90
+
+
+learners
+=================
+artemev.adrian.2520@list.ru				8Екатерина73
+vladimirova.iskra.4535@yandex.ru		5Регина64
+
+
+kovaleva.anzhelika_1959@yandex.ru		1Лидия23
+belyakov.david2830@yandex.ru			1Марина70
+
+prohorov.lavrentiy2448@rambler.ru		6Эмма15
+
+sergeeva.marta_4319@bk.ru				9Ольга67
+
+strelkova.margarita.4969@inbox.ru		3Клементина91

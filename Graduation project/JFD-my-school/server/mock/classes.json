@@ -1,0 +1,197 @@
+[
+  {
+    "title": "5К",
+    "uuid": "3fea684b-b1b8-4900-b208-0bd76aa30a57",
+    "description": "Класс 5К",
+    "study_subjects": [
+      {
+        "uuid": "ded92047-f44c-4dd6-a4c5-0d50b93f0eff",
+        "subject": "Математика",
+        "teacher_uuid": "52738560-437a-46a8-8e3d-c2bd4a33a0b4"
+      },
+      {
+        "uuid": "cbb14d31-ffea-4fa2-b9f5-c4cb7e6ca935",
+        "subject": "Русский язык",
+        "teacher_uuid": "a36ecc41-ed62-48b5-95c3-8be1a1e27e95"
+      },
+      {
+        "uuid": "cbe06418-46f9-4af6-8134-1f8b5f52a6ac",
+        "subject": "Литература",
+        "teacher_uuid": "04647760-539d-454c-b312-bb3741b0771d"
+      },
+      {
+        "uuid": "d7386d6c-ad55-450f-b866-4cd6b0dd245b",
+        "subject": "Англиский язык",
+        "teacher_uuid": "0506aa92-67aa-4b92-a52f-fac37cb82f26"
+      },
+      {
+        "uuid": "7074bbf8-d450-4939-bee4-8bdba43c2b53",
+        "subject": "Физика",
+        "teacher_uuid": "1390c6e8-3796-4a1d-bc53-bd33723b1af6"
+      },
+      {
+        "uuid": "8f95497d-e006-45a4-b299-b083e261102c",
+        "subject": "Биология",
+        "teacher_uuid": "d79f2a3b-98e1-44de-9f5c-984284bd1664"
+      }
+    ],
+    "group_mentor": "0506aa92-67aa-4b92-a52f-fac37cb82f26",
+    "learners_list": [
+      "cec5b4a2-2b9f-4125-99e4-b1cb92d3a788",
+      "1afcb4f6-2dcb-46a0-a28c-8e1422c9beba",
+      "a44df6c0-f9dc-4b25-af04-668407eb3ec0",
+      "c89aa91b-2a89-4fe4-bad5-6f4b70653ebe",
+      "8ad9ee7b-a3b7-4d41-a1cf-80472424d0de",
+      "7f618104-0bb3-4589-bf23-c485af6954bc",
+      "0721dfb9-a3bc-4884-b289-1cb6632a1f5b",
+      "95bc2c2c-cd79-4e56-a08d-6287351f3f98",
+      "ccc5df61-e5b0-4670-b700-e3fc933179f3",
+      "a42d4b32-b959-4017-b3f1-f433c1576e38",
+      "6d7820d3-b8d7-422d-adf9-7a20d4b61764",
+      "fee27972-f157-4621-92d4-939d232a88ac",
+      "fbeca65e-a85e-4f82-b268-b54cc2264a50",
+      "578eced5-3ef0-43da-ad96-eb4d063ea69d",
+      "1e76e775-79ce-4bd0-b315-ce9f51d876ca",
+      "720cda6c-94a5-46cd-b665-423750934c72",
+      "1461087d-c35f-49db-8922-113e6c8d828e",
+      "0c266e39-7831-43c8-a305-b4e1d1440868",
+      "2338aeea-2017-4dbf-8fb2-79ebb0f109fb",
+      "242d6fad-6400-4a1c-8d1d-8cee2adeec39",
+      "08f09744-5aa9-4dd1-8dc1-6937244aeac1",
+      "2fce31ec-30a5-4bca-b1c9-2a07e64439b7",
+      "72872079-c57d-46bb-acb2-d98f14690284",
+      "2c51e3c1-4253-4df6-913d-9d64206e2773",
+      "d52d4a96-8f4d-46a8-90c2-83fbde93679d"
+    ]
+  },
+  {
+    "title": "5А",
+    "uuid": "f4567a84-9160-42be-be3e-1e1047ad031e",
+    "description": "Класс 5А",
+    "study_subjects": [
+      {
+        "uuid": "ded92047-f44c-4dd6-a4c5-0d50b93f0eff",
+        "subject": "Математика",
+        "teacher_uuid": "52738560-437a-46a8-8e3d-c2bd4a33a0b4"
+      },
+      {
+        "uuid": "cbb14d31-ffea-4fa2-b9f5-c4cb7e6ca935",
+        "subject": "Русский язык",
+        "teacher_uuid": "eef50179-0952-4662-938d-698006cec405"
+      },
+      {
+        "uuid": "cbe06418-46f9-4af6-8134-1f8b5f52a6ac",
+        "subject": "Литература",
+        "teacher_uuid": "04647760-539d-454c-b312-bb3741b0771d"
+      },
+      {
+        "uuid": "d7386d6c-ad55-450f-b866-4cd6b0dd245b",
+        "subject": "Англиский язык",
+        "teacher_uuid": "f7fa9bce-6d98-4a9d-9e3b-b1fc3594325c"
+      },
+      {
+        "uuid": "7074bbf8-d450-4939-bee4-8bdba43c2b53",
+        "subject": "Физика",
+        "teacher_uuid": "1390c6e8-3796-4a1d-bc53-bd33723b1af6"
+      },
+      {
+        "uuid": "8f95497d-e006-45a4-b299-b083e261102c",
+        "subject": "Биология",
+        "teacher_uuid": "8c29ac15-3ee5-4fc9-a233-49897385bbf9"
+      }
+    ],
+    "group_mentor": "1390c6e8-3796-4a1d-bc53-bd33723b1af6",
+    "learners_list": [
+      "7eb60516-8e3f-4c12-9316-81ced59ef880",
+      "82df0a97-5e68-4ed9-9587-877e826dc6dc",
+      "9d1f94c3-a290-4bbc-aaa9-8962515e66c5",
+      "e8175a0f-7d58-4fce-8107-356102a220c3",
+      "4a6d210d-7276-464c-8ba6-b175dd10f409",
+      "4f0b8bf5-f308-4912-b86f-33b326ef3f2d",
+      "6707aed5-7db0-42a8-a486-243f4a82d738",
+      "801e9367-cca7-43a9-9e46-673d73d84349",
+      "ba04542a-d200-45a5-8e88-460d78be847a",
+      "cdd1ea33-feae-41d7-a4dc-d4946715b6db",
+      "bf3595b0-6f4e-430e-a5c7-b8355fa6d860",
+      "b405a138-4979-4251-8f57-621aaa4b021d",
+      "c07b73fe-0aba-4a87-90de-30128d3aaa60",
+      "ee82cfd0-999a-4e9a-a5fb-dcd3c7984116",
+      "22c7679f-3444-4baa-b126-c483e00f3ece",
+      "c0c73133-351c-4609-891d-430bf4d59c5e",
+      "1fd841b2-4c8c-4400-9f9e-1e5db84aa816",
+      "32278abe-6b2c-4acd-a965-84453d90b453",
+      "7470f911-fcc1-4e23-b68c-497146a345fc",
+      "92032ac2-691b-43e7-9953-e01b284af67e",
+      "22de1895-41c0-4ff0-80df-2fe2c36d9d7e",
+      "5cc8a7f2-2b3a-4bc5-bcc8-c1bb856b7919",
+      "701b8bb5-ad95-465a-a02e-f7961c8c66b1",
+      "c28adb70-b7af-451f-b851-42e183594c53",
+      "fc729bbd-0825-428a-abbd-f10da67daea6"
+    ]
+  },
+  {
+    "title": "6Б",
+    "uuid": "e6ee6aff-336c-4ce2-911c-aa44ab43001d",
+    "description": "Класс 6Б",
+    "study_subjects": [
+      {
+        "uuid": "5f321df2-469a-4d5f-a5e0-abfa01ca4a6e",
+        "subject": "Математика",
+        "teacher_uuid": "52738560-437a-46a8-8e3d-c2bd4a33a0b4"
+      },
+      {
+        "uuid": "160c720d-9381-4edb-96db-7e776940a106",
+        "subject": "Русский язык",
+        "teacher_uuid": "d4565cad-6205-49c1-a79b-a3e2326a3c4b"
+      },
+      {
+        "uuid": "47b1d3f4-8b98-4c82-9ddd-f145c2b13a08",
+        "subject": "Литература",
+        "teacher_uuid": "04647760-539d-454c-b312-bb3741b0771d"
+      },
+      {
+        "uuid": "a6cad3b5-0fff-4d05-9fe0-87da3414a39c",
+        "subject": "Англиский язык",
+        "teacher_uuid": "0506aa92-67aa-4b92-a52f-fac37cb82f26"
+      },
+      {
+        "uuid": "1b2417e0-02b7-4d42-b8df-c0797b5ea25c",
+        "subject": "Физика",
+        "teacher_uuid": "d98fea5b-9e4c-4e35-a2a0-f23a71a46cc5"
+      },
+      {
+        "uuid": "f79acebf-fb41-4690-bfa4-cdc2a7eedc19",
+        "subject": "Биология",
+        "teacher_uuid": "00a067ae-a8eb-4c45-a0aa-94be70f33d55"
+      }
+    ],
+    "group_mentor": "52738560-437a-46a8-8e3d-c2bd4a33a0b4",
+    "learners_list": [
+      "0720f665-d3a9-4176-984f-2c8c8d25adc5",
+      "716e327a-1318-48dd-8d51-a91c6083bcd9",
+      "4be33dfe-30f7-47b8-886b-16dbcd708546",
+      "c10b8bf4-32eb-4bb2-992c-044b3f9b947f",
+      "e000c69e-8a05-4350-85e7-c8311dc5d81b",
+      "b3123342-cda2-4280-add8-e1a51e280469",
+      "2bad0951-a8a0-4c3f-b0a0-399978e33d8c",
+      "4c2329c7-e63f-4b60-8a11-561ca2e02793",
+      "433215b2-9ae0-45e4-bc71-04027a53e1c9",
+      "0005b624-644c-4a1a-b62c-0eb57e857528",
+      "7385d3a9-4fb2-4747-908a-3ec7a1af6928",
+      "d1834ec1-cec3-4f67-a52f-68a6fb4aedfc",
+      "338bc01b-7293-498a-9fec-26e8e8f9b6c5",
+      "9d0ec312-300d-42d5-8af7-ddfa376423b3",
+      "431a800a-43c4-408f-a778-d01bca462530",
+      "5165b2bd-71f7-4c13-8b13-76ec6b310a01",
+      "8294597e-9b5e-4295-8305-5a6141878ebe",
+      "417f6700-3c4b-4b0a-a406-4a73dd62f0dd",
+      "c4c265ca-4f0f-4b49-b7c0-ff2336d58b3c",
+      "ab5eb3e0-0207-4429-88de-8b78e5b7d4b0",
+      "83ea319b-1afb-4385-bebe-03b4481e11d2",
+      "c2f95476-90b5-47cf-8354-587c0806449f",
+      "9497b984-05db-4228-86c9-47b2b96dccd9",
+      "0380dd42-bced-4ad6-afa5-1d6718298735",
+      "f6c4c215-061c-4da5-9225-05ab7fd53f72"
+    ]
+  }
+]

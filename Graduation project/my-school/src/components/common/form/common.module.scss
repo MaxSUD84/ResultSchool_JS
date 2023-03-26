@@ -1,0 +1,94 @@
+.checkbox {
+    @apply
+    form-checkbox
+    rounded
+    border-gray-300
+    text-indigo-600
+    shadow-sm
+    focus:border-indigo-300
+    focus:ring
+    focus:ring-offset-0
+    focus:ring-indigo-200
+    focus:ring-opacity-50
+}
+
+.alert {
+    @apply text-xs text-red-500
+}
+
+.field__label {
+    @apply text-gray-700
+}
+
+.textfield {
+    @apply block
+}
+
+.textfield__container {
+    @apply flex flex-row items-center
+}
+
+.textfield__container__input {
+    @apply
+        form-input          
+        block
+        rounded-md
+        w-full
+        border-gray-300
+        shadow-sm
+        focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+}
+
+.textfield__container__area {
+    @apply
+        form-textarea          
+        block
+        rounded-md
+        w-full
+        border-gray-300
+        shadow-sm
+        focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+}
+
+.textfield__container__showhidebutton {
+    @apply
+        p-3 
+        /* static  */
+        /* inline-block */
+        bg-slate-100 hover:bg-purple-200
+        rounded-r-md
+        shadow-sm
+        ring-1
+        focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+}
+
+.radio__container {
+    @apply inline-flex items-center
+}
+
+.radio__input {
+    @apply 
+        form-radio
+        border-gray-300
+        text-indigo-600
+        shadow-sm
+        focus:border-indigo-300
+        focus:ring
+        focus:ring-offset-0
+        focus:ring-indigo-200
+        focus:ring-opacity-50 
+}
+
+.selectfield {
+    @apply block
+}
+.selectfield__select {
+    @apply 
+        form-select 
+        block w-full 
+        mt-1
+        rounded-md
+        border-gray-300
+        shadow-sm
+        focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+}

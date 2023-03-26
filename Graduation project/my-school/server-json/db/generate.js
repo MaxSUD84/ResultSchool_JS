@@ -76,77 +76,82 @@ module.exports = function () {
 
   // Создаем уникальные uuid по каждую программу обучения
   casual.define("learning_programm", function (clsNum) {
-    const learning_programm = {
+    const learning_programm = Object.keys(sd.prg_subjects).map((sub) => ({
       classNum: clsNum,
-      prog_data: Object.keys(sd.prg_subjects).map((sub) => ({
-        uuid: casual.uuid,
-        description: sd.prg_subjects[sub],
-        lp_data: lp.learning_programm[sub][clsNum]
-      }))
-    };
+      uuid: casual.uuid,
+      description: sd.prg_subjects[sub],
+      lp_data: lp.learning_programm[sub][clsNum],
+    }));
 
     // доавляем уникальные идентификаторы к каждой теме
-    return {
-      ...learning_programm,
-      prog_data: learning_programm.prog_data.map((sub) => ({
-        ...sub,
-        lp_data: sub.lp_data.map((el) => ({ ...el, uuid: casual.uuid }))
-      }))
-    };
+    return learning_programm.map((sub) => ({
+      ...sub,
+      lp_data: sub.lp_data.map((el) => ({ ...el, uuid: casual.uuid })),
+    }));
 
     // return learning_programm;
   });
 
-  // Инициализируем программы обучения под каждый номер класса
-  const learning_programm = _.sortedUniq(
-    sd.className.map((clsName) => clsName.slice(0, clsName.length > 2 ? 2 : 1))
-  ).map((clsNum) => casual.learning_programm(clsNum));
-
   // копируем программу обучения по каждый класс
-  casual.define("study_program", function (cls) {
-    const find_lp = learning_programm.filter(
-      (el) => el.classNum == cls.slice(0, cls.length > 2 ? 2 : 1)
-    )[0];
-
-    return find_lp.prog_data.map((sub) => ({
-      uuid: sub.uuid,
-      name: sub.description
-    }));
-  });
-
-  // Генерируем структуру для храниения оценок для однго предмета на основе программы обучения
-  casual.define("subject_progress", function (data) {
-    return data.map((les) => ({
-      lesson: les.lesson,
-      uuid_les: les.uuid,
-      uuid_progress: casual.uuid,
-      progress: {
-        avr: 0,
-        values: []
-      }
-    }));
+  // копируем перечень предметов для каждого класса
+  casual.define("study_program", function () {
+    return sd.subjects;
   });
 
   // value: { date: date, mark: value, type: "homework", uuid_work: "", description: "comment"}
   // Генерируем структуру для храниения оценок по всем предметам
-  casual.define("all_subjects_progress", function (learning_programm) {
-    return learning_programm.map((sub) => ({
-      name: sub.description,
-      average: 0,
-      [sub.uuid]: casual.subject_progress(sub.lp_data)
-    }));
+  // casual.define("all_subjects_progress", function (learning_programm) {
+  //   return learning_programm.map((sub) => ({
+  //     name: sub.description,
+  //     average: 0,
+  //     [sub.uuid]: casual.subject_progress(sub.lp_data),
+  //   }));
+  // });
+
+  casual.define("topicProgress", function (les_uuid) {
+    return {
+      lesson: "",
+      uuid_lesson: les_uuid,
+      uuid_progress: casual.uuid,
+      progress: {
+        avg: 0,
+        values: [],
+      },
+    };
   });
 
-  // Генерируем структуру для назначения заданий.
-  casual.define("subject_work", function (les_uuid, typework) {
+  // Генерируем структуру для назначения домашних заданий.
+  casual.define("homework", function (les_uuid) {
     return {
       lesson: les_uuid,
-      uuid_les: les_uuid,
-      work: {
-        uuid: casual.uuid,
-        type: typework,
-        exercise: ""
-      }
+      uuid_homework: casual.uuid,
+      date: "",
+      task: "",
+    };
+  });
+
+  // генерируем разделы журнала по каждому предмету
+  casual.define("journalClass", function (className, uuid_class) {
+    return {
+      uuid_class: uuid_class,
+      name_class: className,
+      progress_journal: [{ subject: "", uuid_subject_journal: "" }],
+    };
+  });
+
+  // генерируем сам журнал для каждого класса
+  casual.define("journalSubject", function (classNum, uuid_subject) {
+    console.log(classNum, uuid_subject);
+    return {
+      uuid: "", // subject - learning programm
+      subject: "", // subject - name
+      topics: [
+        {
+          uuid_lesson: "",
+          uuid_homeworks: [""],
+          uuid_progress: [""],
+        },
+      ],
     };
   });
 
@@ -156,27 +161,41 @@ module.exports = function () {
       title: str,
       uuid: casual.uuid,
       description: "Класс " + str,
+      study_subjects: casual.study_program,
       group_mentor: "",
-      study_program: casual.study_program(str)
     };
   });
 
   // генерируем учетелей
   casual.define("teacher", function (subject) {
+    const isFemale = _.sample(["w", "m"])?.toLowerCase().startsWith("w");
+    const last_name = casual.last_name + (isFemale ? "а" : "");
+    const first_name = casual.populate(
+      isFemale ? "{{first_name_female}}" : "{{first_name_male}}"
+    );
+    const middle_name = casual.populate(
+      isFemale ? "{{middle_name_female}}" : "{{middle_name_male}}"
+    );
+
     return {
-      full_name: casual.full_name,
+      full_name: [last_name, first_name, middle_name].join(" "),
       uuid: casual.uuid,
       experience_education: casual.experience_education(subject),
       subject: subject, // _.sample(subject),
-      uuid_class: [], // прикрепленные классы
+      email:
+        al.translit(`${last_name}.${first_name}`) +
+        _.sample(["_", ".", ""]) +
+        casual.integer((from = 1950), (to = 5000)) +
+        "@" +
+        _.sample(casual.free_email_domains),
+      password: casual.password,
+      uuid_class: [], // прикрепленные классы uuid
       isMentor: false,
       uuid_mentor: "",
-      events: [],
-      achievements: [],
       education_rating: 0,
       learner_rating: 0,
-      advices: [],
-      messages: []
+      advices: [], // uuid
+      messages: [], // uuid
     };
   });
 
@@ -200,7 +219,7 @@ module.exports = function () {
         _.sample(casual.free_email_domains),
       password: casual.password,
       address: address.uuid,
-      messages: []
+      messages: [],
     };
   });
 
@@ -210,7 +229,7 @@ module.exports = function () {
       uuid: casual.uuid,
       addr: casual.populate(
         "{{city_prefix}} Москва, {{street_prefix}} {{street}}, {{building_number}}"
-      )
+      ),
     };
   }); //
 
@@ -228,7 +247,7 @@ module.exports = function () {
       first_name: first_name,
       last_name: last_name,
       phone: casual.phone,
-      login:
+      email:
         al.translit(`${last_name}.${first_name}`) +
         _.sample(["_", ".", ""]) +
         casual.integer((from = 1950), (to = 5000)) +
@@ -236,23 +255,34 @@ module.exports = function () {
         _.sample(casual.free_email_domains),
       password: casual.password,
       address: address.uuid,
-      hobby: [],
-      add_education: [],
-      // uuid_class: "",
+      hobby: [], // obj: { id: uuid, content: string }
+      add_education: [], // obj: { id: uuid, content: string }
+      achievements: [], // obj: { id: uuid, content: string }
+      study_subjects: casual.study_program,
       academic_progress_sum: 0,
       teacher_raiting: 0,
       birthday: {
-        day: casual.day_of_mounth,
+        day: casual.integer((from = 1), (to = 28)),
         month: casual.month_number,
-        year: casual.integer((from = 2010), (to = 2013))
+        year: casual.integer((from = 2010), (to = 2013)),
       },
       parents: {
         father: father.uuid,
-        mother: mother.uuid
+        mother: mother.uuid,
       },
-      achievements: [],
-      events: [],
-      messages: []
+      advices: [], // uuid
+      messages: [], // uuid
+    };
+  });
+
+  // генерируем советы
+  casual.define("advice", function (teacher_uuid, topic_uuid, message) {
+    return {
+      uuid: casual.uuid,
+      from: teacher_uuid, // teacher_uuid
+      topic: topic_uuid, // topic_uuid
+      message: message,
+      timestamp: new Date(2023, 1, 25, 13, 31, 0),
     };
   });
 
@@ -274,12 +304,24 @@ module.exports = function () {
     address: [],
     father: [],
     mother: [],
-    learner: []
+    learner: [],
   };
 
   for (let i = 0; i < 100; i++) {
     calcLearner(def);
   }
+
+  // Инициализируем программы обучения под каждый номер класса
+  const classNumbersArr = _.sortedUniq(
+    sd.className.map((clsName) => clsName.slice(0, clsName.length > 2 ? 2 : 1))
+  );
+  const learning_programm = [];
+  classNumbersArr.forEach((clsNum) => {
+    const classPrg = casual.learning_programm(clsNum);
+    if (Array.isArray(classPrg)) {
+      classPrg.forEach((el) => learning_programm.push(el));
+    }
+  });
 
   // Назначаем классых руководителей
   const setMentor = ({ classes, teachers, learners }) => {
@@ -289,8 +331,8 @@ module.exports = function () {
 
     for (const cls of classes) {
       // Выбираем учителей предметников
-      const class_teachers = cls.study_program.map((sub) =>
-        _.sample(teachers.filter((teacher) => teacher.subject === sub.name))
+      const class_teachers = cls.study_subjects.map((subject) =>
+        _.sample(teachers.filter((teacher) => teacher.subject === subject))
       );
       // Выбираем классных руководителей
       const selected_teacher = _.sample(teacher_uuid);
@@ -312,7 +354,7 @@ module.exports = function () {
         class_teachers: class_teachers,
         class_uuid: cls.uuid,
         mentor: selected_teacher,
-        class_learner_list: learners_list
+        class_learner_list: learners_list,
       });
     }
 
@@ -324,9 +366,11 @@ module.exports = function () {
 
     return {
       classes: classes.map((cls) => {
+        // Ищим класного руководителя
         const mentorId = tempArr.filter(
           (tempData) => tempData.class_uuid === cls.uuid
         )[0].mentor;
+
         return {
           ...cls,
           // добавляем классного руководителя
@@ -336,16 +380,23 @@ module.exports = function () {
             (tempData) => tempData.class_uuid === cls.uuid
           )[0].class_learner_list,
           // назначаем учителей предметников
-          study_program: cls.study_program.map((sub) => ({
-            ...sub,
+          study_subjects: cls.study_subjects.map((subject) => ({
+            uuid: learning_programm.filter((subj_prg) => {
+              const clsNum = cls.title.slice(0, cls.length > 2 ? 2 : 1);
+              return (
+                subj_prg.classNum === clsNum && subject === subj_prg.description
+              );
+            })[0].uuid,
+            subject: subject,
             teacher_uuid: tempArr
               .filter((tempData) => tempData.class_uuid === cls.uuid)[0]
               .class_teachers.filter(
-                (_teacher) => _teacher.subject === sub.name
-              )[0].uuid
-          }))
+                (_teacher) => _teacher.subject === subject
+              )[0].uuid,
+          })),
         };
       }),
+
       teachers: teachers.map((teach) => {
         const class_mentor =
           tempArr.filter((tempData) => tempData.mentor === teach.uuid)[0]
@@ -369,9 +420,10 @@ module.exports = function () {
           isMentor: isMentor,
           uuid_mentor: class_mentor,
           // назначаем классы для предметной работы
-          uuid_class: [...teach.uuid_class, ...uuid_class]
+          uuid_class: [...teach.uuid_class, ...uuid_class],
         };
       }),
+
       learners: learners.map((learner) => ({
         ...learner,
         uuid_class: get_tArrEl(learner.uuid)?.class_uuid,
@@ -379,10 +431,19 @@ module.exports = function () {
         // tempArr.filter((tData) =>
         //   tData.class_learner_list.includes(learner.uuid)
         // )["class_uuid"], // )[0].class_uuid
-        uuid_progress: casual.uuid
-      }))
+        uuid_progress: "",
+      })),
     };
   };
+
+  // Инициализируем по одному совету от преподавателя
+  // casual.advice(teacher_uuid, topic_uuid, message)
+
+  // Инициализируем одно домашнее задание по предмету
+  // casual.homework(les_uuid)
+
+  // Инициализируем одну оценку по предмету
+  // casual.topicProgress(les_uuid)
 
   const result = {};
   result.classes = sd.className.map((cls) => casual.class(cls));
@@ -401,22 +462,23 @@ module.exports = function () {
   result.learners = temp.learners;
 
   result.learning_programm = learning_programm;
-  result.learning_progress = temp.classes.map((cls) => {
-    const cls_number = cls.title.slice(0, cls.title.length > 2 ? 2 : 1);
-    return {
-      uuid_class: cls.uuid,
-      name_class: cls.title,
-      progress_journal: cls.learners_list.map((learner_uuid) => ({
-        [learner_uuid]: casual.all_subjects_progress(
-          learning_programm.filter(
-            (programm) => programm.classNum === cls_number
-          )[0].prog_data
-        )
-      }))
-    };
-  });
-  result.messages = [];
-  result.events = [];
+
+  // result.learning_progress = temp.classes.map((cls) => {
+  //   const cls_number = cls.title.slice(0, cls.title.length > 2 ? 2 : 1);
+  //   return {
+  //     uuid_class: cls.uuid,
+  //     name_class: cls.title,
+  //     progress_journal: cls.learners_list.map((learner_uuid) => ({
+  //       [learner_uuid]: casual.all_subjects_progress(
+  //         learning_programm.filter(
+  //           (programm) => programm.classNum === cls_number
+  //         )[0].prog_data
+  //       ),
+  //     })),
+  //   };
+  // });
+
+  result.advices = [];
 
   return result;
 };

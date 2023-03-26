@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 8080,
+    "mongoUri": "mongodb://u7cuqgme7utxgmlssn8b:lHr4tHf6RSvuArh2CX6K@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bosrxa7p3udyzra?replicaSet=rs0",
+    "accessSecret": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+    "refreshSecret": "And nothing 'gainst Time's scythe can make defence. Save breed, to brave him when he takes thee hence."
+}

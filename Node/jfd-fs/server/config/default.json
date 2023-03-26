@@ -1,0 +1,6 @@
+{
+    "port": 8080,
+    "mongoUri": "mongodb://utny5ewmwspld4x3rj3b:mFNSQzwpWUvab9TV39JB@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/b4deduqiccdumtd?replicaSet=rs0",
+    "accessSecret": "super secret from backend",
+    "refreshSecret": "super secret refresh key"
+}

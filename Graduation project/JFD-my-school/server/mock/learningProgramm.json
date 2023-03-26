@@ -1,0 +1,849 @@
+[
+  {
+    "classNum": "5",
+    "uuid": "ded92047-f44c-4dd6-a4c5-0d50b93f0eff",
+    "description": "Математика",
+    "lp_data": [
+      {
+        "lesson": "Вводное повторение",
+        "hours": 6,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "755c1c39-823f-4568-8291-610a13cd24c0"
+      },
+      {
+        "lesson": "Натуральные числа и шкалы",
+        "hours": 18,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "162eb67b-f473-470f-b386-90425509a0aa"
+      },
+      {
+        "lesson": "Сложение и вычитание натуральных чисел",
+        "hours": 24,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "496687f5-97cc-446c-87e1-d64d73ff7f22"
+      },
+      {
+        "lesson": "Умножение и деление натуральных чисел",
+        "hours": 30,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "c13cd31b-4b41-4ebe-86c3-a8ef45f7a295"
+      },
+      {
+        "lesson": "Площади и объемы",
+        "hours": 16,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "128e55c4-3474-455b-a42c-ddeff6e0989d"
+      },
+      {
+        "lesson": "Обыкновенные дроби",
+        "hours": 29,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "c6ed31c0-304f-402f-924f-ba89492ad065"
+      },
+      {
+        "lesson": "Десятичные дроби. Сложение и вычитание десятичных дробей",
+        "hours": 18,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "3c5bfeea-aa25-47a8-a965-b6e7380c0e40"
+      },
+      {
+        "lesson": "Умножение и деление десятичных дробей",
+        "hours": 32,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "58b84b04-624a-4402-8e71-c600e3d6a465"
+      },
+      {
+        "lesson": "Инструменты для вычислений и измерений",
+        "hours": 20,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "93e01604-f456-430f-a9df-aa07d5edf892"
+      },
+      {
+        "lesson": "Итоговое повторение курса математики 5 класса.",
+        "hours": 17,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "def7ee06-b27c-4ec9-96e8-6f9930934c85"
+      }
+    ]
+  },
+  {
+    "classNum": "5",
+    "uuid": "7074bbf8-d450-4939-bee4-8bdba43c2b53",
+    "description": "Физика",
+    "lp_data": [
+      {
+        "lesson": "Мы познаем мир, в котором живем",
+        "hours": 6,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "be64d36f-b69e-4b2f-afd0-ff9e8a77cd73"
+      },
+      {
+        "lesson": "Взаимодействия",
+        "hours": 9,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "7c72a82e-8e9e-4cac-8672-715167e76064"
+      },
+      {
+        "lesson": "Пространство",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "b9cb5b67-0ab4-4b9c-9b36-faae983c1549"
+      },
+      {
+        "lesson": "Время",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "9a3b921f-40c7-4c89-a6c3-6f385ceaac4a"
+      },
+      {
+        "lesson": "Движение",
+        "hours": 6,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "51113e68-5ffe-4471-acc4-75c4b5d3eedb"
+      }
+    ]
+  },
+  {
+    "classNum": "5",
+    "uuid": "8f95497d-e006-45a4-b299-b083e261102c",
+    "description": "Биология",
+    "lp_data": [
+      {
+        "lesson": "Введение",
+        "hours": 6,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "8f7a3473-a433-4e06-b225-c13ea77409da"
+      },
+      {
+        "lesson": "Клеточное строение организмов",
+        "hours": 6,
+        "labs": 3,
+        "tests": 0,
+        "uuid": "9fe42b88-4459-4fce-a44e-5caea8381f99"
+      },
+      {
+        "lesson": "Царство Бактерии",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "5b125c71-2b74-4498-8239-e5d0b029da6c"
+      },
+      {
+        "lesson": "Царство Грибы",
+        "hours": 5,
+        "labs": 2,
+        "tests": 0,
+        "uuid": "2f4f7f81-cf44-4823-b0ca-ff7fd4931cb5"
+      },
+      {
+        "lesson": "Царство Растения",
+        "hours": 13,
+        "labs": 4,
+        "tests": 0,
+        "uuid": "9b04e15e-cae9-4365-89b9-df784aeee369"
+      },
+      {
+        "lesson": "Итоговое повторение",
+        "hours": 1,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "3ae069db-949b-485f-a0bd-edf548a1d069"
+      }
+    ]
+  },
+  {
+    "classNum": "5",
+    "uuid": "cbb14d31-ffea-4fa2-b9f5-c4cb7e6ca935",
+    "description": "Русский язык",
+    "lp_data": [
+      {
+        "lesson": "Вводный урок. Язык и общение. Язык и человек. Общение устное и письменное.",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "ab56a4d7-ba39-43b3-b4a4-db38cbe5e0a0"
+      },
+      {
+        "lesson": "Повторение изученного в начальных классах.Вспоминаем, повторяем, изучаем.",
+        "hours": 26,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "641638ef-565e-4797-b13d-2798892056ec"
+      },
+      {
+        "lesson": "Синтаксис. Пунктуация. Культура речи.",
+        "hours": 31,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "d0f1243e-e093-4c1f-94a9-8b238994025c"
+      },
+      {
+        "lesson": "Фонетика. Орфоэпия. Графика. Орфография. Культура речи.",
+        "hours": 16,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "76e1c726-4d91-4754-a63d-f3597e69066f"
+      },
+      {
+        "lesson": "Лексика. Культура речи.",
+        "hours": 15,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "6c9a8ee0-dc52-4dbf-b411-75210e0df636"
+      },
+      {
+        "lesson": "Морфемика. Орфография. Культура речи.",
+        "hours": 23,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "8dc30cae-b050-4afc-af18-af18d755b47f"
+      },
+      {
+        "lesson": "Имя существительное",
+        "hours": 20,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "f441944d-c03e-4204-ad31-6b072938e918"
+      },
+      {
+        "lesson": "Имя прилагательное",
+        "hours": 11,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "255c1792-cd99-4f34-8975-ece40ed29bd6"
+      },
+      {
+        "lesson": "Глагол",
+        "hours": 11,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "da10f045-b214-4ed7-a85d-ff5aee26203a"
+      },
+      {
+        "lesson": "Повторение и систематизация изученного.",
+        "hours": 5,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "45f9e525-d6a2-420a-8d02-57ac4b40dff9"
+      }
+    ]
+  },
+  {
+    "classNum": "5",
+    "uuid": "cbe06418-46f9-4af6-8134-1f8b5f52a6ac",
+    "description": "Литература",
+    "lp_data": [
+      {
+        "lesson": "Мифология",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "bf06dd36-62e4-4612-84c6-1219de8a84ad"
+      },
+      {
+        "lesson": "Фольклор",
+        "hours": 7,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "4e02e58e-34ec-4c6c-a805-00f91aca0072"
+      },
+      {
+        "lesson": "Литература первой половины XIX века",
+        "hours": 16,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "0c364ffa-3a60-48e8-9444-2398a25d3e69"
+      },
+      {
+        "lesson": "Литература второй половины XIX века",
+        "hours": 16,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "8a3a5a7b-3db7-4785-a05e-d6dde24492de"
+      },
+      {
+        "lesson": "Литература XIX—ХХ веков",
+        "hours": 25,
+        "labs": 0,
+        "tests": 3,
+        "uuid": "a60bc3b0-c9eb-4c41-89c4-16de0c2bd4b0"
+      },
+      {
+        "lesson": "Литература XX—XXI веков",
+        "hours": 13,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "dfd60492-10a4-4532-9c0e-50c53affc1fb"
+      },
+      {
+        "lesson": "Литература народов Российской Федерации",
+        "hours": 5,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "f4c1e5fc-e9b2-4e12-9ec3-8d3030f01768"
+      },
+      {
+        "lesson": "Зарубежная литература",
+        "hours": 16,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "2abb2df8-0278-4787-ab8a-560aec764c2f"
+      }
+    ]
+  },
+  {
+    "classNum": "5",
+    "uuid": "d7386d6c-ad55-450f-b866-4cd6b0dd245b",
+    "description": "Англиский язык",
+    "lp_data": [
+      {
+        "lesson": "Повторение",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "1a765e7c-1c9c-46bb-8481-ebac94a5f6ce"
+      },
+      {
+        "lesson": "Школа и школьная жизнь. Изучаемые предметы и отношение к ним",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "d43ac020-ecd1-477e-8b00-c511eff9fd42"
+      },
+      {
+        "lesson": "Мир вокруг нас. Родная страна и страна изучаемого языка",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "a7aca0e7-9e67-4f8d-bcdf-eee679343085"
+      },
+      {
+        "lesson": "Среда  проживания",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "4537b8ab-695e-4be1-9424-42b6ab18a24d"
+      },
+      {
+        "lesson": "Межличностные взаимоотношения в семье, с друзьями  в школе",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "9e2f89e0-b17f-4fce-ab37-021bed73834d"
+      },
+      {
+        "lesson": "В мире животных",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "4519c02d-c787-4c3c-a077-5c8b06757d1b"
+      },
+      {
+        "lesson": "Учимся, работаем, отдыхаем",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "474aaa62-9b3a-4d6f-8a16-fb6f986d3cf4"
+      },
+      {
+        "lesson": "Времена года",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "7f50f841-8b74-4cf0-9a57-10805224f284"
+      },
+      {
+        "lesson": "Праздники",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "adf77fc7-de31-429a-a9b8-db5bf765a120"
+      },
+      {
+        "lesson": "Досуг и увлечения (спорт, музыка, посещение кино, кафе, магазина)",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "57181782-614b-45b9-8ee4-1bbfe938dfc5"
+      },
+      {
+        "lesson": "Каникулы и их проведение в различное время года",
+        "hours": 10,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "8adb77de-2eb8-4523-89f3-000a1536a619"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "5f321df2-469a-4d5f-a5e0-abfa01ca4a6e",
+    "description": "Математика",
+    "lp_data": [
+      {
+        "lesson": "Делимость чисел",
+        "hours": 20,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "f97e5375-1f4c-40fc-a696-c52f11927f90"
+      },
+      {
+        "lesson": "Сложение и вычитание дробей с разными знаменателями",
+        "hours": 22,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "6f8c910f-56f2-4df3-91b4-b757707ec4a8"
+      },
+      {
+        "lesson": "Умножение и деление обыкновенных дробей",
+        "hours": 31,
+        "labs": 0,
+        "tests": 3,
+        "uuid": "1182d69d-0a84-45d2-91e1-97ba3e63d2cd"
+      },
+      {
+        "lesson": "Отношения и пропорции",
+        "hours": 20,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "d3d133aa-6632-457a-8ccb-bccec22cdf8b"
+      },
+      {
+        "lesson": "Положительные и отрицательные числа",
+        "hours": 13,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "56c7338c-5939-458f-9f94-5b719a56202e"
+      },
+      {
+        "lesson": "Сложение и вычитание положительных и отрицательных чисел",
+        "hours": 15,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "a1c815e7-aed1-4196-a8b9-14491e0e5a4f"
+      },
+      {
+        "lesson": "Умножение и деление положительных и отрицательных чисел",
+        "hours": 13,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "606c568f-26b8-4ece-83b2-5fd95024eb95"
+      },
+      {
+        "lesson": "Решение уравнений",
+        "hours": 17,
+        "labs": 0,
+        "tests": 2,
+        "uuid": "bcd9bee8-e807-430b-bfa6-2f184f3736b8"
+      },
+      {
+        "lesson": "Координаты на плоскости",
+        "hours": 13,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "0428a42d-4de0-4fb3-8da6-cb04edbda549"
+      },
+      {
+        "lesson": "Итоговое повторение",
+        "hours": 6,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "eeaa5ed5-f1ef-4c3f-92c4-0035cd5ad9b2"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "1b2417e0-02b7-4d42-b8df-c0797b5ea25c",
+    "description": "Физика",
+    "lp_data": [
+      {
+        "lesson": "Введение",
+        "hours": 2,
+        "labs": 2,
+        "tests": 1,
+        "uuid": "934ccdff-2642-450b-80d7-25c964956bf5"
+      },
+      {
+        "lesson": "Тело и вещество",
+        "hours": 6,
+        "labs": 7,
+        "tests": 1,
+        "uuid": "2c38e867-fc60-4304-b23f-c988a2d282e8"
+      },
+      {
+        "lesson": "Взаимодействие тел",
+        "hours": 8,
+        "labs": 5,
+        "tests": 1,
+        "uuid": "d7e1a90c-73dd-4cb6-9b93-9bc038b2f2e8"
+      },
+      {
+        "lesson": "Физические явления",
+        "hours": 10,
+        "labs": 12,
+        "tests": 1,
+        "uuid": "f314bc25-cccd-45cf-905e-0d1ff38e2300"
+      },
+      {
+        "lesson": "Человек и природа",
+        "hours": 9,
+        "labs": 3,
+        "tests": 2,
+        "uuid": "5327e9f3-f0b6-41c5-8d9e-0b022ac4ab56"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "f79acebf-fb41-4690-bfa4-cdc2a7eedc19",
+    "description": "Биология",
+    "lp_data": [
+      {
+        "lesson": "Наука о растениях-ботаника",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "a41b04b9-208f-472f-80dc-db16745c6bac"
+      },
+      {
+        "lesson": "Органы растений",
+        "hours": 9,
+        "labs": 4,
+        "tests": 0,
+        "uuid": "125f8214-c8ad-4b7c-9477-2dc3fa6d8a66"
+      },
+      {
+        "lesson": "Осн. процессы жизнедеятельности растений",
+        "hours": 6,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "5a6362b7-8e89-4941-b1b6-384fd846ce27"
+      },
+      {
+        "lesson": "Многообразие и развитие растительного мира",
+        "hours": 11,
+        "labs": 1,
+        "tests": 0,
+        "uuid": "06533947-f715-49b7-89f2-fdc59ddadf2c"
+      },
+      {
+        "lesson": "Природные сообщества",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "345e9560-c0ea-4157-b3b0-439fcd29485d"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "160c720d-9381-4edb-96db-7e776940a106",
+    "description": "Русский язык",
+    "lp_data": [
+      {
+        "lesson": "Язык, речь, общение",
+        "hours": 2,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "aee003b3-9101-41b7-9a67-f8d5c1576a48"
+      },
+      {
+        "lesson": "Повторение изученного в 5 классе",
+        "hours": 11,
+        "labs": 1,
+        "tests": 1,
+        "uuid": "263e0e4d-2ac8-41de-adee-5d9816dfe2bb"
+      },
+      {
+        "lesson": "Лексика и фразеология",
+        "hours": 8,
+        "labs": 1,
+        "tests": 0,
+        "uuid": "2a0e65be-3cc5-43ac-a090-21b6019ada1f"
+      },
+      {
+        "lesson": "Словообразование",
+        "hours": 10,
+        "labs": 3,
+        "tests": 1,
+        "uuid": "2fb11b93-92f7-4349-ad15-274c82bec221"
+      },
+      {
+        "lesson": "Морфология. Имя существительное",
+        "hours": 10,
+        "labs": 1,
+        "tests": 1,
+        "uuid": "b5c8ab5e-c4a3-4628-bbcf-e93aaefb1626"
+      },
+      {
+        "lesson": "Имя прилагательное",
+        "hours": 10,
+        "labs": 3,
+        "tests": 0,
+        "uuid": "bc840145-ae3b-4a53-bc1f-b926e87a04e7"
+      },
+      {
+        "lesson": "Имя числительное",
+        "hours": 10,
+        "labs": 1,
+        "tests": 0,
+        "uuid": "420a0b23-a0c7-4060-91fa-db31678cbb18"
+      },
+      {
+        "lesson": "Местоимение",
+        "hours": 10,
+        "labs": 2,
+        "tests": 1,
+        "uuid": "0d1ecc62-18a8-45aa-9bfd-f2b210cf7454"
+      },
+      {
+        "lesson": "Глагол",
+        "hours": 20,
+        "labs": 3,
+        "tests": 1,
+        "uuid": "a703a900-3c10-4b68-af6e-17c28da8273f"
+      },
+      {
+        "lesson": "Повторение и систематизация пройденного в 6 классе",
+        "hours": 11,
+        "labs": 1,
+        "tests": 1,
+        "uuid": "9f973bba-15ba-4b84-91e9-02d22f73a570"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "47b1d3f4-8b98-4c82-9ddd-f145c2b13a08",
+    "description": "Литература",
+    "lp_data": [
+      {
+        "lesson": "Введение",
+        "hours": 1,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "7f2255d0-fbf9-49fa-a089-16babf6a5ca5"
+      },
+      {
+        "lesson": "Устное народное творчество",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "b7d9f19f-bb92-4028-9606-2f970f14ed14"
+      },
+      {
+        "lesson": "Из древнерусской литературы",
+        "hours": 2,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "96f51567-2fd1-4482-bb4c-aef06596bcf8"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. Русские басни",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "7b94f455-074f-4dd5-8ba4-816f026fecfc"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. А.С. Пушкин",
+        "hours": 18,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "01d08105-53eb-4f82-95c7-7b9d04905954"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. М.Ю. Лермонтов",
+        "hours": 4,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "9c1a72f9-45cb-43c0-8760-0933cc041baf"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. И.С. Тургенев",
+        "hours": 5,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "1cc66e27-2a32-4641-9dba-26616e22758d"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. Ф.И. Тютчев",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "3028a69c-fefc-46d1-98ea-f448f2808bee"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. А.А. Фет",
+        "hours": 4,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "c7142387-ffb6-40a6-bad1-f310ee63913f"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. Н.А. Некрасов",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "871ebed1-8777-46c3-82b6-23aa2646218a"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. Н.С. Лесков",
+        "hours": 6,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "24f8f372-dd8b-434d-921a-08ec5e58d618"
+      },
+      {
+        "lesson": "Из русской литературы XIX в. А.П. Чехов",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "87b76028-c567-4e53-8e21-953448c59b14"
+      },
+      {
+        "lesson": "Родная природа в стихотворениях русских поэтов XIX века",
+        "hours": 4,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "9ffc06b0-9149-4eaf-932a-918ee6fc2fd8"
+      },
+      {
+        "lesson": "Из русской литературы XX в. А.И. Куприн",
+        "hours": 2,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "123bb2e1-a215-47b9-942d-88cf5a25cda1"
+      },
+      {
+        "lesson": "Из русской литературы XX в. А.С. Грин",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "59dc2cd7-f031-4be3-a352-17f73088c2db"
+      },
+      {
+        "lesson": "Из русской литературы XX в. А.П, Платонов",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "6887eb6a-b98b-4f13-9f67-f8bd784fe6d5"
+      },
+      {
+        "lesson": "Произведения о Великой Отечественной войне",
+        "hours": 8,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "a7fb69d4-b66b-43a6-a349-306fdb9b0ee5"
+      },
+      {
+        "lesson": "Писатели улыбаются",
+        "hours": 4,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "787468c7-b643-45a3-a729-1980a167dd83"
+      },
+      {
+        "lesson": "Родная природа в русской поэзии XX века",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "fdec28bb-5b91-4e65-a608-5c935366825b"
+      },
+      {
+        "lesson": "Из литературы народов России",
+        "hours": 2,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "29923d01-f65c-4d82-b1a8-d450894ec964"
+      },
+      {
+        "lesson": "Из зарубежной литературы",
+        "hours": 12,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "543f57a9-538d-47cd-997d-db4a379a54b0"
+      },
+      {
+        "lesson": "Подведение итогов года",
+        "hours": 3,
+        "labs": 0,
+        "tests": 0,
+        "uuid": "63e20466-445e-4e57-a3f8-96468a55a1da"
+      }
+    ]
+  },
+  {
+    "classNum": "6",
+    "uuid": "a6cad3b5-0fff-4d05-9fe0-87da3414a39c",
+    "description": "Англиский язык",
+    "lp_data": [
+      {
+        "lesson": "Две столицы",
+        "hours": 11,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "edc6828b-7766-4a95-9863-ff36ce0bb279"
+      },
+      {
+        "lesson": "Посещение Британии",
+        "hours": 12,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "15edf30a-508e-49db-812c-314f9158e799"
+      },
+      {
+        "lesson": "Традиции, каникулы, праздники",
+        "hours": 12,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "fe61c3fa-6698-444e-940e-1f7f80af9a3b"
+      },
+      {
+        "lesson": "Страна за океаном",
+        "hours": 11,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "b6f05563-dc21-4844-b32a-46daa27ba4ee"
+      },
+      {
+        "lesson": "Любимые занятия",
+        "hours": 12,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "6ac86a37-8d96-403d-83b6-b405084d47ce"
+      },
+      {
+        "lesson": "Какие мы?",
+        "hours": 10,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "7c28386c-af22-4b1b-9274-588e8722f113"
+      },
+      {
+        "lesson": "Модуль: «Занимательная грамматика»",
+        "hours": 36,
+        "labs": 0,
+        "tests": 1,
+        "uuid": "d85364c7-3620-4a0d-bb78-dc7d1a9c9592"
+      }
+    ]
+  }
+]
