@@ -104,11 +104,15 @@ export const ProgressProvider = ({ children, journalId, lessonId }) => {
       // Обновим значения полей прогресса
       if (content._id) {
         setProgress((p) =>
-          p.map((prg) => ({
-            ...prg,
-            progress: content.progress,
-            updatedAt: content.updatedAt,
-          }))
+          p.map((prg) =>
+            prg._id === content._id
+              ? {
+                  ...prg,
+                  progress: content.progress,
+                  updatedAt: content.updatedAt,
+                }
+              : prg
+          )
         );
       }
       setLoading(false);

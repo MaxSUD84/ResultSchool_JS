@@ -117,7 +117,7 @@ const AdvEducation = () => {
       achievements,
       learnerId: curUser._id,
     });
-    location.reload();
+    window.location.reload();
   };
 
   return (
