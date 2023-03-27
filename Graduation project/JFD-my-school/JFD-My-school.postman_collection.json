@@ -1,0 +1,1934 @@
+{
+	"info": {
+		"_postman_id": "6f559746-3d94-475f-bbd0-2ad69e472ea3",
+		"name": "JFD-My-school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "AddressById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/address/63f73a88b71d2ee4eda6fdd2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"address",
+								"63f73a88b71d2ee4eda6fdd2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WeeklyTimetable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/timetable/63f9f3fb067c064c2ebcf70b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"timetable",
+								"63f9f3fb067c064c2ebcf70b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParentsByLearnerId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/parent/63f73a8eb71d2ee4eda7005c",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"parent",
+								"63f73a8eb71d2ee4eda7005c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FatherById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/parent/father/63f73a8cb71d2ee4eda6ffb8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"parent",
+								"father",
+								"63f73a8cb71d2ee4eda6ffb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MotherById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/parent/mother/63f73a8bb71d2ee4eda6fec7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"parent",
+								"mother",
+								"63f73a8bb71d2ee4eda6fec7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Learner",
+			"item": [
+				{
+					"name": "Learners",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNDA2N2MwNjRjMmViY2YzZmIiLCJpYXQiOjE2Nzc4NDU0MjYsImV4cCI6MTY3Nzg0OTAyNn0.Um22fdaueU13YYWOzcdevMwLB--Qlcp9uja_7B3xSBQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/learner/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"learner",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LearnerById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNTA2N2MwNjRjMmViY2Y0MjEiLCJpYXQiOjE2NzczODM1ODksImV4cCI6MTY3NzM4NzE4OX0.EG_21dxb3p-6EUjobBcz9Zs67lLBUvxlqsuDpnXekuw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/learner/63f9f3f5067c064c2ebcf41d",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"learner",
+								"63f9f3f5067c064c2ebcf41d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditLearnerById",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNTA2N2MwNjRjMmViY2Y0MjEiLCJpYXQiOjE2NzczODM1ODksImV4cCI6MTY3NzM4NzE4OX0.EG_21dxb3p-6EUjobBcz9Zs67lLBUvxlqsuDpnXekuw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "      {\r\n        \"hobby\":[\r\n                {\"id\": \"G2G1fPEmCC\", \"content\": \"Горные лыжи\"}\r\n        ], \r\n        \"add_education\": [\r\n                { \"id\": \"luGyqUCXZd\", \"content\": \"Секция футбола, пн,чт: 15:00-18:00\" },\r\n                { \"id\": \"9rCAla31xM\", \"content\": \"Англиский язык, вт,пт: 17:00-18:00\" }\r\n        ],\r\n        \"achievements\": [\r\n                { \"id\": \"AIDCj9Hy3x\", \"content\": \"Грамота за второе место в турнире по футболу. 21.06.21\" }\r\n        ]\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/learner/63f9f3f5067c064c2ebcf41d",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"learner",
+								"63f9f3f5067c064c2ebcf41d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditLearnerById_1",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"kovaleva.anzhelika_1959@yandex.ru\",\r\n    \"password\": \"1Лидия23\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNTA2N2MwNjRjMmViY2Y0MjEiLCJpYXQiOjE2NzczODM1ODksImV4cCI6MTY3NzM4NzE4OX0.EG_21dxb3p-6EUjobBcz9Zs67lLBUvxlqsuDpnXekuw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "      {\r\n        \"hobby\":[\r\n                {\"id\": \"G2G1fPEmCC\", \"content\": \"Горные лыжи\"}\r\n        ], \r\n        \"add_education\": [\r\n                { \"id\": \"luGyqUCXZd\", \"content\": \"Секция футбола, пн,чт: 15:00-18:00\" },\r\n                { \"id\": \"9rCAla31xM\", \"content\": \"Англиский язык, вт,пт: 17:00-18:00\" }\r\n        ],\r\n        \"achievements\": [\r\n                { \"id\": \"AIDCj9Hy3x\", \"content\": \"Грамота за второе место в турнире по футболу. 21.06.21\" }\r\n        ]\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/learner/63f9f3f5067c064c2ebcf423",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"learner",
+								"63f9f3f5067c064c2ebcf423"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Classes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/class",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassesById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/class/63f9f3fb067c064c2ebcf712",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"class",
+								"63f9f3fb067c064c2ebcf712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassesById_fulldata",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNDA2N2MwNjRjMmViY2YzZjYiLCJpYXQiOjE2Nzc3NTM1NDYsImV4cCI6MTY3Nzc1NzE0Nn0.Au_7N6R3vjcAUxk-y5bRX3FgTOpEoK8rZjgwgb-PzGQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/class/fulldata/63f9f3fb067c064c2ebcf712",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"class",
+								"fulldata",
+								"63f9f3fb067c064c2ebcf712"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Teachers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/teacher",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TeacherById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/teacher/63f9f3f4067c064c2ebcf3ff",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"teacher",
+								"63f9f3f4067c064c2ebcf3ff"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Journal",
+			"item": [
+				{
+					"name": "JournalClass",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/class/63f9f3fb067c064c2ebcf712",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"class",
+								"63f9f3fb067c064c2ebcf712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JournalClassById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/journal_class/63f9f3fb067c064c2ebcf712",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"journal_class",
+								"63f9f3fb067c064c2ebcf712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JournalSubjectById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/journal_subject/63f9f417067c064c2ebcf956",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"journal_subject",
+								"63f9f417067c064c2ebcf956"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Homework",
+			"item": [
+				{
+					"name": "homeworkByLessonId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/homeworkByLesson/63f9f3fc067c064c2ebcf820",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homeworkByLesson",
+								"63f9f3fc067c064c2ebcf820"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "homeworkById",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"samsonova.platon_2350@rambler.ru\",\r\n    \"password\": \"0Анастасия99\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/journal/homeworkById/6405abe362fee4c32be1618b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homeworkById",
+								"6405abe362fee4c32be1618b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "homeworksByDate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"vladimirova.iskra.4535@yandex.ru\",\r\n    \"password\": \"5Регина64\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/homeworksByDate/?date=Tue Mar 13 2023 03:00:00 GMT+0300 (Москва, стандартное время)&journalsId='63f9f417067c064c2ebcf97e','63f9f417067c064c2ebcf97e','63f9f417067c064c2ebcf99e','63f9f417067c064c2ebcf976','63f9f417067c064c2ebcf98a'",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homeworksByDate",
+								""
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "Tue Mar 13 2023 03:00:00 GMT+0300 (Москва, стандартное время)"
+								},
+								{
+									"key": "journalsId",
+									"value": "'63f9f417067c064c2ebcf97e','63f9f417067c064c2ebcf97e','63f9f417067c064c2ebcf99e','63f9f417067c064c2ebcf976','63f9f417067c064c2ebcf98a'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "homeworkDeleteById",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/journal/homework/640f0860872cb8652b6d0300",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homework",
+								"640f0860872cb8652b6d0300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddHomework",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"doronina.aleksandr.4972@bk.ru\",\r\n    \"password\": \"6Светлана15\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"classId\": \"63f9f3fb067c064c2ebcf712\",\r\n    \"journalId\": \"63f9f417067c064c2ebcf96a\",\r\n    \"topicId\": \"63f9f3fc067c064c2ebcf815\",\r\n    \"date\": \"2023-03-14T10:06:14.982+00:00\",\r\n    \"task\": \"Рабочая тетрадь упражнение №782. Читать п.15\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/homework/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homework",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditHomework",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZjNmNDA2N2MwNjRjMmViY2YzZmIiLCJpYXQiOjE2Nzg1MjI4ODEsImV4cCI6MTY3ODUyNjQ4MX0.E43jPDZABolcNXvS_C95DPshr7nb7nOKwxfbbegwbG0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "image/png",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"classId\": \"63f9f3fb067c064c2ebcf712\",\r\n    \"journalId\": \"63f9f417067c064c2ebcf956\",\r\n    \"topicId\": \"63f9f3fc067c064c2ebcf820\",\r\n    \"date\": \"2023-03-02T10:06:14.982+00:00\",\r\n    \"task\": \"Рабочая тетрадь упражнение №1500.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/journal/homework/6405acc462fee4c32be161a1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"journal",
+								"homework",
+								"6405acc462fee4c32be161a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Progress",
+			"item": [
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/progress/all/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClassProgress",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/progress/class/?journalId=63f9f417067c064c2ebcf956&lessonId=63f9f3fc067c064c2ebcf820",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"class",
+								""
+							],
+							"query": [
+								{
+									"key": "journalId",
+									"value": "63f9f417067c064c2ebcf956"
+								},
+								{
+									"key": "lessonId",
+									"value": "63f9f3fc067c064c2ebcf820"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProgressById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/63f9f3f5067c064c2ebcf45b?journalId=63f9f417067c064c2ebcf956&lessonId=63f9f3fc067c064c2ebcf820",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"63f9f3f5067c064c2ebcf45b"
+							],
+							"query": [
+								{
+									"key": "journalId",
+									"value": "63f9f417067c064c2ebcf956"
+								},
+								{
+									"key": "lessonId",
+									"value": "63f9f3fc067c064c2ebcf820"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTwoWeekProgress",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n    \"email\": \"vladimirova.iskra.4535@yandex.ru\",\r\n    \"password\": \"5Регина64\"\r\n}    ",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "secret",
+									"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/TimePeriod/63f9f3f5067c064c2ebcf420?learnerId=63f9f3f5067c064c2ebcf420&startDate=Tue Mar 13 2023 03:00:00 GMT+0300 (Москва, стандартное время)&endDate=Tue Mar 26 2023 03:00:00 GMT+0300 (Москва, стандартное время)",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"TimePeriod",
+								"63f9f3f5067c064c2ebcf420"
+							],
+							"query": [
+								{
+									"key": "learnerId",
+									"value": "63f9f3f5067c064c2ebcf420"
+								},
+								{
+									"key": "startDate",
+									"value": "Tue Mar 13 2023 03:00:00 GMT+0300 (Москва, стандартное время)"
+								},
+								{
+									"key": "endDate",
+									"value": "Tue Mar 26 2023 03:00:00 GMT+0300 (Москва, стандартное время)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMark",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deleteMarkId\": \"heSbind-5vAQ5LCvUZgTu\",\r\n    \"journalId\": \"63f9f417067c064c2ebcf956\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/deleteMark/6412d48d5896855afb06645b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"deleteMark",
+								"6412d48d5896855afb06645b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetProgress",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "image/png",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"journalId\": \"63f9f417067c064c2ebcf956\",\r\n    \"lessonId\": \"63f9f3fc067c064c2ebcf820\",\r\n    \"learnerId\": \"63f9f3f5067c064c2ebcf437\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/setProgress/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"setProgress",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetClassProgress",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "image/png",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"journalId\": \"63f9f417067c064c2ebcf956\",\r\n    \"lessonId\": \"63f9f3fc067c064c2ebcf822\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/setClassProgress/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"setClassProgress",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddMark",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"journalId\": \"63f9f417067c064c2ebcf956\",\r\n    \"date\": \"2023-03-13T10:06:14.982+00:00\",\r\n    \"task\": \"Рабочая тетрадь упражнение №1502.\",\r\n    \"_id\": \"\",\r\n    \"type\": 1,\r\n    \"mark\": 3.6\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/addMark/64121443dfc40e589314b7bf",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"addMark",
+								"64121443dfc40e589314b7bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddMark_1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2023-03-18T00:00:00.000Z\",\r\n    \"journalId\":\"63f9f417067c064c2ebcf956\",\r\n    \"mark\":4.5,\r\n    \"task\":\"ДЗ от 17.03.23\",\r\n    \"type\":0,\r\n    \"_id\":\"heSbind-5vAQ5LCvUZgTu\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/progress/addMark/6412d48d5896855afb06645b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"progress",
+								"addMark",
+								"6412d48d5896855afb06645b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "jwt",
+				"jwt": [
+					{
+						"key": "payload",
+						"value": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+						"type": "string"
+					},
+					{
+						"key": "secret",
+						"value": "As fast as thou shalt wane, so fast thou growest. In one of thine, from that which thou departest",
+						"type": "string"
+					},
+					{
+						"key": "algorithm",
+						"value": "HS256",
+						"type": "string"
+					},
+					{
+						"key": "isSecretBase64Encoded",
+						"value": false,
+						"type": "boolean"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "headerPrefix",
+						"value": "Bearer",
+						"type": "string"
+					},
+					{
+						"key": "queryParamKey",
+						"value": "token",
+						"type": "string"
+					},
+					{
+						"key": "header",
+						"value": "{}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y5ZTUwYTM4ZTBhYjEwNzhlZjVlMmMiLCJpYXQiOjE2NzczMjMzNjR9.iMNMxxLeVQuHMlC74_-0aF00TLvDYsWpeFT-RvkoNcw\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/token",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"teterina.anatoliy_2590@yandex.ru\",\r\n    \"password\": \"6Клавдия84\"\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/signin",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"v1@mail.ru\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/signup",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Static",
+			"item": [
+				{
+					"name": "NewsData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/static/news/data/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"static",
+								"news",
+								"data",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewsPicture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/static/news/AD47oYaul9DhaAx3uQvorZlsDHQZK-h5.jpg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"static",
+								"news",
+								"AD47oYaul9DhaAx3uQvorZlsDHQZK-h5.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EventsData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/static/events/data/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"static",
+								"events",
+								"data",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EventsPicture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/static/events/b3aNyBWcQ3wPX3yOIdPiwZ3EIcIdi8Cc.jpg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"static",
+								"events",
+								"b3aNyBWcQ3wPX3yOIdPiwZ3EIcIdi8Cc.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OthersPicture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/static/others/classroom_detail_high.jpg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"static",
+								"others",
+								"classroom_detail_high.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8080/api",
+			"type": "default"
+		}
+	]
+}
